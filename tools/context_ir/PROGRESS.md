@@ -9,7 +9,7 @@ PY = python
 - [x] 第 5 步 自动分析：24 rows，官方无缺失；6 项统计文件及 8 项逐镜并排文件已确认。
 - [x] 第 6 步 对比报告 REPORT.md：8 条完整填写；16 行跨用例统计核对；328 次英文原句引用由脚本验证来源完全一致，无空格或占位格。
 - [x] 第 7 步 修改建议 PROPOSALS.md：仅 C=0、D=1 两项满足规则冲突门槛，各附 3 个官方用例原句；官方 lint 的 1 条 WARN 已原样复制；未改 skill。
-- [ ] 第 8 步 写入 official-calibration.md：
+- [x] 第 8 步 写入 official-calibration.md：append_calibration.py 写入 8 cases；8 条原文逐字核对，标记前内容除脚本设计的状态行外未变。
 - [ ] 第 9 步 出片对照 JSON：
 - [ ] 第 10 步 真实项目改写（可选）：
 - [ ] 第 11 步 收尾：
