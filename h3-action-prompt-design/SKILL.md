@@ -174,14 +174,14 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 
 ## 6. 对白和粤语
 
-台词预算、声线段、每镜一句、说完闭嘴的写法看 `h3-shot-prompt`（`references/performance-and-dialogue.md`）。台词位置靠切点和动作先后来定，不写 `Line lands about …`。这里只补标注格式和粤语。
+台词预算、声线段、每镜一句、说话人收口、听者闭嘴的适用范围看 `h3-shot-prompt`（SKILL.md"台词"和 `references/performance-and-dialogue.md`）。台词位置靠切点和动作先后来定，不写 `Line lands about …`。这里只补标注格式和粤语。
 
-- 台词原样放进 `<d>[语言] ...</d>`，写真正的语言：粤语写 `[Cantonese]`，不用 `[Chinese]`。`<d>` 里只放语言标签和台词，完整句子带句末标点；被打断的保留省略号。
-- 说话人编号每段从 S1 重新编，按开口顺序；画外的声音也给编号。同一人的第二句也要标。挂素材时写成 `<Subject 2> (S1), at screen-left, says flatly ..., <d>[Cantonese] 喂，借借。</d>`；不挂素材写 `The woman (S1) says:`。
-- 画面里有两人以上时，写说话人在画面哪侧。听的人露脸时写明嘴闭着，反应放在眼睛、呼吸、喉咙、手上。多人段加一句 "Only the person speaking moves their lips."
-- **一次生成尽量只有一个声源。** 第三方实例：一次生成里几个人说话会串台，模型还会补没写的回话。必须两人时，台词隔开，每次都写听的人闭嘴。单人说话时，台词后接：`Only this one vocal source is heard. <Subject 3>'s mouth stays closed. Do not repeat, paraphrase or continue beyond the listed spoken content.` 再写嘴在什么时候闭上（按台词结束或实际片长）。
-- 说台词时避免快跑、捂脸、转开和大的运镜；说完写 `closes his mouth naturally`，再接下一个动作。
-- 旁白用固定说法 `says in an off-screen voiceover`，`</d>` 后面紧跟一句画面里的人嘴闭着。
+- 台词原样放进 `<d>[语言] ...</d>`，语言标签后一个半角空格，写真正的语言：粤语写 `[Cantonese]`，不用 `[Chinese]`。`<d>` 里只放语言标签和台词，完整句子带句末标点；被打断的保留省略号。
+- 说话人编号每段从 S1 重新编，按开口顺序；画外的声音也给编号。同一人的第二句也要标。挂素材时写成 `<Subject 2> (S1), at screen-left, says flatly ..., <d>[Cantonese] 喂，借借。</d>`；不挂素材写 `The woman (S1) says:`。说话人在第一次出场的句子里就挂编号并写 `on-screen`（`h3-shot-prompt` 的写法）。
+- 画面里有两人以上时，写说话人在画面哪侧。听的人先写反应（眼睛、呼吸、喉咙、手）；闭嘴只在三种情况写：切到听者用画外音句、单人说话但画里有别人、听者的脸和说话人同时清楚在画里（细则见 `h3-shot-prompt`）。听者看不到脸、只剩虚化的肩膀或后脑、镜头里没人说话时不写。多人段加一句 "Only the person speaking moves their lips."
+- **一次生成尽量只有一个声源。** 第三方实例：一次生成里几个人说话会串台，模型还会补没写的回话。必须两人时，台词隔开，看得见脸的听者写闭嘴。单人说话时，台词后可接单声源句，照《阎王打工记》EP02 实际跑过的原文结构写，只换人名：`Only this one vocal source is heard: Yama. <Subject 3> and <Subject 4> keep their mouths closed. Do not repeat, paraphrase or continue beyond the listed spoken content.` EP02 同时拆了段，修好串词的主因是拆段，这句单独的作用没有分离测过。
+- 说台词时避免快跑、捂脸、转开和大的运镜；画内说话人说完写收口：闭嘴并进下一个动作（`closes his mouth and …`），或紧接一个动作（`Immediately after speaking, he …`）。
+- 旁白用固定说法 `says in an off-screen voiceover`，`</d>` 后面紧跟一句画面里的人嘴闭着：切到听者时是听者（`while the woman's lips remain completely closed`，已实测），内心独白时是说话人自己（`while his lips remain completely closed`）。
 - 跨剪辑点的台词两头都用 `<scenetrans>`，并说明声音跨过剪辑点延续；被片尾截断的用 `<cutoff>`。
 - 要强锁声线，可以给每个角色挂参考音频（`<Audio N>`，最多三个），绑到它的 S 编号。
 - H3 自己出的环境底噪很少：在 `overall_soundscape` 写明每段沉默下面垫什么环境声；系列片后期每场铺一条环境声。
@@ -263,7 +263,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 | 道具越画越走样 | 删描述词，写 `matches <Subject N> exactly`（第 1 节） |
 | 听的人半张脸表情不对 | 从背后拍 |
 | 说话人朝错方向 | 写画面左右加视线目标（`he keeps his eyes on her`） |
-| 串台、多出没写的回话 | 一个声源；"Only this one vocal source is heard…"（第 6 节） |
+| 串台、多出没写的回话 | 按说话人拆段；单人段可加单声源句 "Only this one vocal source is heard: …"（第 6 节） |
 | 走路的人停下、走过头、变成两个 | 侧跟拍，删掉停顿类的词（第 8 节） |
 | 车拐开或在人前刹住 | 车沿镜头轴线，位置锚定，全速切黑（第 8 节） |
 | 接力段开头多出一个人、跳到别处 | 起始位置等于上一段实际结尾；环境句照抄（第 7 节） |

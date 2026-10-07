@@ -25,7 +25,7 @@ CATEGORIES = {
     "amplitude_speed": r"with (small|large) amplitude|at (slow|fast) speed",
     "temporal": r"\b(as|while|then|until|before|after|suddenly|immediately|a beat (later|after)|moments? later|early in the clip|as the clip progresses|throughout|toward the end|towards the end|in the final|finally|at the same time|simultaneously)\b",
     "reidentify": r"from Shot \d|from \[Shot \d\]",
-    "lips": r"\b(lips?|jaw|mouth)\b",
+    "lips": r"\b(lips?|jaws?|mouths?)\b",
     "emotion": r"\b(sad|sadness|angry|anger|happy|joy|nervous|anxious|tense|tension|hurt|relief|relieved|fear|afraid|shock|shocked|surprise|surprised|grief|contemplat\w*|determin\w*|resolve|expression|emotion\w*|mood|warmth|tender\w*|calm|composure|frustrat\w*)\b",
     "physics": r"\b(weight|heavy|force|momentum|impact|jolt\w*|settl\w*|slid\w*|skid\w*|trembl\w*|ripple\w*|splash\w*|drip\w*|bounc\w*|scatter\w*|roll\w*|slam\w*|press\w*|crush\w*|buckl\w*|sway\w*|stagger\w*|brace\w*|recoil\w*|land\w*|drag\w*|tilt\w*)\b",
     "negation": r"\b(no|not|never|without|nobody|nothing|none)\b|n't\b",

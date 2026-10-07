@@ -13,7 +13,7 @@ H3 不会算物理，它是按"见过的视频长什么样"来画。物理对不
 | 被打飞、倒地、爬起这类受力动作 | 无重量、像被线吊着 | 只拍"一顿""被拽住""踉跄半步"；被打中的一方用碎掉、炸开、猛地停住来表现 |
 | 手部操作小物件（系扣、写字、拿杯子、点烟） | 手指数量不对、物件变形 | 物件大一点、动作慢一点、镜头近一点；一个镜头只操作一个物件 |
 | 多人同时做不同的事 | 动作互相干扰、有人突然消失 | 一个镜头只有一个人在做主动作，其他人静止或只做重复的小动作 |
-| 一个镜头里塞好几个动作 | 顺序错乱、动作被跳过 | 一镜一个主动作；多了就拆镜头或拆段 |
+| 一个镜头里塞好几个动作 | 顺序错乱、动作被跳过 | 一镜一条主动作链（同一个人、同一个目的、一步接一步）；不在一个镜头里并行第二条链，多了就拆镜头或拆段 |
 | 遮挡后重新出现、快速穿过前景 | 身份和服装变掉 | 避免；需要时在出现后再复述一次外形 |
 | 远景里的人脸、远景里的字 | 768p 下糊成一片 | 要看清就推近 |
 
@@ -33,6 +33,14 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 - 惯性和衰减：`the swinging lamp slows over three swings and stops`、`the rolling bead loses speed and stops against the teapot`
 - 环境一起动：风同时吹动头发、衣角和灰尘，方向一致；人走过时水洼起波纹
 - 落定：`settles`、`comes to rest`、`stops against`、`holds its new shape`
+
+**接触戏怎么写得有分量**（官方改写的写法，四步之内补细节；本地还没出片验证，A/B 用 wrist_grab）：
+- **起因**带时机词：`Just as his fingertips graze the paper, …`。没交代原因的物理变化，补一个看得见的起因（官方把"念珠散开"写成 `the string holding the black prayer beads from Shot 1 snaps without warning`）。
+- **用力**：主动方先整个身体动，再接触（`lunges forward`）；每个接触最多一个力度或突然副词（`forcefully`、`abruptly`、`sharply`）。入画的全身大景别里不用 `violently`，免得动作过猛、肢体变形。
+- **反应**：既写接触点，也写受力方上游的身体（`The young man's shoulders tense sharply as his forward momentum is halted.`、`Jerked to a sudden halt by his pinned tail, …`）。
+- **僵持**（有就写）：写持续受力——指节发白、手背青筋、呼吸声（`the older man's knuckles turning pale`）；手抖最多写 `a faint tremor`，不写 `tremble visibly`。
+- **落定或抽离**：落定照常写；"在对方没松的手下面滑出"（`slowly sliding out from under the older man's unyielding grip`）只在只拍手和物件的特写里慢速写，配摩擦声。
+- 快的接触那一下仍按第 3A 节只放在插入特写里，不学官方在双人中近景里写擒腕。
 
 **方向跟着力走**：横砍碎片往侧面飞，下砸往下塌，撞墙裂纹从接触点散开，被推的人往推的方向退。
 
@@ -59,7 +67,7 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 | 0–2.0s | 俯拍甩到仰拍 | 登场、落地、武器亮起，还不打 |
 | 2.0–4.5s | 低角度从背后跟拍 | 冲进敌群，第一击，前排敌人碎掉 |
 | 4.5–7.0s | 侧面跟拍，接一个快速推近特写 | 跃起砸地，地面炸开；特写眼睛、面具或枪口 |
-| 7.0–9.5s | 两三个角度快切（算一个镜头组，可以并成侧跟） | 原地连击，每一下都有敌人碎掉 |
+| 7.0–9.5s | 侧面跟拍，一个镜头（不拆成两三个角度的快切：拆开后每镜不到 1.5 秒，全段也会超过 6 个镜头） | 原地连击，每一下都有敌人碎掉 |
 | 9.5–11.5s | 静止特写 | 一拍静：轻轻一碰，没反应，然后一击，全场同时碎 |
 | 11.5–15.08s | 弧形绕拍后拉远 | 终结：主角自己的手做一个动作，全屏特效炸开，慢慢停在主角身上 |
 
@@ -67,7 +75,15 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 
 ### C. 安静戏（一镜到底）
 
-适用：一个人，或两个人但不接触；没有打斗。动作主要交给镜头（由远推近、贴脸后拉远、对焦虚实变化）。人只做几个小动作，但要有一个小事件：触发 → 反应 → 余波（画外有动静 → 一怔、偷瞄 → 松口气但头没转回来）。按时间先后写，最后停在一个定住的瞬间。
+适用：一个人，或两个人但不接触；没有打斗。动作主要交给镜头（由远推近、贴脸后拉远、对焦虚实变化）。人只做几个小动作，但要有一个小事件：触发 → 反应 → 余波（画外有动静 → 一怔、偷瞄 → 松口气但头没转回来）。整段是一条主动作链，按时间先后写，最后停在一个定住的瞬间。
+
+写法要点（参照 `official-calibration.md` 的 quiet_shen_fire）：
+- 首句写景别和整段运镜（`a medium shot, the camera slowly pushes in toward …`）；写实真人戏放在底座和光源之后的第一句构图句。
+- 触发可以用 `Suddenly, …` 开头；先后用事件锚定（`Suddenly`、`Once …`、`a beat later`），或用官方用过的 `Early in the shot`、`Toward the end`。不写片内秒数。
+- 反应链保留"眼先动、头慢半拍"的明确时间差（`her eyes move first, sliding toward the sound; only a beat later does her head turn a fraction`），写一两句都可以。
+- 运镜终点挂在最后一个从句上（`as the camera closes in on the flickering flames and her profile`），同时写清人停在什么状态。
+- 画外声音的方位按简报写，不挪进画面（官方把"画外"的窸窣改成了 `the dark corner behind her`，不学）；手里道具的状态前后一致。
+- 声音里写一处由动作引起的环境反馈（重心移动时地板吱呀）和人物的呼吸；配乐写 `N/A`。
 
 ## 4. 通用技巧
 
@@ -89,4 +105,7 @@ She sets the cup down first, then reaches across the table; her fingertips stop 
 He takes half a step forward, heel first in the soft dirt, and a small puff of dust drifts and thins.
 The door swings shut behind her, bounces once against the frame and clicks closed.
 The beads scatter across the walnut tabletop, roll, slow down and stop one by one against the teapot.
+Just as his fingertips graze the paper, the older man lunges forward and forcefully grabs his wrist, pressing it down onto the tabletop; the young man's shoulders tense sharply as his forward momentum is halted.
+The string holding the black prayer beads from Shot 1 snaps without warning, and the beads scatter across the walnut.
+The two hands hold there against each other, the older man's knuckles turning pale, both men breathing hard through the nose.
 ```

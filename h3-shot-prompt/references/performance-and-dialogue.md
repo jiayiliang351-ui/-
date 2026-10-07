@@ -29,13 +29,13 @@
 ```text
 Nobody stands idle or poses for the camera. Every character is always occupied with some small piece of business — handling an object, finishing a movement, glancing at something off-topic. In every exchange one character acts while the other reacts, and reactions arrive a beat late, the way real people respond while their attention is still somewhere else. Small involuntary gestures (swallowing, shifting weight, thumb rubbing an edge, a delayed look-up) matter more than polished facial expressions.
 ```
-说明：这段是 v2 胜出时用的写法（原句开头是 `Acting direction for the whole sequence:`，这里去掉了这个标签头，正文没改）。新文体的 A/B 里会试"去掉这段、把内容全写进镜头"的版本，结果出来前继续用它。
+说明：这段是 v2 胜出时用的写法（原句开头是 `Acting direction for the whole sequence:`，这里去掉了这个标签头，正文没改）。它属于 SKILL.md 的"固定句例外"，两个以上人物的写实真人戏默认照抄，一字不改，不计入字数预算。`examples.md` 3.2 B 去掉了它，那只是 A/B 表第 9 项的测试变量，不是默认写法；结果出来前继续用它。
 
 **背景人物**：主角承担主要动作，配角回应具体事件，背景人只保留少量持续活动或自然静止。不要让背景人集体转头、同步手势或抢主角的注意力。
 
 ## 2. 台词与防串词
 
-**台词预算**（只数说出口的字）：10 秒 20–28 字，12 秒 28–36 字，15 秒 36–44 字，最多 48 字；硬上限约每秒 3.5 字。有哽咽、结巴、长停顿、拥抱，或走路、转身多的段，再少两成以上。一句最好十个字以内，一个镜头只有一个人说话。台词不到 24 字、又只有简单动作的段，先试着并进前后段。
+**台词预算**（只数说出口的字）：10 秒 20–28 字，12 秒 28–36 字，15 秒 36–44 字，最多 48 字；硬上限约每秒 3.5 字。有哽咽、结巴、长停顿、拥抱，或走路、转身多的段，再少两成以上。一句最好十个字以内，一个镜头只有一个人说话（画外音句除外）。台词不到 24 字、又只有简单动作的段，先试着并进前后段；但为防串词按说话人拆开的单人段不并回去，宁可短。
 
 **一段只装**：一个场景、一次关系变化（追问 → 否认、靠近 → 拉开）、一条动作链、一个落点。
 
@@ -43,19 +43,20 @@ Nobody stands idle or poses for the camera. Every character is always occupied w
 
 **怎么写一句台词（官方文体 + 实测句式）**
 ```text
-[Shot 2] At 00:02.400, the camera cuts to an over-the-shoulder close shot of the man on the right of the frame, her shoulder a soft blur in the left foreground. He rubs the back of his neck and does not meet her eyes. The young man with a tired, clipped mid-low voice (S2) says: <d>[Chinese]我今天真的很累。</d> As the line ends his lips close and his jaw stops moving; he drops his hand and keeps looking away down the street.
+[Shot 2] At 00:02.400, the camera cuts to an over-the-shoulder close shot of the young man from Shot 1 (S2) on the right of the frame, holding a static shot with a faint handheld breath, her shoulder a soft blur in the left foreground. He rubs the back of his neck and does not meet her eyes, then replies tiredly, <d>[Chinese] 我今天真的很累。</d> Exactly as his voice stops, his lips press together and his jaw ceases speaking motion; he drops his hand and keeps looking away down the street.
 ```
-- 说话人第一次出现：身份 + 音色 + 语气 + 编号，都在 `<d>` 外。
-- 说完写闭嘴（`his lips close and his jaw stops moving`），否则嘴容易一直动。
-- 听的人：写对这句话的具体反应，写 `her lips stay closed`。
-- 单人说话的段，台词后可以接这句实测有效的单声源句（《阎王打工记》EP02 不串词，虽然是指令式写法，照样保留）：`Only this one vocal source is heard. <Subject 3>'s mouth stays closed. Do not repeat, paraphrase or continue beyond the listed spoken content.` 多人在画时加一句 `Only the person speaking moves their lips.`
+- **编号和声线**：说话人在第一次出场的句子里（外形加站位）就挂编号并写 `on-screen`（`A young on-screen man (S2) in a black bomber jacket …`）；第一次开口时在 `<d>` 外写清声线（见下文"声线"）；之后的台词，语气写在动词上（`replies tiredly`、`murmurs even more quietly`）。动词后用冒号或逗号都可以。
+- **台词标签**：`<d>[Chinese] 台词</d>`，标签后一个半角空格（官方指南和官方改写全部带空格）。本地实测通过的旧段（`examples.md` 2.2、2.3）是不带空格的写法，不回改；有空格和没空格的对比见 A/B 表第 14 项。
+- **说话人收口**：说话人在画内、镜头还停在他脸上时，`</d>` 后写一句收口，二选一：闭嘴并进下一个动作（官方指南：`She closes her lips and guards the cookie …`、`He closes his mouth into an apologetic smile and …`；官方 Ref2VA 改写：`Exactly as his voice stops, his lips meet in a relaxed, peaceful smile, and his jaw ceases speaking motion.`），或紧接一个接管脸和身体的动作（官方改写：`Immediately after speaking, he pivots smoothly on his heel …`）。同一人连说几句，只在最后一句后写。说话人在画外、台词跨切点、被段尾截断、台词一结束就切走时不写。它防的是"说完嘴还在动、补出没写的话"，不防串词；串词靠拆段。来源是官方文本，本地还没单独 A/B（A/B 表第 12 项）。
+- **听的人**：先写对这句话的具体可见反应（慢半拍、手停一下、视线移开；有编号就带编号）。闭嘴只在三种情况写：① 切到听的人、说话人不在画面里——用下面的画外音句（已实测）；② 一段只有一个人说话、画面里还有别人——`… watch silently, their mouths kept firmly closed.`（官方改写原句式）；③ 听者的脸和说话人同时清楚在画里（双人镜、多人镜，外形差别大的两人在同一段轮流说也算）——把闭嘴并进反应句，如 `He exhales through his nose and looks away down the street, his lips pressed together.`。听者不在画面里、背对镜头、只剩前景虚化的肩膀或后脑，或者这个镜头里没人说话时，不写闭嘴。官方改写不会主动写听者闭嘴，这是本地防串词的写法（A/B 表第 13 项）。
+- **单声源句**（可选，SKILL.md 的固定句例外，照原句结构写，只换人名）：《阎王打工记》EP02 实际跑的原文见 `examples.md` 2.2：`Only this one vocal source is heard: Yama. <Subject 3> and <Subject 4> keep their mouths closed. Do not repeat, paraphrase or continue beyond the listed spoken content.` T2VA 没有 `<Subject N>` 标签时改用人物复指：`Only this one vocal source is heard: the man in the grey suit. The man behind the tea table keeps his mouth closed. Do not repeat, paraphrase or continue beyond the listed spoken content.` 证据边界：EP02 那一版同时按说话人拆了段，还带一句 `IMPORTANT —` 单声源说明；修好串词的主因是拆段，这句单独的作用没有分离测过。多人在画时可加 `Only the person speaking moves their lips.`
 - 说台词时避免快跑、捂脸、转开和大的运镜。
-- 切到听的人时，说话人在画外说：`The man (S1) says in an off-screen voiceover: <d>[Chinese]……</d> while the woman's lips remain completely closed.`（已实测：《五点五十九》跨切那句声音对、听的人嘴闭着）
+- **画外音句**：切到听的人时，说话人在画外说，闭嘴的是画面里的听者：`The man (S1) says in an off-screen voiceover: <d>[Chinese] ……</d> while the woman's lips remain completely closed.`（已实测：《五点五十九》跨切那句声音对、听的人嘴闭着；实测时标签后没有空格）。说话人自己在画里、声音是内心独白时，闭嘴的是说话人自己：`… while his lips remain completely closed.`
 - 同一句跨切点：两边写 `<scenetrans>`，注明 `continues seamlessly across the cut`；被段尾截断写 `<cutoff>`。
-- 切点落在说话权交换、回答前的停顿、视线变化处。情绪最重的那一下，可以插一个不到 1.5 秒的特写（攥紧裙摆又松开）。
+- 切点落在说话权交换、回答前的停顿、视线变化处。情绪最重的那一下，可以插一个反应特写（攥紧裙摆又松开）；这个特写也至少 1.5 秒，并算进 SKILL.md 镜头数表的镜头数。
 - 视线只写正向：`his eyes stay on her`、`she looks down at the screen`。
 
-**声线**：每个说话的角色写一段固定声线，每段照抄：年龄、音高、音色、平常语速，这场戏里声音怎么走（推销时沉稳笃定、被问住时泄气下沉、摊牌时低而硬、被戳中时几乎耳语），以及不要的腔调写成正向（`a plain, natural speaking voice, not a broadcaster's tone`）。只写"平静地说"，出来就是机器人念稿。
+**声线**：每个说话的角色写一段固定声线，每段照抄：年龄、音高、音色、平常语速，这场戏里声音怎么走（推销时沉稳笃定、被问住时泄气下沉、摊牌时低而硬、被戳中时几乎耳语），以及不要的腔调写成正向（`a plain, natural, conversational speaking voice, like someone talking across a table`）。只写"平静地说"，出来就是机器人念稿。
 
 **中文台词**：用标准汉字和普通标点；多音字、生僻字容易读错，必要时换个说法。语速快、俚语多时，尾字容易被吞。
 

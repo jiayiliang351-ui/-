@@ -30,6 +30,8 @@ CAPS_WORD = re.compile(r"\b[A-Z][A-Z\-]{2,}\b")
 CAPS_ALLOW = {"ARRI", "LF", "LED", "CCTV", "ATM", "UI", "TV", "POV", "ID", "OK", "USB", "SUV", "BBQ",
               "VIP", "CEO", "NHZX", "IMAX", "HDR", "LCD", "CRT", "DSLR", "GPS"}
 LAND_TIME = re.compile(r"[Ll]ine lands about|Total runtime is exactly")
+CLIP_SECONDS = re.compile(r"\b(?:by|at|until|around|after)\s+(?:about\s+)?\d+(?:\.\d+)?\s*(?:s|sec|seconds)\b", re.I)
+ABSENT_THING = re.compile(r"\b(?:no|nobody|nothing)\b(?!\s+longer)", re.I)
 CJK = re.compile(r"[　-〿㐀-鿿＀-￯‘’“”]")
 
 
@@ -141,7 +143,9 @@ def lint(text, seconds):
         warns.append(f"last shot lasts {eff - prev:.2f}s (< {MIN_SHOT}s)")
     n_shots = len(shots) + len(re.findall(r"\[Shot \d+ ·", desc))
     if n_shots > 6:
-        warns.append(f"{n_shots} shots in one clip; official rewrites usually use 2-4")
+        warns.append(f"{n_shots} shots in one clip; official rewrites use 1-3")
+    if len(shots) >= 2 and "from Shot" not in desc and "from [Shot" not in desc:
+        warns.append("multi-shot clip never re-identifies people or props with 'from Shot N'")
 
     # Style: rule words, tags, caps, timing notes
     plain = strip_allowed(text.split("\n", 1)[1] if mode in ("I2VA", "FL2VA", "L2VA") else text)
@@ -151,6 +155,12 @@ def lint(text, seconds):
         errors.append(f"state tag {tag} — write the state as a sentence")
     if LAND_TIME.search(plain):
         warns.append("timing note ('Line lands about' / 'Total runtime') — not in the official format")
+    desc_plain = strip_allowed(desc)
+    for m in sorted(set(x.group(0) for x in CLIP_SECONDS.finditer(desc_plain))):
+        warns.append(f"in-clip time '{m}' — anchor timing to events instead")
+    absent = sorted(set(w.lower() for w in ABSENT_THING.findall(desc_plain)))
+    if absent:
+        warns.append("names an absent thing (" + "/".join(absent) + ") — prefer a positive state; fixed sentences are exempt")
     caps = sorted({w for w in CAPS_WORD.findall(plain) if w not in CAPS_ALLOW})
     if caps:
         warns.append("ALL-CAPS words: " + ", ".join(caps[:12]) + (" ..." if len(caps) > 12 else ""))
@@ -163,6 +173,8 @@ def lint(text, seconds):
     for i, line in enumerate(lines, 1):
         if not re.match(r"\[[A-Za-z]+\]", line):
             errors.append(f"dialogue #{i} lacks a language tag like [Chinese]")
+        elif not re.match(r"\[[A-Za-z]+\] ", line):
+            warns.append(f"dialogue #{i}: no space after the language tag (official form is '<d>[Chinese] ...</d>')")
     zh = sum(len(re.findall(r"[一-鿿]", l)) for l in lines)
     if zh:
         limit = min(48, math.floor(eff * 3.5))

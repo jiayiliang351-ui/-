@@ -16,8 +16,11 @@
 - 按时间顺序写，用 `Early in the clip`、`As the clip progresses`、`Throughout the remainder of the clip`、`Suddenly`、`As … fades` 交代先后；
 - 物理过程写全：`The sheer spatial force violently jolts the bridge, causing the captain to stagger slightly forward, her shoulders tensing as she braces herself`；
 - 后面的镜头复指前面的人：`the captain from Shot 1`、`the young man in the dark-grey hoodie from Shot 1`；
-- 台词前写声线，台词后写闭嘴：`He closes his mouth into an apologetic smile`；
-- 一段 2–3 个镜头。
+- 台词前写声线，台词后写收口：闭嘴并进下一个动作（`He closes his mouth into an apologetic smile and strokes the dog's thick white fur.`），或紧接一个动作（`She folds the letter along its existing crease.`）；
+- 一段 1–3 个镜头（1.1、1.3 和 1.4 的 T2VA 是多镜头；1.2 和 1.4 的 FL2VA、L2VA 是单镜头）。
+- 台词标签后有一个空格：`<d>[English] I get off at the next station.</d>`。
+
+用官方接口改写的本项目 8 条测试需求在 `official-calibration.md`，和本节一起作参照。
 
 ### 1.1 T2VA，10 秒，2 个镜头（无台词，物理冲击）
 
@@ -212,6 +215,8 @@ non_diegetic_music: Sparse solo piano at a slow tempo enters at about 5.0 second
 
 跑法：同一个种子（至少 2 个），A、B 各跑一次，其他设置一字不动。看四件事：动作是否按顺序完成、物理是否可信、人物表演是否自然、台词和嘴型是否对得上。
 
+注意，这两组 B 是对照用的，不是模板：3.1 B 是 8 秒 4 镜；3.2 B 为了只比文体，沿用了 A 的 15 秒 6 镜，还去掉了全局表演段（那是 A/B 表第 9 项的测试变量，不是默认写法）。它们写于 2026-10-07 校准之前，没有用到后来的规则（台词标签空格、`from Shot N` 复指、切镜句写景别和运镜、说话人收口二选一、声音段写法）。新写的段按 SKILL.md 当前的规则和默认层来写；`official-calibration.md` 里有同一批戏的官方改写，可以三方对照。
+
 ### 3.1 《纸引》EP1-06 扑水被截、踩灭尾火（8 秒）
 
 **改了什么**：镜头从 6 个减到 4 个（每镜至少 1.5 秒）；全大写运镜和动词改成官方自然句；`(flame: ON)` 标签改成陈述句；按秒列的声音改成连续段落；每个接触补了"起因 → 用力 → 反应 → 落定"。这一组同时改了密度和文体，如果 B 更好，再拆开验证是哪一项起作用（A/B 表第 7、8 项）。
@@ -263,7 +268,7 @@ non_diegetic_music: N/A
 **B（新文体）**
 
 ```text
-integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Location light: flat cold-white fluorescent tubes inside the store, a warm amber glow from the hot-food cabinet, blue night light through the wet glass front as the rain thins; faces half cold white, half warm. A small unbranded 24-hour convenience store at 2 a.m., with no logos or brand names anywhere. The checkout counter is on the right of the frame and the window counter and glass door are on the left. Only two people are in the store. A 50mm medium shot shows Lao Xu at the window counter on the left: a delivery rider about 45, rain-flattened short hair, grey stubble, a sun-darkened tired face, a wet yellow rain jacket over a grey hoodie, his scuffed yellow helmet on the counter beside an open boxed meal. He snaps a pair of disposable chopsticks apart and rubs them together to clear the splinters, keeping his eyes on the chopsticks, as if to keep his thanks casual.
+integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Location light: flat cold-white fluorescent tubes inside the store, a warm amber glow from the hot-food cabinet, blue night light through the wet glass front as the rain thins; faces half cold white, half warm. A small unbranded 24-hour convenience store at 2 a.m., its shelves stocked with plain, generic packaging. The checkout counter is on the right of the frame and the window counter and glass door are on the left. Only two people are in the store. A 50mm medium shot shows Lao Xu at the window counter on the left: a delivery rider about 45, rain-flattened short hair, grey stubble, a sun-darkened tired face, a wet yellow rain jacket over a grey hoodie, his scuffed yellow helmet on the counter beside an open boxed meal. He snaps a pair of disposable chopsticks apart and rubs them together to clear the splinters, keeping his eyes on the chopsticks, as if to keep his thanks casual.
 
 [Shot 2] At 00:02.200, the camera cuts to a 50mm medium shot of Xiao Su behind the checkout counter on the right: a young woman about 22, dark hair in a low ponytail, a plain dark-green store vest over a white long-sleeve tee. Her back is half turned as she stacks cartons on a shelf. Lao Xu, a middle-aged man with a low, rough voice in plain Mandarin, short and gruff, a dry half-joke with warmth underneath (S1), says in an off-screen voiceover: <d>[Chinese]那我帮你扔。</d> while Xiao Su's lips remain completely closed. A beat after the line her hands pause on a carton; one corner of her mouth lifts a fraction; she does not turn around, and goes back to stacking, as if she would rather not make anything of it.
 

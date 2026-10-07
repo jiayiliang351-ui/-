@@ -2,11 +2,13 @@
 
 只在写《纸引》时读。
 
-**画风开头（每段原样照抄，紧跟 `[Shot 1]`）：**
+**画风开头（《纸引》每段原样照抄，紧跟 `[Shot 1]`；《纸引》用它代替 `cinematography.md` 的电影感底座，两段不叠加，全集画面才一致；它属于 SKILL.md 的固定句例外，不计入字数预算）：**
 ```text
 Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy shop on a rainy night: black wooden pillars, wet stone floor, white paper lotus lanterns hanging from the beams, white paper horses standing in the shadows. Warm orange light from an iron fire brazier at the back left, cold blue rain light from the open doorway at the back. All creatures are real handmade paper craft: stiff folded paper with visible fibres, brush-ink lines and burnt edges; they bend only at the joints. Film grain.
 ```
-（原句末尾的 `never soft or stretchy` 改成了正向写法；如想保持实测原样，可以加回去。）
+（原句末尾的 `never soft or stretchy` 改成了正向写法，不要加回去。没有纸扎角色出镜的段（例如沈娘子独自守火），照抄时只删掉 `All creatures are real handmade paper craft: stiff folded paper with visible fibres, brush-ink lines and burnt edges; they bend only at the joints.` 这一句，其余一字不改，然后接沈娘子的角色插句。有纸扎角色出镜时保留这一句。）
+
+画风开头之后的第一句构图句写清景别和运镜状态（`A low tracking shot at paw height follows …`、`a medium shot, the camera slowly pushes in toward …`），后续切镜句同样写景别和运镜状态。
 
 大殿里固定的位置：火盆在左后，黑铜水盆在右侧木凳上，大门在正中后方（冷蓝雨夜），工作台在左前。
 
@@ -15,7 +17,7 @@ Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy s
 - 鹤婆：`a tall paper crane-woman — long thin beak, spiky white paper crown, layered white paper robes trimmed in red, one snow-white wing and one charred black wing —`
 - 沈娘子：`a real woman in her thirties — black hair in a low bun with a wooden hairpin, pale grey-green linen jacket, grey-blue long skirt, plain and unadorned —`（她是真人，不是纸扎）
 
-后续镜头复指：`the paper tiger cub`、`the crane-woman`、`the woman in the grey-green jacket`。
+后续镜头第一次提到时复指并带出处：`the paper tiger cub from Shot 1`、`the crane-woman from Shot 1`、`the woman in the grey-green jacket from Shot 1`。
 
 挂素材时对应的定稿图：阿糊 C01_AHU_Master_LOCK，鹤婆 C04_HEPO_Master_LOCK，沈娘子 C10_SHENNIANGZI_Master_LOCK；大殿机位图 S02A/S02B/S02D/S02E/S02F/S02H，水镜特写 S03。
 

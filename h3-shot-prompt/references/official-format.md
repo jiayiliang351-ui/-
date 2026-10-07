@@ -44,7 +44,7 @@ How the reference pictures align with the target video — <Picture 1> (from [Sh
 
 ## 4. 镜头与切点
 
-- `[Shot 1]` 不带时间戳。T2VA 和关键帧模式下，画风和起始构图紧跟在 `[Shot 1]` 后面写；Ref2VA 下，画风用一两句英文写在 `[Shot 1]` 之前。
+- `[Shot 1]` 不带时间戳。T2VA 和关键帧模式下，画风和起始构图紧跟在 `[Shot 1]` 后面写；Ref2VA 下，画风用一两句英文写在 `[Shot 1]` 之前（写实真人戏是电影感底座整段加本场光源，见 SKILL.md）。
 - 后续镜头：`[Shot N] At MM:SS.mmm, the camera cuts to …`，时间严格递增，小于实际时长。
 - 切镜动词：`the camera cuts to` / `the shot cuts to` / `the shot transitions to` / `the shot changes to` / `the shot switches to`。叠化、淡入淡出、划像只在明确需要时用。
 - 切镜要带来新信息（主体、空间、状态、视角或时间）。只改距离或一点角度时，用运镜，不切。
@@ -90,15 +90,20 @@ The camera holds a static shot as the runner exits the frame.
 ## 6. 说话人与台词
 
 - 会出声的角色用固定编号 `(S1)`、`(S2)`，按实际开口先后编；整段不变；不出声的角色不编号。多人齐声用 `(S1,S2)`。
-- 第一次出现时写清身份：角色类型、年龄、性别、是否在画内、音高、音色、语速、口音。身份、编号、动作、语气都写在 `<d>` 外面。
-- `<d>` 里只放语言标签和台词原文，逐字照抄，不翻译、不改标点：`<d>[Chinese]你每次都说下次。</d>`
-- 画外音固定句式，`<d>` 后紧跟闭嘴：
+- 第一次出现时写清身份：角色类型、年龄、性别、是否在画内、音高、音色、语速、口音。身份、编号、动作、语气都写在 `<d>` 外面。官方改写的习惯是在人物第一次出场的句子里就挂编号，并写 `on-screen`：`A young on-screen woman (S1) with shoulder-length straight black hair … stands on the left side of the frame.`
+- `<d>` 里只放语言标签和台词原文，标签后一个半角空格，逐字照抄，不翻译、不改标点：`<d>[Chinese] 你每次都说下次。</d>`（官方指南原文 `<d>[English] I get off at the next station.</d>` 带空格；官方改写 7/7 句带空格。）
+- 说话动词后用冒号（官方指南 T2VA 示例 `says: <d>`）或逗号（官方 Ref2VA 示例和 Context-IR 改写 `says, <d>`）都可以。
+- 画外音固定句式：`<d>` 后紧跟一句"画面里那个人嘴闭着"（官方原文：state that the corresponding on-screen character's lips remain closed）。说话人自己在画里、声音是内心独白或旁白时，闭嘴的是说话人自己：
 ```text
-The man (S1) says in an off-screen voiceover: <d>[Chinese]……</d> while his lips remain completely closed.
+The man (S1) says in an off-screen voiceover: <d>[Chinese] ……</d> while his lips remain completely closed.
+```
+说话人在画外、画面切到听的人身上时，闭嘴的是听的人（本地已实测，《五点五十九》段 03）：
+```text
+The man (S1) says in an off-screen voiceover: <d>[Chinese] ……</d> while the woman's lips remain completely closed.
 ```
 - 同一句台词跨切点：两边都写 `<scenetrans>`，并写明 `continues seamlessly across the cut`（也可用 `continues uninterrupted into the next shot` / `carries over from the previous shot` / `remains audible across the transition`）。
 - 被段尾截断的台词写 `<cutoff>`。
-- 官方改写示例里常用的收口句：`Exactly as his voice stops, his lips meet in a relaxed smile, and his jaw ceases speaking motion.`
+- 官方文本里的说完收口：官方 Ref2VA 改写（README 复现脚本）`Exactly as his voice stops, his lips meet in a relaxed, peaceful smile, and his jaw ceases speaking motion.`；官方指南饼干示例 `She closes her lips and guards the cookie …`、`He closes his mouth into an apologetic smile and …`。2026-10-07 的 8 条 T2VA 校准改写里，7 句台词后都没写说话人闭嘴，而是接听者的反应、切走，或 `Immediately after speaking, …` 这样的紧接动作。本 skill 的用法见 SKILL.md"说话人收口"。
 
 ## 7. 画面文字
 
@@ -106,8 +111,8 @@ The man (S1) says in an off-screen voiceover: <d>[Chinese]……</d> while his l
 
 ## 8. 两个声音字段
 
-- `overall_soundscape`：1–4 句连续英文，写整段的环境声、动作声、非语言人声（风、雨、脚步、衣料、撞击、呼吸、笑）。台词、唱歌、角色听得见的音乐写在正文里，这里不重复。只有用户明确要求全程无声时才写 `N/A`。
-- `non_diegetic_music`：1–3 句，只有观众听得见的配乐；写乐器、速度、节奏、力度变化。收音机、现场演奏这类角色听得见的音乐写进正文。没有配乐写 `N/A`。
+- `overall_soundscape`：官方规定 1–4 句连续英文，写整段的环境声、动作声、非语言人声（风、雨、脚步、衣料、撞击、呼吸、笑）。台词、唱歌、角色听得见的音乐写在正文里，这里不重复。只有用户明确要求全程无声时才写 `N/A`。官方改写的实际写法偏长（8 条校准平均约 87 词，多为 3–4 句）：第 1 句写环境底噪，后面每句把关键动作声绑到看得见的动作上；本 skill 的具体要求见 SKILL.md"输出格式"。
+- `non_diegetic_music`：1–3 句，只有观众听得见的配乐；写乐器、速度、节奏、力度变化，官方指南要求不写抽象情绪词（官方改写自己常违反，不照学）。收音机、现场演奏这类角色听得见的音乐写进正文。没有配乐写 `N/A`。官方改写在简报没提配乐时常自己加一段克制的配乐；接力剧集的默认做法见 SKILL.md"输出格式"。
 
 ## 9. Ref2VA 六段式
 
@@ -143,6 +148,6 @@ The man (S1) says in an off-screen voiceover: <d>[Chinese]……</d> while his l
 - 格式：`<Subject 1> (appears in [Shot 1], [Shot 3]): fully_preserved - …`；`<Picture 2> ([Shot 1] first frame): fully_preserved - …`；`<Audio 1>: reference - …`
 - 剧情里新加的动作和背景不算"保留度下降"，不要因此降级。
 
-**detailed_description**：画风一两句写在 `[Shot 1]` 前；每个镜头写清构图、主体外形和位置、环境和光、动作和状态变化、运镜、声音、参考内容在哪里出现。生成任务一般 350–500 个英文词，台词多的段以装下完整台词为先。重要的 `<Subject N>` 第一次清楚出现时，写它的参考特征、画面位置和当前动作；之后沿用同一标签。说话的参考角色写成 `<Subject 2> (S1) turns toward the woman and says, <d>[Chinese]……</d>`。
+**detailed_description**：画风一两句写在 `[Shot 1]` 前（写实真人戏是电影感底座整段）；每个镜头写清构图、主体外形和位置、环境和光、动作和状态变化、运镜、声音、参考内容在哪里出现。生成任务一般 350–500 个英文词，台词多的段以装下完整台词为先。重要的 `<Subject N>` 第一次清楚出现时，写它的参考特征、画面位置和当前动作；之后沿用同一标签。说话的参考角色写成 `<Subject 2> (S1) turns toward the woman and says, <d>[Chinese] ……</d>`。后续镜头复指写成 `<Subject 4> (S2), the young man in the dark-grey hoodie from Shot 1`（官方示例写法）。
 
 关键帧锚点的自然写法：`the shot begins from <Picture 1>` / `the shot's keyframe corresponds to <Picture 2>` / `the shot ends on <Picture 3>`。
