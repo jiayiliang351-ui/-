@@ -4,7 +4,7 @@ PY = python
 
 - [x] 第 1 步 环境检查：Python 3.14.5；临时密钥 KEY OK；基础 lint OK；results 尚不存在。
 - [x] 第 2 步 Codex 按 skill 写 8 条：8 个文件首次 lint OK，全部原句台词由脚本核对一致，官方接口尚未调用。
-- [ ] 第 3 步 试跑一条接口：已试调 tea_pour，HTTP 401，未获得官方结果和 token 用量；按故障处理表停止。
+- [ ] 第 3 步 试跑一条接口：国内默认地址首次返回 HTTP 401；确认海外站后改用 https://api.minimax.io 重试 tea_pour，返回 HTTP 402 insufficient balance (1008)。未获得官方结果或 token 用量，停止。
 - [ ] 第 4 步 跑全部接口：
 - [ ] 第 5 步 自动分析：
 - [ ] 第 6 步 对比报告 REPORT.md：
@@ -39,3 +39,19 @@ FAIL tea_pour: HTTP 401 from https://api.minimaxi.com/v2/h3_context_ir: {"type":
 | office_two_speakers | 0 | 0 |
 | wrist_grab | 0 | 0 |
 | tea_pour | 0 | 0 |
+
+## 海外站确认后的第 3 步重试
+
+用户确认密钥来源：https://platform.minimax.io/console/plan 。官方 H3 README 及接口文档确认海外基址为 https://api.minimax.io 。仅用 --base 参数更正地址，没有修改脚本。
+
+```text
+run  tea_pour (8s) ...
+FAIL tea_pour: HTTP 402 from https://api.minimax.io/v2/h3_context_ir: {"type":"error","error":{"type":"insufficient_balance_error","message":"insufficient balance (1008)","http_code":"402"},"request_id":"0714fe18ba0c76b34a378dd6ac6898b0"}
+```
+
+当前阻塞以本次海外接口响应为准：余额不足。先前国内接口 401 不应作为海外密钥无效的结论。未获得 task_id，未进行批量请求，校准仍未完成。需用户确认 H3-Context-IR 所用的计费余额、资源包或套餐权益；未执行充值或购买。
+
+官方来源：
+- https://github.com/MiniMax-AI/MiniMax-H3/blob/main/README.md
+- https://platform.minimax.io/docs/api-reference/video-generation-v2-h3-context-ir
+- https://platform.minimax.io/protocol/paid-agreement （标准按量 API Key 与 Token Plan 订阅 Key 分开且不可互换，具体权益以服务页面为准。）
