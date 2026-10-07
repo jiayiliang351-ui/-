@@ -48,6 +48,8 @@ Nobody stands idle or poses for the camera. Every character is always occupied w
 - 说话人第一次出现：身份 + 音色 + 语气 + 编号，都在 `<d>` 外。
 - 说完写闭嘴（`his lips close and his jaw stops moving`），否则嘴容易一直动。
 - 听的人：写对这句话的具体反应，写 `her lips stay closed`。
+- 单人说话的段，台词后可以接这句实测有效的单声源句（《阎王打工记》EP02 不串词，虽然是指令式写法，照样保留）：`Only this one vocal source is heard. <Subject 3>'s mouth stays closed. Do not repeat, paraphrase or continue beyond the listed spoken content.` 多人在画时加一句 `Only the person speaking moves their lips.`
+- 说台词时避免快跑、捂脸、转开和大的运镜。
 - 切到听的人时，说话人在画外说：`The man (S1) says in an off-screen voiceover: <d>[Chinese]……</d> while the woman's lips remain completely closed.`（已实测：《五点五十九》跨切那句声音对、听的人嘴闭着）
 - 同一句跨切点：两边写 `<scenetrans>`，注明 `continues seamlessly across the cut`；被段尾截断写 `<cutoff>`。
 - 切点落在说话权交换、回答前的停顿、视线变化处。情绪最重的那一下，可以插一个不到 1.5 秒的特写（攥紧裙摆又松开）。
@@ -59,7 +61,7 @@ Nobody stands idle or poses for the camera. Every character is always occupied w
 
 ## 3. 参考素材一致性（挂素材时）
 
-- 有图的关键道具不写外观，只写 `<Subject N> is the … from <Picture N>.`，出现该道具的每个镜头写一次 `matching <Picture N> exactly`。状态（不碎、不开）和位置（在柜里、原位）照常写。删光描述后仍漂移，补 1–2 个和图一致的材质词，或者换一张"道具在场景里"的合成图。
+- 有图的关键道具不写外观，在 `subject_definitions` 里定义成主体（`<Subject N> is the … in <Picture N>.`），出现该道具的每个镜头写一次 `matches <Subject N> exactly`。状态（不碎、不开）和位置（在柜里、原位）照常写。删光描述后仍漂移，补 1–2 个和图一致的材质词，或者换一张"道具在场景里"的合成图。
 - 一个人两张图时分开写：`Facial identity comes from <Picture 2>; full-body proportions, clothing, and posture come from <Picture 3>.`
 - 音色参考加一句：`its vocal timbre guides the delivery without copying the original signal.`
 - 左右写清视角：`on the right side of the case, as seen when facing the case from the front`。

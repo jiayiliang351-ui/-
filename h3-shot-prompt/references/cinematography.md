@@ -29,4 +29,5 @@ Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Pan
 ## 4. 画面文字和字幕
 
 - 画面里真实可见的字，用英文半角双引号逐字写：`the terminal screen reads "余额不足"`。给一个静止的插入特写（`The camera holds a static shot on the screen.`），字才清楚。剧情靠字成立时（日期、金额），字要短。
-- 不要字幕时，写成正向陈述：`The frame stays clean of subtitles, captions and text overlays.`
+- 不要字幕时，全项目只用这一句实测过的文字防护：`The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.` 其他地方不写"no X"——本地正向里写"没有 X"也算提到 X（实测"no subtitles"反而招来了字幕）。
+- 挂了纯色底角色卡、背景变成影棚时，用 `h3-action-prompt-design` 第 1 节的 `Behind them is ONLY <Subject N>: …` 背景句。

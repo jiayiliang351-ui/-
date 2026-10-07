@@ -87,7 +87,7 @@ description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官�
 | 手上有什么 | 模式 | 写法 |
 |---|---|---|
 | 只有文字 | T2VA | 三段式 |
-| 一张图当第一帧（含上一段末帧接力） | I2VA | 首帧对齐句 + 三段式 |
+| 一张图当第一帧（含上一段末帧接力；长链要同时挂身份图时改用 Ref2VA） | I2VA | 首帧对齐句 + 三段式 |
 | 首帧 + 尾帧 | FL2VA | 首尾帧对齐句 + 三段式，默认单镜头 |
 | 一张图当最后一帧 | L2VA | 尾帧对齐句 + 三段式 |
 | 角色图、场景图、声音参考 | Ref2VA | 六段式 |
@@ -148,3 +148,5 @@ non_diegetic_music: ...
 | `references/projects/zhiyin.md` | 写《纸引》时 |
 | `references/projects/yanwang.md` | 写《阎王打工记》时 |
 | `scripts/lint_prompt.py` | 写完后跑：查规则词、括号标签、全角符号、切点、时长、台词字数、Ref2VA 标签和标记词 |
+
+配套 skill：`h3-action-prompt-design`（补充手册：挂素材细则、空间方向、门、手和道具、粤语、接力、车辆、LoRA 触发词）；`h3-director-json-review`（整份导播台 JSON 的审查、批量重写和校验）。
