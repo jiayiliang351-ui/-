@@ -12,11 +12,11 @@ PY = python
 - [x] 第 8 步 写入 official-calibration.md：append_calibration.py 写入 8 cases；8 条原文逐字核对，标记前内容除脚本设计的状态行外未变。
 - [x] 第 9 步 出片对照 JSON：54 shots，580 秒；同种子、提示词逐字、独立无素材/接力、schemaVersion=5 的静态检查通过。尚未导入或渲染。
 - [x] 第 10 步 真实项目改写（可选）：跳过；PROJECT_JSON 未指定，REAL_LIMIT=0，未调用额外接口。
-- [ ] 第 11 步 收尾：
+- [ ] 第 11 步 收尾：交付文件已核验并本地提交；git push 因 GitHub 未登录失败，尚未推送。
 
 ## 阻塞
 
-当前无；国内站新密钥已于 2026-10-07 成功完成 tea_pour，以下为历史故障记录。
+当前阻塞：第 11 步 GitHub 本机凭据缺失，无法推送。接口阻塞已解除，8 条结果全部取得；以下为历史接口故障记录。
 
 2026-10-07：第 3 步真实接口认证失败。未重试、未调用其余 7 条、未修改脚本或 skill。需要本机环境中可用于目标 H3 接口的 MiniMax 开放平台密钥；如果使用海外站密钥，还需确认 API 基址。已完成第 1、2 步，保留独立写作结果。第 4–11 步未执行，校准未完成，分支尚未推送。
 
@@ -65,3 +65,29 @@ wrote C:\Users\Administrator\Videos\提示词参考视频\h3-calibration\tools\c
 ```
 
 仅 3 条用例有 old_versions，其他 5 条只有 skill/codex/official；脚本按实际可用版本生成，未补造旧版本。实际总量为 580 秒，区别于方案预估约 400 秒。
+
+## 第 11 步推送阻塞
+
+已执行 git push -u origin codex/context-ir-calibration。本机凭据管理器一直等待；结束该次凭据读取后返回：
+
+```text
+fatal: could not read Username for 'https://github.com': terminal prompts disabled
+```
+
+本机未获得 GitHub 登录凭据；不是网络错误，按方案不做网络重试。需要用户完成 GitHub 登录后再运行相同推送命令。校准文件已经本地提交，远端分支未确认建立；未创建 PR、未合并、未改写历史。
+
+## 交付清单
+
+- [x] tools/context_ir/analysis/REPORT.md：8 个用例、16 行跨用例统计、11 项平均值。
+- [x] tools/context_ir/analysis/PROPOSALS.md：2 条待审核建议，未直接修改 skill。
+- [x] tools/context_ir/analysis/SKILL_CLARITY.md：5 条清晰度反馈。
+- [x] tools/context_ir/analysis/features.md：24 条数据记录。
+- [x] tools/context_ir/results/：16 个文件（8 个 .prompt.txt + 8 个 .json）；68,562 tokens。
+- [x] tools/context_ir/render_compare.json：54 段，约 580 秒；2 个同种子，尚未导入或渲染。
+- [x] h3-shot-prompt/references/official-calibration.md：按原脚本写入 8 条官方原文。
+- [x] tools/context_ir/codex_versions/：8 条独立写作版本，调用接口前提交，全部 lint OK。
+- [x] tools/context_ir/analysis/REPORT_EVIDENCE.json、REPORT_QUOTE_CHECK.json：抽取位置与 328 次英文原句来源核对记录。
+- [x] tools/context_ir/project_rewrites/：不适用，未指定真实项目，按方案跳过。
+- [ ] origin/codex/context-ir-calibration：GitHub 登录阻塞，尚未推送。
+
+最终范围核对：46 个改动文件均在允许清单内；所有 .py、SKILL.md、其他规则文件、cases.json、templates、skill_versions、old_versions 保持原样；提交内容未检出密钥字符串。未执行视频生成，文本/API/JSON 验证不代表导播台导入或成片效果验收。
