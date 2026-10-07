@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-08",
+  "source": "user_written_render_feedback",
+  "direct_video_inspection": false,
+  "input_json": "C:\\Users\\Administrator\\Videos\\提示词参考视频\\H3_skill优化_异能_20261007\\H3时间静止_只删表演段_4段60秒.json",
+  "input_json_sha256": "4e0b8dc2127ca6c31ad21cfce07665a8d24b3c340f8f3ab4ccdbe0cf0f849dc1",
+  "original_prompts": [
+    {
+      "id": "freeze_keep_s1",
+      "seed": 2026100701,
+      "sha256": "4e7c14c7dd224d6b175d2f7e3b0b6d6d0e544ebc3fa538bef435f982c2ce3c8a",
+      "words": 570,
+      "explicit_initial_and_sequence_checks": {
+        "empty_hands_at_entry": true,
+        "boy_on_ground_initially": true,
+        "arrows_stop_in_air": true,
+        "left_hand_maintained": true,
+        "same_boy_picked_up": true,
+        "child_placed_before_release": true,
+        "arrows_land_after_release": true
+      }
+    },
+    {
+      "id": "freeze_omit_s1",
+      "seed": 2026100701,
+      "sha256": "6d191620f4ff31ff64c989fee65c0f30b04841fdeb8f995679d31a24cfa5c5f2",
+      "words": 493,
+      "explicit_initial_and_sequence_checks": {
+        "empty_hands_at_entry": true,
+        "boy_on_ground_initially": true,
+        "arrows_stop_in_air": true,
+        "left_hand_maintained": true,
+        "same_boy_picked_up": true,
+        "child_placed_before_release": true,
+        "arrows_land_after_release": true
+      }
+    },
+    {
+      "id": "freeze_keep_s2",
+      "seed": 2026100702,
+      "sha256": "4e7c14c7dd224d6b175d2f7e3b0b6d6d0e544ebc3fa538bef435f982c2ce3c8a",
+      "words": 570,
+      "explicit_initial_and_sequence_checks": {
+        "empty_hands_at_entry": true,
+        "boy_on_ground_initially": true,
+        "arrows_stop_in_air": true,
+        "left_hand_maintained": true,
+        "same_boy_picked_up": true,
+        "child_placed_before_release": true,
+        "arrows_land_after_release": true
+      }
+    },
+    {
+      "id": "freeze_omit_s2",
+      "seed": 2026100702,
+      "sha256": "6d191620f4ff31ff64c989fee65c0f30b04841fdeb8f995679d31a24cfa5c5f2",
+      "words": 493,
+      "explicit_initial_and_sequence_checks": {
+        "empty_hands_at_entry": true,
+        "boy_on_ground_initially": true,
+        "arrows_stop_in_air": true,
+        "left_hand_maintained": true,
+        "same_boy_picked_up": true,
+        "child_placed_before_release": true,
+        "arrows_land_after_release": true
+      }
+    }
+  ],
+  "videos": [
+    {
+      "ordinal": 1,
+      "reported_filename": "freeze_keep_s1_video_00001_",
+      "json_id": "freeze_keep_s1",
+      "id_mapping": "filename_confirmed",
+      "findings": [
+        "child_already_carried_at_entry",
+        "arrows_already_on_ground",
+        "activation_after_entering_arrow_field",
+        "crowd_and_child_freeze_incomplete",
+        "release_before_child_placed",
+        "arrow_body_intersection"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "reported_filename": null,
+      "json_id_if_original_order": "freeze_omit_s1",
+      "id_mapping": "inferred_from_order_not_filename_verified",
+      "findings": [
+        "child_already_carried_at_entry",
+        "arrows_land_before_approach",
+        "extra_hand_during_arrow_contact",
+        "floating_or_unsteady_walk",
+        "overall_causality_failed"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "reported_filename": null,
+      "json_id_if_original_order": "freeze_keep_s2",
+      "id_mapping": "inferred_from_order_not_filename_verified",
+      "findings": [
+        "child_already_carried_at_entry",
+        "arrows_already_on_ground",
+        "additional_child_on_ground",
+        "intended_pickup_missing",
+        "overall_causality_failed"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "reported_filename": null,
+      "json_id_if_original_order": "freeze_omit_s2",
+      "id_mapping": "inferred_from_order_not_filename_verified",
+      "findings": [
+        "overall_failure_reported_details_unspecified"
+      ]
+    }
+  ],
+  "configuration": {
+    "model": null,
+    "lora": null,
+    "steps": null,
+    "effective_prompt_rewritten": null
+  },
+  "original_intended_story_completed_user_reported": 0,
+  "reported_video_count": 4,
+  "hypotheses_not_proven": [
+    "complex_one_take_state_sequence_exceeds_current_configuration_following_ability",
+    "later_carrying_and_grounded_arrow_states_appear_early",
+    "hand_contact_and_carried_child_interaction_add_anatomical_load"
+  ],
+  "paid_api_calls": 0,
+  "new_video_jobs": 0,
+  "skill_rule_changes": false
+}
