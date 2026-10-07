@@ -29,7 +29,7 @@
 ```text
 Nobody stands idle or poses for the camera. Every character is always occupied with some small piece of business — handling an object, finishing a movement, glancing at something off-topic. In every exchange one character acts while the other reacts, and reactions arrive a beat late, the way real people respond while their attention is still somewhere else. Small involuntary gestures (swallowing, shifting weight, thumb rubbing an edge, a delayed look-up) matter more than polished facial expressions.
 ```
-说明：这段是 v2 胜出时用的写法（原句开头是 `Acting direction for the whole sequence:`，这里去掉了这个标签头，正文没改）。它属于 SKILL.md 的"固定句例外"，两个以上人物的写实真人戏默认照抄，一字不改，不计入字数预算。`examples.md` 3.2（《临期》v2）没有这一段，两轮出片表演仍然自然，但这只是 A/B 表第 9 项的弱证据，默认不变，写新段时照抄。
+说明：这段是 v2 胜出时用的写法（原句开头是 `Acting direction for the whole sequence:`，这里去掉了这个标签头，正文没改）。它属于 SKILL.md 的"固定句例外"，两个以上人物的写实真人戏默认照抄，一字不改，不计入字数预算。`examples.md` 3.2（《临期》v2）没有这一段，两轮出片用户都没提表演问题（第一轮种子 2 最好，第二轮两个种子都没问题），但这只是 A/B 表第 9 项的弱证据，默认不变，写新段时照抄。
 
 **背景人物**：主角承担主要动作，配角回应具体事件，背景人只保留少量持续活动或自然静止。不要让背景人集体转头、同步手势或抢主角的注意力。
 
