@@ -61,13 +61,16 @@ def split_fields(text, names):
     return body, missing, order_ok
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("file")
-    ap.add_argument("--seconds", type=int, required=True)
-    args = ap.parse_args()
-    text = sys.stdin.read() if args.file == "-" else open(args.file, encoding="utf-8").read()
+class _Args:
+    def __init__(self, seconds):
+        self.seconds = seconds
+
+
+def lint(text, seconds):
+    """Return (summary, errors, warns) for one prompt; seconds is the integer duration typed in."""
+    args = _Args(int(seconds))
     text = text.strip().replace("\r\n", "\n")
+    text = re.sub(r"\{\{ref:[^}]*\}\}", "<Picture 0>", text)  # director placeholders
 
     errors, warns = [], []
     eff = effective_seconds(args.seconds)
@@ -213,7 +216,18 @@ def main():
     elif words > 650:
         warns.append(f"{main_field} has {words} words; check for rules or repetition")
 
-    print(f"mode={mode}  shots={n_shots}  real_duration={eff:.3f}s  words={words}  spoken_zh={zh}")
+    summary = f"mode={mode}  shots={n_shots}  real_duration={eff:.3f}s  words={words}  spoken_zh={zh}"
+    return summary, errors, warns
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("file")
+    ap.add_argument("--seconds", type=int, required=True)
+    args = ap.parse_args()
+    text = sys.stdin.read() if args.file == "-" else open(args.file, encoding="utf-8").read()
+    summary, errors, warns = lint(text, args.seconds)
+    print(summary)
     for e in errors:
         print("ERROR", e)
     for w in warns:

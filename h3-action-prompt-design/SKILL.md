@@ -5,22 +5,31 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 
 # H3 补充手册（实测规矩）
 
-**先用 `h3-shot-prompt` 写。** 分镜、镜头头、运镜、动作、状态标签、台词预算、范例，都以它为准。这本手册只放它没写到、又在本地渲染里验证过的规矩，按主题查，用不到的章节不读。
+**先用 `h3-shot-prompt` 写。** 文体、分镜、镜头头、运镜、动作、台词、合法时长、范例，都以它为准。这本手册只放它没写到、又在本地渲染里验证过的规矩，按主题查，用不到的章节不读。
 
-两者冲突时听 `h3-shot-prompt`。下面这些旧规矩已经作废，不要再用：
-- 不再要求 `detailed_description` 写满 350–500 词。那是官方指南的建议范围，但快剪范例 1、4 都更短，照样跑通；字数跟着镜头走，安静戏可以写满。绝不为凑字数加事件、道具或规则。
-- `[Shot N · 1.5–2.8s]` 镜头头、`(flame: ON)` `(3 remaining)` 这类状态标签、大写运镜和动词、`IMPORTANT —` 段、对话戏里的 `hard cut to`，都可以写进提示词。
-- 运镜不强制官方词表（`Push In with small amplitude at slow speed`）。它仍然可用，适合安静戏；快剪用大写运镜。
-- 旧的整段模板（1v1、1vN、追逐、跑酷、写实）和 `ANCHORS LOCKED / RED LINES / END STATE` 那一套格式全部作废。
+两者冲突时听 `h3-shot-prompt`。核心一句：本地没有官方 Context-IR，提示词要写成 Context-IR 改写后的样子——按播放顺序的英文描述，每句都是看得见或听得见的东西（"可观察测试"）。
+
+已经作废、不要再用的写法：
+- `[Shot N · 1.5–2.8s]` 区间镜头头 → 用 `[Shot N] At 00:01.500, the camera cuts to …`，`[Shot 1]` 不带时间。
+- `(flame: ON)`、`(3 remaining)` 这类括号状态标签 → 在每个相关镜头里用一句陈述写出状态。
+- 全大写运镜和动词（`WHIP PAN`、`SLAMS`）→ 官方自然句（类型 + 幅度 + 速度），动词正常小写。
+- `IMPORTANT —` 段、`FORBIDDEN`、`Line lands about …`、`Total runtime is exactly …` → 改成可观察的陈述句，或者删掉。
+- 对话戏里的 `hard cut to` → 官方切镜动词 `the camera cuts to`。
+- 旧的整段模板（1v1、1vN、追逐、跑酷、写实）和 `ANCHORS LOCKED / RED LINES / END STATE` 那一套格式。
+- 字数：按 `h3-shot-prompt` 的预算（简单段 150–300 词，复杂段 350–500 词）。绝不为凑字数加事件、道具或规则；写得太短也是常见失败。
+
+例外：下面几句是本地实测有效的固定句，虽然带否定或大写，照样保留原文：单声源句（第 6 节）、`Behind them is ONLY <Subject N>` 背景句（第 1 节）、统一的文字防护句（第 9 节）、挤构图的人数句（第 3 节）。
 
 仍然不能进提示词的：内部编号（镜头 ID、P1、FAN_A、声线代号）、给人看的制作备注（"后期处理""为了接力"）、LoRA 触发词之外的工作流说明。
+
+写完后跑 `h3-shot-prompt` 的 `scripts/lint_prompt.py` 查机械错误。
 
 ---
 
 ## 1. 挂素材：六段式怎么写
 
 只在挂了图、视频或音频时用；不挂素材就用 `integrated_multimodal_description` 三段式。六段顺序固定：
-`subject_definitions / summary / retention_analysis / detailed_description / overall_soundscape / non_diegetic_music`，每段标题单独一行，段间空一行。`detailed_description` 里的镜头照 `h3-shot-prompt` 写。
+`subject_definitions / summary / retention_analysis / detailed_description / overall_soundscape / non_diegetic_music`，每段标题单独一行，段间空一行。`detailed_description` 里的镜头照 `h3-shot-prompt` 写；官方格式细则在它的 `references/official-format.md` 第 9 节。
 
 ### subject_definitions
 
@@ -85,7 +94,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 | 14 s | 345 | 14.38 s |
 | 15 s | 362 | 15.08 s |
 
-- 时间点、summary、对齐句都按实际长度写，最后一个镜头要把多出来的时间填满。只有 8 秒正好对上。
+- 切点按实际长度写，全部小于实际片长，最后一个镜头要把多出来的时间填满。只有 8 秒正好对上。对齐句里的 `S.SS` 用实际长度（`10.13`）还是名义长度（`10.00`）还没对比过，见 `h3-shot-prompt` 的 A/B 表。
 - 事件都挤在前半段时，尾巴会僵住（第三方测得尾段运动量掉到全片平均的 0.46，正常片是 0.55–0.94）。最后一秒没有新动作，但烟、光、衣摆、环境声还在动。
 - 单次生成不超过 15 秒。
 
@@ -119,7 +128,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 - **尺度写成实际距离**，模型爱把东西压扁：风扇在躺着的人上方整整一个身长、柜台齐腰、车隔两条车道。相隔远的两样东西要用够宽的景别；硬塞进一个特写，房间就被压缩了。
 - **大全之后的近景，把背景重写一遍**：用全景里的具体东西（墙色、招牌或门牌号、窗、灯），留够头顶空间放关键标志，景深适中。只写 "shallow depth of field, soft bokeh" 会让模型自己编一个黑背景。
 - **同类东西多个时说清是哪一个**："他自己那层楼梯口、头顶那盏灯"。
-- **两人戏左右锁定**：第一个镜头定下，之后每个镜头用同一句重复（范例 2、5 的写法）。镜子和玻璃里的倒影除外，出现时说明。单人戏写明没有左右规则，免得套用系列模板。
+- **两人戏左右锁定**：第一个镜头定下，之后每个镜头用同一句陈述重复（`She stays on the left of the frame, he on the right.`；参考 `h3-shot-prompt` 的 `examples.md` 2.1）。镜子和玻璃里的倒影除外，出现时说明。单人戏不需要左右规则，免得套用系列模板。
 - **挤的构图写死人数**：`Exactly 2 distinct people are represented in this crop. No extra body, duplicate face or mirror double enters.`
 - **画框边缘用身体部位说**："画框下缘止于她胸口"。必须完整的道具：`the WHOLE television, with a margin around it`，屏幕内容写具体。
 - **模型想填的空，用真东西填。** 空的前景总被编出家具或人时，把场景里真有的东西放到前景、隔着它拍。第三方实例：隔着茶几和果盘拍，床就不再凭空出现；"她必须躺在沙发上"这句话没用。
@@ -158,14 +167,14 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 - **身体的左右不是画面的左右。** 面朝镜头的人，右手在画左；背对镜头，右手在画右。手碰画面某侧的东西（扶手、门、墙）时两个都写，并且对上："his right hand, on the left of frame, closes on the rail"。
 - **道具账**：几个、谁的、哪只手、什么状态（拿着、放下、开、关、掉了）。拿着东西的手不是空手：要去抓扶手，先写放下或松开。
 - 有风险的动作时重复道具和手："he steps back once; the same bag stays in his left hand."
-- 一个镜头里只写一样要一路跟住的东西时，用 `h3-shot-prompt` 的括号标签；多样东西就逐镜重复。
+- 要一路跟住的东西，在每个相关镜头里用一句陈述重复（`the same bag is still in his left hand`），不用括号标签。
 - 持续状态（伤、湿、脏、灯、门、碎片）除非画面里有可见原因，否则不重置。之后还要行动的角色不能用终结动词（碎了、化了），杂兵除外。
 
 ---
 
 ## 6. 对白和粤语
 
-台词预算、声线段、每镜一句、`Line lands about …` 的写法看 `h3-shot-prompt`。这里只补标注格式和粤语。
+台词预算、声线段、每镜一句、说完闭嘴的写法看 `h3-shot-prompt`（`references/performance-and-dialogue.md`）。台词位置靠切点和动作先后来定，不写 `Line lands about …`。这里只补标注格式和粤语。
 
 - 台词原样放进 `<d>[语言] ...</d>`，写真正的语言：粤语写 `[Cantonese]`，不用 `[Chinese]`。`<d>` 里只放语言标签和台词，完整句子带句末标点；被打断的保留省略号。
 - 说话人编号每段从 S1 重新编，按开口顺序；画外的声音也给编号。同一人的第二句也要标。挂素材时写成 `<Subject 2> (S1), at screen-left, says flatly ..., <d>[Cantonese] 喂，借借。</d>`；不挂素材写 `The woman (S1) says:`。
@@ -203,7 +212,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 - 用侧跟拍，镜头跟着步速走，人保持在画面中间。固定机位加"走到画面左三分之一"这种目标，和真实步速冲突，模型会让她停下、走过头，或者多出一个她。
 - 全段一个步速。不写会让人停下的词：stop、pause、wait、hesitate、slow、small steps、in place、stands。危险区域里"小步走"读起来像在等危险。
 - 走路时手上的动作（重拨电话、看手机）写 "in stride"。
-- `h3-shot-prompt` 范例 5 是"两人往反方向走"的跑通写法，优先照它。
+- `h3-shot-prompt` 的 `examples.md` 2.1 是"两人往反方向走"的跑通写法，内容照它，写法换成新文体。
 
 **车辆和行人擦身、撞上**
 - 车沿镜头轴线从纵深开向镜头，行人在车和镜头之间，写明车直冲着她。留了车道或偏移，模型就会让车拐开、擦过去。
@@ -217,7 +226,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 
 - **本地没有改写器。** 官方 App/API 会先用 H3-Context-IR 把输入整理成结构化格式，所以那里写自然语言、`[0s-2s]` 时间码、"no push in, no cuts" 这类短否定都行。本地 ComfyUI 模型读到的就是你写的字。
 - **本地正向里写"没有 X"也算提到 X。** 第三方实例："no subtitles"反而招来了字幕。改成写结束状态、写出所有该有的东西；全项目只留一句文字防护：`The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.`，以及紧跟在 "ONLY <场景>" 后面的那句背景排除。
-  - `h3-shot-prompt` 的 `FORBIDDEN:` 用于出片后针对一个具体毛病的修补（和一条正向的 `IMPORTANT` 配对），效果以实测为准；不要一开始就堆 FORBIDDEN 清单。
+  - 出片后修具体毛病，也不加 `IMPORTANT` / `FORBIDDEN`，而是在出问题的那个镜头里加一句可观察的正向陈述（`h3-shot-prompt` 的修改原则）。
 - 不在正向里点缺席的角色或东西（这镜没有阿婆就别写"no granny"），写 "nobody else is in frame"。
 - **negativePrompt**：H3 权重是 CFG 蒸馏的，没有原生负向输入，只有工作流加了 NAG 这类节点才起作用。V7.3 导播台（`BasicGuider`）没接，就留空，防护全写成正向句。接了的话写短而具体的几项。
 - **LoRA 触发词和效果 embedding** 放在描述正文里（`detailed_description` 或 `integrated_multimodal_description`），不放在最后一段后面，否则会被当成配乐说明。触发词原样写，不让模型改写。
@@ -225,7 +234,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
   - 写实 LoRA（fal）：`r34l1sm` 放最前面，强度 1.0，想轻一点 0.6–0.8。
   - MiniMax 自带 10 个效果 embedding（`minimaxh3_art_is_explosion` `_blooming_flowers` `_bullet_time` `_dark_magic` `_fire_breath` `_four_seasons` `_kiss_camera` `_spiral_ascent` `_storm_magic` `_truman_show`）。放进 `ComfyUI/models/embeddings/`，写成 ` embedding:minimaxh3_bullet_time`：小写、前面有空格、名字后没有句号，否则会被悄悄丢掉。只有全开或不开，改措辞调不了强度。
 - **加速 LoRA**：larryvrh v4 强度 1.0，6–8 步，simple 调度器；4 步糊快动作，超过 8 步过锐。加速 LoRA 在 1344×768 训练，直接出 1920×1088 会偏软，1080p 用后期放大。
-- 打戏 LoRA、文戏高配流程、多跑几个种子：见 `h3-shot-prompt`"提示词以外"一节。
+- 打戏 LoRA、文戏高配流程、CFG、多跑几个种子：见 `h3-shot-prompt` 的 `references/pipeline-and-settings.md` 第 3 节。
 - 每次改配置后看日志：有些设置会悄悄关掉缓存或换成别的注意力后端。
 
 ---
@@ -242,7 +251,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 
 ## 11. 出片后按病症查
 
-先按 `h3-shot-prompt` 的规矩改：一次只针对一个问题加一条 `IMPORTANT`（需要时配一句 `FORBIDDEN`），其他文字一字不动，另存新版本。改法查这张表：
+先按 `h3-shot-prompt` 的规矩改：先排除提示词以外的原因；一次只改一处，先删后加；要加就在出问题的镜头里加一句可观察的陈述，其他文字一字不动，另存新版本。通用病症先查 `h3-shot-prompt` 的 `references/troubleshooting.md`，下面是它没覆盖的：
 
 | 病症 | 改法 |
 |---|---|
@@ -253,7 +262,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 | 不露脸的局部特写出了半透明重影 | 这镜不挂角色卡 |
 | 道具越画越走样 | 删描述词，写 `matches <Subject N> exactly`（第 1 节） |
 | 听的人半张脸表情不对 | 从背后拍 |
-| 说话人朝错方向 | 写画面左右加视线目标；"never addresses the camera" |
+| 说话人朝错方向 | 写画面左右加视线目标（`he keeps his eyes on her`） |
 | 串台、多出没写的回话 | 一个声源；"Only this one vocal source is heard…"（第 6 节） |
 | 走路的人停下、走过头、变成两个 | 侧跟拍，删掉停顿类的词（第 8 节） |
 | 车拐开或在人前刹住 | 车沿镜头轴线，位置锚定，全速切黑（第 8 节） |
@@ -261,7 +270,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 | 身份沿接力链漂移 | 每段挂参考；断链重建锚点 |
 | 尾巴僵住 | 事件往后排，最后一秒留余动和环境声（第 2 节） |
 | 写了"没有字幕"却出了字幕 | 删掉否定句，只留那一句统一的文字防护（第 9 节） |
-| 受惊反应变成慢动作 | 写"瞬间、全身一颤、绝对不慢" |
+| 受惊反应变成慢动作 | 写 `in real time, a sudden full-body flinch` |
 | 多一只手、手指弯错 | 随机问题，换种子重跑一次 |
 
 渲染没看过之前，不说画面、口型或连戏"没问题"。
