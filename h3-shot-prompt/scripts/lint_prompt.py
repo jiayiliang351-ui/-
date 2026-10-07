@@ -14,7 +14,8 @@ import re
 import sys
 
 LEGAL_FRAMES = [n for n in range(124, 363) if n % 17 == 5]
-MIN_SHOT = 1.5
+MIN_SHOT = 1.5        # dialogue, drama, quiet scenes, and the last shot
+MIN_SHOT_FAST = 1.0   # fast action quick cuts
 
 BASE_FIELDS = ["integrated_multimodal_description", "overall_soundscape", "non_diegetic_music"]
 REF_FIELDS = ["subject_definitions", "summary", "retention_analysis",
@@ -158,16 +159,18 @@ def lint(text, seconds):
     for n, t in times:
         if t <= prev:
             errors.append(f"[Shot {n}] cut {t:.3f}s is not after the previous cut")
+        elif t - prev < MIN_SHOT_FAST:
+            warns.append(f"shot before [Shot {n}] lasts {t - prev:.2f}s (< {MIN_SHOT_FAST}s, too short even for fast action)")
         elif t - prev < MIN_SHOT:
-            warns.append(f"shot before [Shot {n}] lasts {t - prev:.2f}s (< {MIN_SHOT}s)")
+            warns.append(f"shot before [Shot {n}] lasts {t - prev:.2f}s (< {MIN_SHOT}s; fine only for fast-action quick cuts)")
         if t >= eff:
             errors.append(f"[Shot {n}] cut {t:.3f}s is at/after the real end {eff:.3f}s")
         prev = t
     if times and eff - prev < MIN_SHOT:
         warns.append(f"last shot lasts {eff - prev:.2f}s (< {MIN_SHOT}s)")
     n_shots = len(shots) + len(re.findall(r"\[Shot \d+ ·", desc))
-    if n_shots > 6:
-        warns.append(f"{n_shots} shots in one clip; official rewrites use 1-3")
+    if n_shots > 9:
+        warns.append(f"{n_shots} shots in one clip; even fast action tops out around 9 per 15 s")
     if len(shots) >= 2 and not re.search(r"\bfrom \[?Shot \d", desc, re.I):
         warns.append("multi-shot clip never re-identifies people or props with 'from Shot N'")
 
