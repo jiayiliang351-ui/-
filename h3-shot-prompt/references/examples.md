@@ -3,7 +3,7 @@
 三类示例，用途不同：
 1. **官方改写原样示例**：H3-Base 训练时见过的就是这种文体。拿不准怎么写时，先读这一节，照它的语气和句式写；字数、声音段长度和配乐按 SKILL.md 的预算和默认来。官方示例里这些不照学：配乐情绪词（`mournful`、`heartwarming`、`joyful`）和配乐渐强、1.2 那种约 530 词的单镜头长段、1.3 只有一句的声音段。
 2. **你本地跑通的范例**：内容和结构验证过。它们是旧文体（带 `IMPORTANT`、括号标签、按秒列声音），照抄内容思路，不照抄这些写法。
-3. **新旧写法 A/B 对照**：同一段戏的旧版和新版，用来在本地验证新文体。跑完把结果回填到 `pipeline-and-settings.md` 的 A/B 表。
+3. **本地验证过的新文体范例**：快剪动作（《纸引》）和多节拍文戏（《临期》）各一段，和旧版同种子对比、本地出片验证过，内容和写法都可以学。
 
 ---
 
@@ -181,7 +181,7 @@ overall_soundscape:
 
 ### 2.3 活人感 + 画外音 + 画面文字（《临期》段 04，15 秒，6 个镜头，用户反馈跑得不错）
 
-学它的：隐藏目的（想道谢但不想尴尬 → 说成半句玩笑、眼睛看筷子）；画外台词配听者 `lips remain completely closed`；反应写成"慢半拍、手停一下、嘴角动一点、不回头"。这一段在第 3.2 节有新文体对照版。
+学它的：隐藏目的（想道谢但不想尴尬 → 说成半句玩笑、眼睛看筷子）；画外台词配听者 `lips remain completely closed`；反应写成"慢半拍、手停一下、嘴角动一点、不回头"。第 3.2 节是同一段的新文体版，两轮出片验证过。
 
 ```text
 integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Location light: flat cold-white fluorescent tubes inside the store, a warm amber glow from the hot-food cabinet, blue night light through the wet glass front as the rain thins; faces half cold white, half warm. Total runtime is exactly 15.08 seconds.
@@ -211,64 +211,51 @@ non_diegetic_music: Sparse solo piano at a slow tempo enters at about 5.0 second
 
 ---
 
-## 3. 新旧写法 A/B 对照（待本地验证）
+## 3. 本地验证过的新文体范例（2026-10-07 两轮出片）
 
-跑法：同一个种子（至少 2 个），A、B 各跑一次，其他设置一字不动。看四件事：动作是否按顺序完成、物理是否可信、人物表演是否自然、台词和嘴型是否对得上。
+这两段是新文体，和旧版同种子对比、在本地出片验证过，内容和写法都可以学。它们写在部分新规则之前，和 SKILL.md 现行规则不一致的地方在各节列出来，写新段时按 SKILL.md。
 
-注意，这两组 B 是对照用的，不是模板：3.1 B 是 8 秒 4 镜；3.2 B 为了只比文体，沿用了 A 的 15 秒 6 镜，还去掉了全局表演段（那是 A/B 表第 9 项的测试变量，不是默认写法）。它们写于 2026-10-07 校准之前，没有用到后来的规则（台词标签空格、`from Shot N` 复指、切镜句写景别和运镜、说话人收口二选一、声音段写法、否定写法如 3.2 B 的 `he says nothing`、说话人第一次出场挂 `(S1)` 和 `on-screen`、固定段以外的字数预算）。3.1 B 的 8 秒 4 镜也超出现行镜头表 5–8 秒动作戏 2–3 镜的上限。新写的段按 SKILL.md 当前的规则和默认层来写；`official-calibration.md` 里有同一批戏的官方改写，可以三方对照。
+### 3.1 《纸引》EP1-06 快剪动作：扑水被截、踩灭尾火（8 秒 6 镜，第二轮两个种子都没问题）
 
-### 3.1 《纸引》EP1-06 扑水被截、踩灭尾火（8 秒）
+学它的：
+- 一个动作节拍一镜：冲刺 → 起跳被扫开 → 爬起再冲 → 插入特写踩灭 → 被拽停 → 余波。每镜 1.0–1.3 秒，第一镜 1.5 秒，最后一镜 1.8 秒。
+- 交互放在 1.3 秒的第 2 镜：这一镜从起跳开始，腾到最高点被翅膀扫开，摔回画面左边。时机对，没有先停顿。
+- 每个切镜写小老虎往画面右边跑、水盆在画面右边缘的木凳上；插入特写写尾巴拖向画面左边；后续镜头写 `from the same side`，机位不跳到动作线另一侧。两个种子方向都没翻，水盆都没漂。
+- 第 3–6 镜每镜约 60–80 词，第 2 镜有鹤女第一次出场的外形插句，约 120 词；声音段 3 句，配乐 N/A。
 
-**改了什么**：镜头从 6 个减到 4 个（每镜至少 1.5 秒）；全大写运镜和动词改成官方自然句；`(flame: ON)` 标签改成陈述句；按秒列的声音改成连续段落；每个接触补了"起因 → 用力 → 反应 → 落定"。这一组同时改了密度和文体，如果 B 更好，再拆开验证是哪一项起作用（A/B 表第 7、8 项）。
-
-**A（旧版，"有点像样子"）**
-
-```text
-integrated_multimodal_description:
-Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy shop on a rainy night: black wooden pillars, wet stone floor, white paper lotus lanterns hanging from the beams, white paper horses standing in the shadows. Warm orange light from an iron fire brazier at the back left, cold blue rain light from the open doorway at the back. All creatures are real handmade paper craft: stiff folded paper with visible fibres, brush-ink lines and burnt edges; they bend only at the joints, never soft or stretchy. Film grain.
-
-[Shot 1 · 0.00–1.5s] LOW-ANGLE GROUND TRACKING at paw height. A small tiger cub made of stiff white folded paper — black brush-painted stripes, torn red paper ribbons at his neck and wrists, a tiny bronze bell at his throat, one amber ink-painted eye and one blank white paper eye — SPRINTS on all fours across the wet stone toward a black bronze water basin on a low wooden stool. A small FLAME burns on the very tip of his tail and streaks behind him like a lit fuse. (flame: ON)
-
-[Shot 2 · 1.5–2.8s] SIDE TRACKING, WHIP PAN. He LEAPS for the basin, front paws reaching. A tall paper crane-woman — long thin beak, spiky white paper crown, layered white paper robes trimmed in red, one snow-white wing and one charred black wing — steps in from screen-right and SWEEPS her huge white wing across his path. The wing SLAMS him out of the air; white paper feathers and ash BURST, and he tumbles across the wet stone away from the basin. (flame: ON)
-
-[Shot 3 · 2.8–4.0s] LOW ANGLE, handheld shake. Without stopping, he scrambles up, claws skidding on the wet stone, and LUNGES for the basin again. (flame: ON)
-
-[Shot 4 · 4.0–5.0s] SNAP-ZOOM ECU on his tail tip. A thin white bird claw SLAMS down onto the burning tip. Sparks and black paper ash EXPLODE out from under the claw, and the flame is crushed out in one hit. (flame: OUT)
-
-[Shot 5 · 5.0–6.2s] MEDIUM SHOT, low angle. The cub is YANKED to a dead stop mid-lunge, his stiff paper body snapping taut, the bell at his throat jolting. The crane-woman towers over him, bent forward, her claw still pinning his tail to the stone. (flame: OUT)
-
-[Shot 6 · 6.2–8.0s] SLOW DOLLY-OUT. A beat of stillness. A thin curl of smoke rises from his charred black tail tip. The cub sits on the wet stone, looks back at the burnt tail, then at the water basin, and stays put. The crane-woman lifts her claw and folds her white wing. Only the smoke and the brazier light keep moving.
-
-overall_soundscape:
-(0.0s) Quick patter of paper paws on wet stone, flutter of a small flame, rain outside. (1.8s) Heavy WHUMP of a paper wing and a crunch of paper. (2.2s) Skid and scrape across stone. (4.1s) Sharp HISS and crackle of sparks as the claw slams down. (5.1s) A single jolt of the tiny bell. (6.2s) Near silence: rain, the distant brazier, a thin hiss of smoke.
-```
-
-**B（新文体）**
+和旧版比：旧版（`tools/context_ir/old_versions/zhiyin_ep1_06.txt`）同样 6 镜、同样切点，第一轮最好，但写的是全大写运镜、`[Shot N · 时间]` 镜头头、`(flame: ON)` 括号标签和按秒列的声音，切到灭火特写方向翻了，水盆也漂。v2 只换了文体，并在每镜补了方向和水盆位置。第一轮的 4 镜新文体版（`tools/context_ir/skill_versions/zhiyin_ep1_06.txt`）不如 6 镜，不再作范例。
 
 ```text
-integrated_multimodal_description: [Shot 1] Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy shop on a rainy night: black wooden pillars, wet stone floor, white paper lotus lanterns hanging from the beams, white paper horses standing in the shadows. Warm orange light from an iron fire brazier at the back left, cold blue rain light from the open doorway at the back. All creatures are real handmade paper craft: stiff folded paper with visible fibres, brush-ink lines and burnt edges; they bend only at the joints. Film grain. A low tracking shot at paw height follows a small tiger cub made of stiff white folded paper — black brush-painted stripes, torn red paper ribbons at his neck and wrists, a tiny bronze bell at his throat, one amber ink-painted eye and one blank white paper eye — as he sprints on all fours across the wet stone toward a black bronze water basin on a low wooden stool at the right of the hall. A small flame burns on the very tip of his tail and streams behind him like a lit fuse. Two strides before the basin, a tall paper crane-woman — long thin beak, spiky white paper crown, layered white paper robes trimmed in red, one snow-white wing and one charred black wing — steps in from the right edge of the frame and sweeps her white wing low across his path. The wing catches him mid-stride; he is knocked sideways, rolls once on the wet stone with his stiff legs folding at the joints, and slides to a stop away from the basin while loose white paper feathers flutter down around him.
+integrated_multimodal_description: [Shot 1] Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy shop on a rainy night: black wooden pillars, wet stone floor, white paper lotus lanterns hanging from the beams, white paper horses standing in the shadows. Warm orange light from an iron fire brazier at the back left, cold blue rain light from the open doorway at the back. All creatures are real handmade paper craft: stiff folded paper with visible fibres, brush-ink lines and burnt edges; they bend only at the joints. Film grain. A low tracking shot at paw height follows a small tiger cub made of stiff white folded paper — black brush-painted stripes, torn red paper ribbons at his neck and wrists, a tiny bronze bell at his throat, one amber ink-painted eye and one blank white paper eye — as he sprints on all fours across the wet stone toward the right of the frame, toward a black bronze water basin on a low wooden stool at the right edge of the frame. A small flame burns on the very tip of his tail and streams out behind him toward the left like a lit fuse.
 
-[Shot 2] At 00:02.500, the camera cuts to a low-angle medium shot of the paper tiger cub on the wet floor, the flame still burning on his tail tip. He scrambles up at once, front claws skidding on the slick stone, and lunges toward the basin again; the camera shakes slightly as he launches.
+[Shot 2] At 00:01.500, the camera cuts to a side tracking shot at the same low height, the cub still racing toward the right of the frame, the basin on its stool at the right edge. He leaps for the basin. At the top of the leap, a tall paper crane-woman — long thin beak, spiky white paper crown, layered white paper robes trimmed in red, one snow-white wing and one charred black wing — steps in from the right between him and the basin and sweeps her white wing across his path. The wing slams into him in mid-air; white paper feathers and ash burst, and he tumbles back to the left across the wet stone.
 
-[Shot 3] At 00:04.200, the camera cuts to an extreme close-up of his burning tail tip trailing across the stone. A thin white bird claw comes down hard on the tip and pins it flat. Sparks and flakes of black paper ash burst out from under the claw, and the flame is crushed out in a single blow.
+[Shot 3] At 00:02.800, the camera cuts to a low-angle medium shot from the same side, the cub on the left of the frame, his tail flame still burning. He scrambles up, claws skidding on the wet stone, and lunges again toward the basin at the right edge of the frame; the camera shakes slightly as he launches.
 
-[Shot 4] At 00:05.700, the camera cuts to a low-angle medium shot. The cub's lunge stops short: his stiff paper body jerks taut and the bell at his throat jolts once. The crane-woman stands over him, bent forward, her claw still holding his tail against the stone. A beat later she lifts the claw and folds her white wing against her side. The camera pulls out with small amplitude at slow speed as the cub sits down on the wet stone, looks back at the charred black tip of his tail, where a thin curl of smoke is rising, then looks at the basin, and stays where he is. In the final second neither of them moves; only the smoke, the drifting ash and the flicker of the brazier light continue.
+[Shot 4] At 00:04.000, the camera cuts to a static extreme close-up of his burning tail tip on the stone, trailing toward the left of the frame. A thin white bird claw comes down hard on the tip and pins it flat; sparks and black paper ash burst out from under the claw, and the flame is crushed out in one blow.
 
-overall_soundscape: Rain falls steadily beyond the open doorway and the brazier crackles at the back of the hall. Small paper paws patter fast across wet stone, a heavy paper wing whumps through the air, and a light body skids and scrapes over the floor. A sharp hiss and crackle of sparks marks the moment the claw comes down, followed by a single jolt of the tiny bell and the thin hiss of smoke.
+[Shot 5] At 00:05.000, the camera cuts to a low-angle medium shot from the same side. The cub's lunge toward the right stops short: his stiff paper body jerks taut and the bell at his throat jolts once. The crane-woman from Shot 2 stands bent over him, her claw pinning his tail to the stone on the left; the basin stays on its stool at the right edge of the frame.
+
+[Shot 6] At 00:06.200, the camera cuts to a wider shot from the same side, slowly pulling out. The crane-woman lifts her claw and folds her white wing. The cub sits on the wet stone, looks back toward the left at his charred tail tip, where a thin curl of smoke rises, then looks at the basin at the right edge of the frame and stays where he is. Only the smoke and the brazier light keep moving.
+
+overall_soundscape: Steady rain beyond the open doorway and the soft crackle of the brazier fill the hall. Small paper paws patter fast on wet stone and the tiny bell rings with each stride; a heavy paper wing whumps and a light paper body skids across the floor. Sparks hiss and crackle sharply as the claw comes down, followed by a single jolt of the bell and the thin hiss of rising smoke.
 
 non_diegetic_music: N/A
 ```
 
-### 3.2 《临期》段 04（15 秒）
+### 3.2 《临期》段 04（15 秒 6 镜，第一轮 skill 版种子 2 最好，第二轮 v2 两个种子都没问题）
 
-**改了什么**：镜头数、切点、台词、配乐都不动，只改文体：去掉全局表演段、`Hidden purposes:`、`IMPORTANT —` 和括号标签，把隐藏目的和反应写进各镜头的行为里；第一个镜头的 `The first image is` 改成官方写法；声音改成连续段落。A 已经跑得不错，这一组用来确认新文体至少不比旧的差。如果 B 的表演变呆，把全局表演段加回去再跑一次（A/B 表第 9 项）。
+学它的：
+- 一个节拍一镜：拿筷子 → 画外台词配听者反应 → 吃饭 → 雨停起身戴头盔 → 推门敲玻璃 → 点头余波。
+- 隐藏目的写进行为（`keeping his eyes on the food, as if to keep his thanks casual`、`as if she would rather not make anything of it`），反应慢半拍、手停一下、嘴角动一点、不回头。
+- 画外台词句配听者 `lips remain completely closed`。
+- 细小物件写成已经完成的状态：拿起已经掰开的筷子，不写掰、搓（第一轮 skill 版写了 `snaps … apart and rubs them together`，筷子变形；v2 只改了这一处，同种子不再变形）。
+- 没有全局表演段也演得自然（A/B 表第 9 项的弱证据，默认仍保留表演段）。
 
-**A（旧版）**：见上面 2.3。
-
-**B（新文体）**
+和现行规则不一致、写新段时按 SKILL.md 的地方：台词标签后没有空格（`<d>[Chinese]那我帮你扔。</d>`，A/B 表第 14 项）；后续镜头没有用 `from Shot N` 复指；`with no logos or brand names anywhere`、`he says nothing` 是否定写法；配乐里的 `at about 5 seconds` 是片内秒数。lint 会对这几处报 WARN。
 
 ```text
-integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Location light: flat cold-white fluorescent tubes inside the store, a warm amber glow from the hot-food cabinet, blue night light through the wet glass front as the rain thins; faces half cold white, half warm. A small unbranded 24-hour convenience store at 2 a.m., its shelves stocked with plain, generic packaging. The checkout counter is on the right of the frame and the window counter and glass door are on the left. Only two people are in the store. A 50mm medium shot shows Lao Xu at the window counter on the left: a delivery rider about 45, rain-flattened short hair, grey stubble, a sun-darkened tired face, a wet yellow rain jacket over a grey hoodie, his scuffed yellow helmet on the counter beside an open boxed meal. He snaps a pair of disposable chopsticks apart and rubs them together to clear the splinters, keeping his eyes on the chopsticks, as if to keep his thanks casual.
+integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Location light: flat cold-white fluorescent tubes inside the store, a warm amber glow from the hot-food cabinet, blue night light through the wet glass front as the rain thins; faces half cold white, half warm. A small unbranded 24-hour convenience store at 2 a.m., with no logos or brand names anywhere. The checkout counter is on the right of the frame and the window counter and glass door are on the left. Only two people are in the store. A 50mm medium shot shows Lao Xu at the window counter on the left: a delivery rider about 45, rain-flattened short hair, grey stubble, a sun-darkened tired face, a wet yellow rain jacket over a grey hoodie, his scuffed yellow helmet on the counter beside an open boxed meal. He picks up a pair of already-split wooden chopsticks lying beside the open box, keeping his eyes on the food, as if to keep his thanks casual.
 
 [Shot 2] At 00:02.200, the camera cuts to a 50mm medium shot of Xiao Su behind the checkout counter on the right: a young woman about 22, dark hair in a low ponytail, a plain dark-green store vest over a white long-sleeve tee. Her back is half turned as she stacks cartons on a shelf. Lao Xu, a middle-aged man with a low, rough voice in plain Mandarin, short and gruff, a dry half-joke with warmth underneath (S1), says in an off-screen voiceover: <d>[Chinese]那我帮你扔。</d> while Xiao Su's lips remain completely closed. A beat after the line her hands pause on a carton; one corner of her mouth lifts a fraction; she does not turn around, and goes back to stacking, as if she would rather not make anything of it.
 
@@ -280,7 +267,7 @@ integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:
 
 [Shot 6] At 00:11.600, the camera cuts to an 85mm close-up of Xiao Su behind the counter on the right. A beat after the taps, without looking up from the cartons, she nods once. The camera holds a static shot with a faint handheld breath. For the rest of the shot she does not move again; only the door chime fades and drops slide down the glass, and the window counter on the left behind her stands empty now that Lao Xu has gone.
 
-overall_soundscape: Rain patters on the glass front over a low fluorescent hum and thins to slow drips as the scene goes on. Wooden chopsticks snap apart and rub together, a plastic box lid taps, a stool scrapes back and a helmet strap clicks shut. Two light knuckle taps on glass are followed by the door chime fading and a scooter starting outside and pulling away.
+overall_soundscape: Rain patters on the glass front over a low fluorescent hum and thins to slow drips as the scene goes on. Wooden chopsticks click lightly against the plastic box, a plastic box lid taps, a stool scrapes back and a helmet strap clicks shut. Two light knuckle taps on glass are followed by the door chime fading and a scooter starting outside and pulling away.
 
 non_diegetic_music: Sparse solo piano at a slow tempo enters at about 5 seconds, very quiet under the ambience, adds a single sustained low note when the rain stops, and fades out after the second knuckle tap.
 ```
