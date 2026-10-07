@@ -10,7 +10,7 @@ PY = python（Python 3.14.5）
 - [x] 第 2 步 试跑一条：element_urban 成功；tokens=8442；首行格式符合要求。
 - [x] 第 3 步 跑全部：12/12 条改写；12 个完整响应。
 - [x] 第 4 步 检查结果：12 个提示词与 12 个响应逐条一致；NO KEY IN FILES；脚本未修改。
-- [ ] 第 5 步 推送：
+- [x] 第 5 步 推送：https://github.com/jiayiliang351-ui/-/tree/codex/context-ir-powers
 
 ## 阻塞
 
