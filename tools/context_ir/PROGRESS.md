@@ -4,7 +4,7 @@ PY = python
 
 - [x] 第 1 步 环境检查：Python 3.14.5；临时密钥 KEY OK；基础 lint OK；results 尚不存在。
 - [x] 第 2 步 Codex 按 skill 写 8 条：8 个文件首次 lint OK，全部原句台词由脚本核对一致，官方接口尚未调用。
-- [ ] 第 3 步 试跑一条接口：
+- [ ] 第 3 步 试跑一条接口：已试调 tea_pour，HTTP 401，未获得官方结果和 token 用量；按故障处理表停止。
 - [ ] 第 4 步 跑全部接口：
 - [ ] 第 5 步 自动分析：
 - [ ] 第 6 步 对比报告 REPORT.md：
@@ -16,7 +16,16 @@ PY = python
 
 ## 阻塞
 
-无
+2026-10-07：第 3 步真实接口认证失败。未重试、未调用其余 7 条、未修改脚本或 skill。需要本机环境中可用于目标 H3 接口的 MiniMax 开放平台密钥；如果使用海外站密钥，还需确认 API 基址。已完成第 1、2 步，保留独立写作结果。第 4–11 步未执行，校准未完成，分支尚未推送。
+
+错误原文：
+
+```text
+run  tea_pour (8s) ...
+FAIL tea_pour: HTTP 401 from https://api.minimaxi.com/v2/h3_context_ir: {"type":"error","error":{"type":"authorized_error","message":"invalid api key (2049)","http_code":"401"},"request_id":"0714fb1e85d2520ab40d2b6247d4fbd6"}
+```
+
+本机 Git 未配置作者身份，本轮仅对提交命令临时指定 Codex <codex@openai.com>，没有修改全局或仓库 Git 配置。密钥仅进入调用进程环境，没有写入仓库或持久化环境变量。
 
 ## 第 2 步 lint 记录
 
