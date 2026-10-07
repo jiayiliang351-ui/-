@@ -11,7 +11,7 @@ PY = python
 - [x] 第 7 步 修改建议 PROPOSALS.md：仅 C=0、D=1 两项满足规则冲突门槛，各附 3 个官方用例原句；官方 lint 的 1 条 WARN 已原样复制；未改 skill。
 - [x] 第 8 步 写入 official-calibration.md：append_calibration.py 写入 8 cases；8 条原文逐字核对，标记前内容除脚本设计的状态行外未变。
 - [x] 第 9 步 出片对照 JSON：54 shots，580 秒；同种子、提示词逐字、独立无素材/接力、schemaVersion=5 的静态检查通过。尚未导入或渲染。
-- [ ] 第 10 步 真实项目改写（可选）：
+- [x] 第 10 步 真实项目改写（可选）：跳过；PROJECT_JSON 未指定，REAL_LIMIT=0，未调用额外接口。
 - [ ] 第 11 步 收尾：
 
 ## 阻塞
@@ -51,7 +51,7 @@ run  tea_pour (8s) ...
 FAIL tea_pour: HTTP 402 from https://api.minimax.io/v2/h3_context_ir: {"type":"error","error":{"type":"insufficient_balance_error","message":"insufficient balance (1008)","http_code":"402"},"request_id":"0714fe18ba0c76b34a378dd6ac6898b0"}
 ```
 
-当前阻塞以本次海外接口响应为准：余额不足。先前国内接口 401 不应作为海外密钥无效的结论。未获得 task_id，未进行批量请求，校准仍未完成。需用户确认 H3-Context-IR 所用的计费余额、资源包或套餐权益；未执行充值或购买。
+历史阻塞（现已解除）：当时海外接口响应为余额不足。先前国内接口 401 不应作为海外密钥无效的结论。未获得 task_id，未进行批量请求，校准仍未完成。需用户确认 H3-Context-IR 所用的计费余额、资源包或套餐权益；未执行充值或购买。
 
 官方来源：
 - https://github.com/MiniMax-AI/MiniMax-H3/blob/main/README.md
