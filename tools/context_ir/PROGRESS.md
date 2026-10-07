@@ -7,7 +7,7 @@ PY = python
 - [x] 第 3 步 试跑一条接口：国内站新密钥成功；tea_pour 290 words，tokens=8173；第一行 integrated_multimodal_description: 已确认。
 - [x] 第 4 步 跑全部接口：8 / 8 成功，合计 68562 tokens；tea_pour 已自动跳过，未重复调用。
 - [x] 第 5 步 自动分析：24 rows，官方无缺失；6 项统计文件及 8 项逐镜并排文件已确认。
-- [ ] 第 6 步 对比报告 REPORT.md：
+- [x] 第 6 步 对比报告 REPORT.md：8 条完整填写；16 行跨用例统计核对；328 次英文原句引用由脚本验证来源完全一致，无空格或占位格。
 - [ ] 第 7 步 修改建议 PROPOSALS.md：
 - [ ] 第 8 步 写入 official-calibration.md：
 - [ ] 第 9 步 出片对照 JSON：
