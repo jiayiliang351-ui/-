@@ -10,7 +10,7 @@ PY = python
 - [x] 第 6 步 对比报告 REPORT.md：8 条完整填写；16 行跨用例统计核对；328 次英文原句引用由脚本验证来源完全一致，无空格或占位格。
 - [x] 第 7 步 修改建议 PROPOSALS.md：仅 C=0、D=1 两项满足规则冲突门槛，各附 3 个官方用例原句；官方 lint 的 1 条 WARN 已原样复制；未改 skill。
 - [x] 第 8 步 写入 official-calibration.md：append_calibration.py 写入 8 cases；8 条原文逐字核对，标记前内容除脚本设计的状态行外未变。
-- [ ] 第 9 步 出片对照 JSON：
+- [x] 第 9 步 出片对照 JSON：54 shots，580 秒；同种子、提示词逐字、独立无素材/接力、schemaVersion=5 的静态检查通过。尚未导入或渲染。
 - [ ] 第 10 步 真实项目改写（可选）：
 - [ ] 第 11 步 收尾：
 
@@ -57,3 +57,11 @@ FAIL tea_pour: HTTP 402 from https://api.minimax.io/v2/h3_context_ir: {"type":"e
 - https://github.com/MiniMax-AI/MiniMax-H3/blob/main/README.md
 - https://platform.minimax.io/docs/api-reference/video-generation-v2-h3-context-ir
 - https://platform.minimax.io/protocol/paid-agreement （标准按量 API Key 与 Token Plan 订阅 Key 分开且不可互换，具体权益以服务页面为准。）
+
+第 9 步脚本输出末行：
+
+```text
+wrote C:\Users\Administrator\Videos\提示词参考视频\h3-calibration\tools\context_ir\render_compare.json: 54 shots, about 580 seconds of video to render
+```
+
+仅 3 条用例有 old_versions，其他 5 条只有 skill/codex/official；脚本按实际可用版本生成，未补造旧版本。实际总量为 580 秒，区别于方案预估约 400 秒。
