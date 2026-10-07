@@ -2,7 +2,7 @@
 
 这里收的是用官方 H3-Context-IR 接口改写的本项目测试需求（`tools/context_ir/cases.json`），和 `examples.md` 第 1 节的官方示例一起，作为"官方会怎么写"的参照。拿不准某类戏怎么写时，先找这里最接近的一条。
 
-官方改写只学结构、镜头密度、句式和声音段写法。下面这些不照学：`MCU` 这类缩写（写全称）；`tremble visibly`（最多写 `a faint tremor`）；在双人中近景里写快速接触（放进插入特写）；配乐情绪词，以及简报没要求时自己加配乐（接力剧集默认 `N/A`）；`no X` 式否定；用一个 `Cinematic,` 代替电影感底座；把画外声音挪进画内（quiet_shen_fire）；无视简报的镜头安排（linqi_04 没让台词出现在小苏身上）；`Shot 1` 里不带 `[Shot N]` 标记的隐含切镜（linqi_04 的 `the camera captures a close-up of Xiao Su`）。
+官方改写只学结构、句式和声音段写法；镜头密度只在连续移动加运镜、安静戏里学，快动作和多节拍文戏按 SKILL.md 的镜头数表（本地出片：这两类官方的 2–3 镜不如密切切镜，见 `examples.md` 3.1、3.2）。下面这些不照学：`MCU` 这类缩写（写全称）；`tremble visibly`（最多写 `a faint tremor`）；在双人中近景里写快速接触（放进插入特写）；配乐情绪词，以及简报没要求时自己加配乐（接力剧集默认 `N/A`）；`no X` 式否定；用一个 `Cinematic,` 代替电影感底座；把画外声音挪进画内（quiet_shen_fire）；无视简报的镜头安排（linqi_04 没让台词出现在小苏身上）；`Shot 1` 里不带 `[Shot N]` 标记的隐含切镜（linqi_04 的 `the camera captures a close-up of Xiao Su`）。
 
 状态：**已收集 8 条**（2026-10-07，官方 H3-Context-IR 接口改写，纯文字 T2VA）。
 

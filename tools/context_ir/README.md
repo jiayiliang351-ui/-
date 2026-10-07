@@ -47,7 +47,7 @@ python3 context_ir_batch.py cases.json --out results/ --only zhiyin_ep1_06 linqi
 | `wrist_grab` | 8 | 两人肢体接触的物理 |
 | `tea_pour` | 8 | 手部和道具、液体 |
 
-前四条和 `h3-shot-prompt` 的 `examples.md` 里已有的段对应，可以三方对比：旧写法 / skill 新写法 / 官方改写。
+前四条可以三方对比：旧写法（`old_versions/`）/ skill 新写法（`skill_versions/`）/ 官方改写（`results/`）。《纸引》和《临期》第二轮的 v2 在 `round2/`，也收进了 `examples.md` 第 3 节。
 
 ## 跑完之后
 

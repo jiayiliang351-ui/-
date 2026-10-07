@@ -12,8 +12,8 @@ H3 不会算物理，它是按"见过的视频长什么样"来画。物理对不
 | 快速大幅动作（打斗、翻滚、摔倒） | 脸糊、肢体变形、动作发飘 | 景别拉近到半身、一个镜头一个动作；力量感交给镜头（甩、推近）和后果（碎片、灰、震动） |
 | 被打飞、倒地、爬起这类受力动作 | 无重量、像被线吊着 | 只拍"一顿""被拽住""踉跄半步"；被打中的一方用碎掉、炸开、猛地停住来表现 |
 | 手部操作小物件（系扣、写字、拿杯子、点烟） | 手指数量不对、物件变形 | 物件大一点、动作慢一点、镜头近一点；一个镜头只操作一个物件 |
-| 折断、掰开、揉搓细小物件（掰筷子、搓毛刺、撕纸片、折火柴） | 物件变形、长出多余的段（本地实测：`snaps a pair of disposable chopsticks apart and rubs them together` 筷子变形） | 写成已经完成的状态（`a pair of already-split chopsticks`），直接做下一步（夹菜）；非拍不可时单给一个插入特写，慢速、只做一下 |
-| 两个角色在一个长镜头里交互（一个冲过来、一个扫开或拦住） | 时机对不上：冲的一方先停顿，再被扫开（本地实测） | 交互放进一个 1.0–1.5 秒的短镜头：从起跳或冲刺的最后一步开始，接触落在这一镜里（《纸引》旧版和 v2 都这样写，时机都对） |
+| 折断、掰开、揉搓细小物件（掰筷子、搓毛刺、撕纸片、折火柴） | 物件变形、长出多余的段（本地实测：`snaps a pair of disposable chopsticks apart and rubs them together` 筷子变形，写了掰筷子的 6 段里报了 1 段；第二轮改成已经掰开，同种子没再变形） | 写成已经完成的状态（`a pair of already-split chopsticks`），直接做下一步（夹菜）；非拍不可时单给一个插入特写，慢速、只做一下 |
+| 两个角色在一个长镜头里交互（一个冲过来、一个扫开或拦住） | 时机对不上：冲的一方先停顿，再被扫开（本地实测） | 交互放进一个 1.0–1.5 秒的短镜头：从起跳或冲刺的最后一步开始，接触落在这一镜里（《纸引》旧版和 v2 都这样写，两轮出片都没报停顿） |
 | 快剪切到插入特写 | 运动方向翻转、固定物换位置（本地实测：切到灭火特写后奔跑方向翻了，水盆在每个版本里都漂） | 每个切镜写主体往画面哪边动、固定物在画面哪一侧；机位保持在动作线同一侧 |
 | 多人同时做不同的事 | 动作互相干扰、有人突然消失 | 一个镜头只有一个人在做主动作，其他人静止或只做重复的小动作 |
 | 一个镜头里塞好几个动作 | 顺序错乱、动作被跳过 | 一镜一条主动作链（同一个人、同一个目的、一步接一步）；不在一个镜头里并行第二条链，多了就拆镜头或拆段 |
@@ -37,7 +37,7 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 - 环境一起动：风同时吹动头发、衣角和灰尘，方向一致；人走过时水洼起波纹
 - 落定：`settles`、`comes to rest`、`stops against`、`holds its new shape`
 
-**接触戏怎么写得有分量**（官方改写的写法，四步之内补细节；本地还没出片验证，见 `pipeline-and-settings.md` A/B 表第 18 项）：
+**接触戏怎么写得有分量**（官方改写的写法，四步之内补细节；本地第一轮出片四步写法和加细节的写法都过关，见 `pipeline-and-settings.md` A/B 表第 18 项）：
 - **起因**带时机词：`Just as his fingertips graze the paper, …`。没交代原因的物理变化，补一个看得见的起因（官方把"念珠散开"写成 `the string holding the black prayer beads from Shot 1 snaps without warning`）。
 - **用力**：主动方先整个身体动，再接触（`lunges forward`）；每个接触最多一个力度或突然副词（`forcefully`、`abruptly`、`sharply`）。入画的全身大景别里不用 `violently`，免得动作过猛、肢体变形。
 - **反应**：既写接触点，也写受力方上游的身体（`The young man's shoulders tense sharply as his forward momentum is halted.`、`Jerked to a sudden halt by his pinned tail, …`）。快的接触放在插入特写里时（只拍手和物件，看不到肩膀），上游身体的反应写在紧接的下一镜里。
@@ -65,7 +65,7 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 
 《纸引》EP1-06 第一轮对比里，旧版 8 秒 6 镜（每镜 1.0–1.8 秒）奔跑、腾空、撞击最好，比 4 镜和官方 3 镜都好。快动作这样写：
 - 一个动作节拍一镜：冲刺 → 被拦（接触单独一镜）→ 爬起再冲 → 插入特写（踩灭）→ 被拽停 → 余波。每镜 1.0–2.0 秒，40–70 词。
-- 接触放进一个 1.0–1.5 秒的短镜头：前一镜是冲刺，这一镜从起跳开始，接触落在这一镜里（v2 第 2 镜：起跳 → 腾到最高点 → 被翅膀扫开 → 摔回画面左边）。
+- 接触放进一个 1.0–1.5 秒的短镜头：前一镜是冲刺，这一镜从起跳开始，接触落在这一镜里（v2 第 2 镜：冲刺最后一步 → 起跳 → 在空中被翅膀扫开 → 摔回画面左边）。
 - 每个切镜写方向和固定物：`still racing toward the right of the frame, the black bronze basin on its low stool at the right edge of the frame`；插入特写写 `his burning tail trailing toward the left of the frame`。机位保持在动作线同一侧（例如全程从画面下方、动作线的同一侧拍），不跳到对面。
 - 最后一镜不短于 1.5 秒，留给余波和定格。
 - 写法用新文体（可观察陈述、官方切镜句），不写 `IMPORTANT`、括号标签、全大写运镜。旧版的优势在密度，不在那些标签：第二轮用新文体写同样 6 镜、同样切点（v2，见 `examples.md` 3.1），两个种子都没问题，方向不翻、水盆不漂。

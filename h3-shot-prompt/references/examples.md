@@ -219,11 +219,13 @@ non_diegetic_music: Sparse solo piano at a slow tempo enters at about 5.0 second
 
 学它的：
 - 一个动作节拍一镜：冲刺 → 起跳被扫开 → 爬起再冲 → 插入特写踩灭 → 被拽停 → 余波。每镜 1.0–1.3 秒，第一镜 1.5 秒，最后一镜 1.8 秒。
-- 交互放在 1.3 秒的第 2 镜：这一镜从起跳开始，腾到最高点被翅膀扫开，摔回画面左边。时机对，没有先停顿。
-- 每个切镜写小老虎往画面右边跑、水盆在画面右边缘的木凳上；插入特写写尾巴拖向画面左边；后续镜头写 `from the same side`，机位不跳到动作线另一侧。两个种子方向都没翻，水盆都没漂。
-- 第 3–6 镜每镜约 60–80 词，第 2 镜有鹤女第一次出场的外形插句，约 120 词；声音段 3 句，配乐 N/A。
+- 交互放在 1.3 秒的第 2 镜：这一镜从冲刺的最后一步和起跳开始，在空中被翅膀扫开，摔回画面左边。两个种子都没有先停顿。
+- 每个切镜写小老虎往画面右边跑；水盆出现的每个镜头写它在画面右边缘的木凳上；插入特写写尾巴拖向画面左边；后续镜头写 `from the same side`，机位不跳到动作线另一侧。两个种子方向都没翻，水盆都没漂。
+- 声音段 3 句，配乐 N/A。
 
-和旧版比：旧版（`tools/context_ir/old_versions/zhiyin_ep1_06.txt`）同样 6 镜、同样切点，第一轮最好，但写的是全大写运镜、`[Shot N · 时间]` 镜头头、`(flame: ON)` 括号标签和按秒列的声音，切到灭火特写方向翻了，水盆也漂。v2 只换了文体，并在每镜补了方向和水盆位置。第一轮的 4 镜新文体版（`tools/context_ir/skill_versions/zhiyin_ep1_06.txt`）不如 6 镜，不再作范例。
+和旧版比：旧版（`tools/context_ir/old_versions/zhiyin_ep1_06.txt`）同样 6 镜、同样切点，第一轮最好，但写的是全大写运镜、`[Shot N · 时间]` 镜头头、`(flame: ON)` 括号标签和按秒列的声音，切到灭火特写方向翻了，水盆也漂。v2 换成新文体，补了方向和水盆位置；另外还改了这些：删了第 2 镜的快甩（`WHIP PAN`）和 `front paws reaching`，加了 `At the top of the leap` 和 `between him and the basin`；第 4 镜从急推特写（`SNAP-ZOOM ECU`）改成静止特写（插入特写保持静止，见 `physics-and-action.md` 第 3A 节）；删了第 3 镜的 `Without stopping` 和第 6 镜的 `A beat of stillness`，第 6 镜改成鹤女先抬爪、小老虎后坐下；声音段加了每步的铃声；字数多了约 30%。所以 v2 的结果是整包结果，方向不翻不能只归给每镜写方向。第一轮的 4 镜新文体版（`tools/context_ir/skill_versions/zhiyin_ep1_06.txt`）不如 6 镜，不再作范例。
+
+和现行规则不一致、写新段时按 SKILL.md 的地方：后续镜头复指没带出处（第 2、3、6 镜的 `the cub`、第 6 镜的 `The crane-woman`，应写 `the paper tiger cub from Shot 1`、`the crane-woman from Shot 2`；只有第 5 镜写了 `from Shot 2`，所以 lint 不报）；第 2 镜的切镜句没写景别（`a side tracking shot`），第 3、5 镜没写运镜状态（`a low-angle medium shot from the same side`）；固定段（画风开头）以外约 478 词，超过多镜头 450 词的上限；第 2 镜约 115 词、第 6 镜约 76 词，超过快剪每镜 40–70 词。lint 对这几处都不报 WARN。
 
 ```text
 integrated_multimodal_description: [Shot 1] Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy shop on a rainy night: black wooden pillars, wet stone floor, white paper lotus lanterns hanging from the beams, white paper horses standing in the shadows. Warm orange light from an iron fire brazier at the back left, cold blue rain light from the open doorway at the back. All creatures are real handmade paper craft: stiff folded paper with visible fibres, brush-ink lines and burnt edges; they bend only at the joints. Film grain. A low tracking shot at paw height follows a small tiger cub made of stiff white folded paper — black brush-painted stripes, torn red paper ribbons at his neck and wrists, a tiny bronze bell at his throat, one amber ink-painted eye and one blank white paper eye — as he sprints on all fours across the wet stone toward the right of the frame, toward a black bronze water basin on a low wooden stool at the right edge of the frame. A small flame burns on the very tip of his tail and streams out behind him toward the left like a lit fuse.
@@ -249,10 +251,10 @@ non_diegetic_music: N/A
 - 一个节拍一镜：拿筷子 → 画外台词配听者反应 → 吃饭 → 雨停起身戴头盔 → 推门敲玻璃 → 点头余波。
 - 隐藏目的写进行为（`keeping his eyes on the food, as if to keep his thanks casual`、`as if she would rather not make anything of it`），反应慢半拍、手停一下、嘴角动一点、不回头。
 - 画外台词句配听者 `lips remain completely closed`。
-- 细小物件写成已经完成的状态：拿起已经掰开的筷子，不写掰、搓（第一轮 skill 版写了 `snaps … apart and rubs them together`，筷子变形；v2 只改了这一处，同种子不再变形）。
+- 细小物件写成已经完成的状态：拿起已经掰开的筷子，不写掰、搓（第一轮 skill 版正文和声音段都写了掰开、搓，段 10 筷子变形；v2 把这两句都改成已经掰开、只碰饭盒，同种子不再变形。声音段里也不要留掰、搓）。
 - 没有全局表演段也演得自然（A/B 表第 9 项的弱证据，默认仍保留表演段）。
 
-和现行规则不一致、写新段时按 SKILL.md 的地方：台词标签后没有空格（`<d>[Chinese]那我帮你扔。</d>`，A/B 表第 14 项）；后续镜头没有用 `from Shot N` 复指；`with no logos or brand names anywhere`、`he says nothing` 是否定写法；配乐里的 `at about 5 seconds` 是片内秒数。lint 会对这几处报 WARN。
+和现行规则不一致、写新段时按 SKILL.md 的地方：台词标签后没有空格（`<d>[Chinese]那我帮你扔。</d>`，A/B 表第 14 项）；后续镜头没有用 `from Shot N` 复指；`with no logos or brand names anywhere`、`he says nothing` 是否定写法；配乐里的 `at about 5 seconds` 是片内秒数，lint 会对这四处报 WARN。下面几处 lint 查不到：说话人老徐在第 1 镜第一次出场时没挂 `(S1)` 和 `on-screen`；第 2–5 镜的切镜句只写了景别，没写运镜状态；固定段（底座和光源句）以外约 472 词，超过多镜头 450 词的上限。
 
 ```text
 integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Location light: flat cold-white fluorescent tubes inside the store, a warm amber glow from the hot-food cabinet, blue night light through the wet glass front as the rain thins; faces half cold white, half warm. A small unbranded 24-hour convenience store at 2 a.m., with no logos or brand names anywhere. The checkout counter is on the right of the frame and the window counter and glass door are on the left. Only two people are in the store. A 50mm medium shot shows Lao Xu at the window counter on the left: a delivery rider about 45, rain-flattened short hair, grey stubble, a sun-darkened tired face, a wet yellow rain jacket over a grey hoodie, his scuffed yellow helmet on the counter beside an open boxed meal. He picks up a pair of already-split wooden chopsticks lying beside the open box, keeping his eyes on the food, as if to keep his thanks casual.

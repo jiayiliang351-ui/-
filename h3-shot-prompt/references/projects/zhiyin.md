@@ -10,7 +10,7 @@ Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy s
 
 画风开头已经写了火盆和门口的光，不再接本场光源句。画风开头之后的第一句构图句写清景别和运镜状态（`A low tracking shot at paw height follows …`、`a medium shot, the camera slowly pushes in toward …`），后续切镜句同样写景别和运镜状态。
 
-大殿里固定的位置：火盆在左后，黑铜水盆在右侧木凳上，大门在正中后方（冷蓝雨夜），工作台在左前。水盆在它出现的每个镜头里都要写在画面哪一侧（`the black bronze basin on its low stool at the right edge of the frame`），只写一次会漂（第一轮出片：所有版本的水盆位置都没固定住；第二轮 v2 每镜都写，两个种子都稳住了，写法见 `examples.md` 3.1）。冲向水盆的戏，机位放在动作线同一侧，阿糊全程朝画面右边跑；插入特写也写尾巴朝画面左边拖。挂素材时同时挂大殿机位图（S02 系列），水盆更稳。
+大殿里固定的位置：火盆在左后，黑铜水盆在右侧木凳上，大门在正中后方（冷蓝雨夜），工作台在左前。水盆在它出现的每个镜头里都要写在画面哪一侧（`the black bronze basin on its low stool at the right edge of the frame`），只写一次会漂（第一轮出片：所有版本的水盆位置都没固定住；第二轮 v2 在水盆出现的每个镜头都写，两个种子都稳住了，写法见 `examples.md` 3.1）。冲向水盆的戏，机位放在动作线同一侧，阿糊全程朝画面右边跑；插入特写也写尾巴朝画面左边拖。挂素材时同时挂大殿机位图（S02 系列），水盆更稳。
 
 **角色插句（第一次出现时照抄）：**
 - 阿糊：`a small tiger cub made of stiff white folded paper — black brush-painted stripes, torn red paper ribbons at his neck and wrists, a tiny bronze bell at his throat, one amber ink-painted eye and one blank white paper eye —`
