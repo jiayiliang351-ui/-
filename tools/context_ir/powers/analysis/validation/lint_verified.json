@@ -1,0 +1,82 @@
+[
+  {
+    "case": "blast_urban",
+    "phase": "baseline",
+    "summary": "mode=T2VA  shots=6  real_duration=8.000s  words=623  spoken_zh=0",
+    "errors": [],
+    "warnings": [
+      "shot before [Shot 3] lasts 1.10s (< 1.5s; fine only for fast-action quick cuts)",
+      "shot before [Shot 4] lasts 1.10s (< 1.5s; fine only for fast-action quick cuts)",
+      "shot before [Shot 5] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)",
+      "shot before [Shot 6] lasts 1.00s (< 1.5s; fine only for fast-action quick cuts)"
+    ],
+    "sha256": "71fcc14c4f5660eb3bf5dd675985c8056866e0f08a8b7203f943e3226986e5fb"
+  },
+  {
+    "case": "blast_urban",
+    "phase": "candidate",
+    "summary": "mode=T2VA  shots=5  real_duration=8.000s  words=587  spoken_zh=0",
+    "errors": [],
+    "warnings": [
+      "shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)",
+      "shot before [Shot 4] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)"
+    ],
+    "sha256": "54f6727f03f9e611cf6452213d70ff9f562a37d89edd8f74176d5c60c8317233"
+  },
+  {
+    "case": "telekinesis_urban",
+    "phase": "baseline",
+    "summary": "mode=T2VA  shots=4  real_duration=10.125s  words=450  spoken_zh=0",
+    "errors": [],
+    "warnings": [],
+    "sha256": "c55b28c0428a4782ab73b89f6cfcf78850855cbc25e2f4a3546231e9056952d8"
+  },
+  {
+    "case": "telekinesis_urban",
+    "phase": "candidate",
+    "summary": "mode=T2VA  shots=1  real_duration=10.125s  words=387  spoken_zh=0",
+    "errors": [],
+    "warnings": [],
+    "sha256": "b3559c87cfd3a25d673f50540ad34b165a87d225ce422693c303c2bf2a1b04a4"
+  },
+  {
+    "case": "timestop_xianxia",
+    "phase": "baseline",
+    "summary": "mode=T2VA  shots=1  real_duration=15.083s  words=494  spoken_zh=0",
+    "errors": [],
+    "warnings": [],
+    "sha256": "4e7c14c7dd224d6b175d2f7e3b0b6d6d0e544ebc3fa538bef435f982c2ce3c8a"
+  },
+  {
+    "case": "timestop_xianxia",
+    "phase": "candidate",
+    "summary": "mode=T2VA  shots=1  real_duration=15.083s  words=403  spoken_zh=0",
+    "errors": [],
+    "warnings": [],
+    "sha256": "66c89923dd99b530e98250b3d6f82974106e3589906ee61dc9c952488b183568"
+  },
+  {
+    "case": "onevsmany_urban",
+    "phase": "baseline",
+    "summary": "mode=T2VA  shots=8  real_duration=15.083s  words=643  spoken_zh=0",
+    "errors": [],
+    "warnings": [
+      "shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)",
+      "shot before [Shot 5] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)"
+    ],
+    "sha256": "c4d42921648c0a0e5765551647a91a767daa034140ad05c205dbfd6689f6ab45"
+  },
+  {
+    "case": "onevsmany_urban",
+    "phase": "candidate",
+    "summary": "mode=T2VA  shots=9  real_duration=15.083s  words=650  spoken_zh=0",
+    "errors": [],
+    "warnings": [
+      "shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)",
+      "shot before [Shot 4] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)",
+      "shot before [Shot 5] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)",
+      "shot before [Shot 8] lasts 1.40s (< 1.5s; fine only for fast-action quick cuts)"
+    ],
+    "sha256": "1fd4ef392ad34b45ab962f3f454a4c4001875097a56e621a077c4663c23c7d9b"
+  }
+]

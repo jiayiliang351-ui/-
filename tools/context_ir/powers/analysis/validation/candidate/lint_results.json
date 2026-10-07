@@ -1,0 +1,50 @@
+[
+  {
+    "case_id": "telekinesis_urban",
+    "nominal_seconds": 10,
+    "exit_code": 0,
+    "body_words_excluding_fixed_and_light": 258,
+    "summary": "mode=T2VA  shots=1  real_duration=10.125s  words=387  spoken_zh=0",
+    "errors": [],
+    "warnings": [],
+    "spoken_dialogue": []
+  },
+  {
+    "case_id": "blast_urban",
+    "nominal_seconds": 8,
+    "exit_code": 0,
+    "body_words_excluding_fixed_and_light": 378,
+    "summary": "mode=T2VA  shots=5  real_duration=8.000s  words=587  spoken_zh=0",
+    "errors": [],
+    "warnings": [
+      "WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)",
+      "WARN  shot before [Shot 4] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)"
+    ],
+    "spoken_dialogue": []
+  },
+  {
+    "case_id": "timestop_xianxia",
+    "nominal_seconds": 15,
+    "exit_code": 0,
+    "body_words_excluding_fixed_and_light": 277,
+    "summary": "mode=T2VA  shots=1  real_duration=15.083s  words=403  spoken_zh=0",
+    "errors": [],
+    "warnings": [],
+    "spoken_dialogue": []
+  },
+  {
+    "case_id": "onevsmany_urban",
+    "nominal_seconds": 15,
+    "exit_code": 0,
+    "body_words_excluding_fixed_and_light": 435,
+    "summary": "mode=T2VA  shots=9  real_duration=15.083s  words=650  spoken_zh=0",
+    "errors": [],
+    "warnings": [
+      "WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)",
+      "WARN  shot before [Shot 4] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)",
+      "WARN  shot before [Shot 5] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)",
+      "WARN  shot before [Shot 8] lasts 1.40s (< 1.5s; fine only for fast-action quick cuts)"
+    ],
+    "spoken_dialogue": []
+  }
+]

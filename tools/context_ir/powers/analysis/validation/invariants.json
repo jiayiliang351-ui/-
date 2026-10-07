@@ -1,0 +1,18 @@
+{
+  "protected_files": [
+    "h3-shot-prompt/scripts/lint_prompt.py",
+    "h3-director-json-review/scripts/lint_json.py",
+    "tools/context_ir/context_ir_batch.py",
+    "tools/context_ir/analyze_ir.py",
+    "h3-shot-prompt/references/cinematography.md",
+    "h3-shot-prompt/references/official-format.md",
+    "h3-shot-prompt/references/examples.md",
+    "h3-shot-prompt/references/official-calibration.md",
+    "h3-shot-prompt/references/projects/zhiyin.md",
+    "h3-shot-prompt/references/projects/yanwang.md"
+  ],
+  "shot_count_table_unchanged": true,
+  "fixed_examples_unchanged": true,
+  "dialogue_rules_unchanged": true,
+  "official_prompts_exact": 12
+}

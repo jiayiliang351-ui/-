@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 5,
+  "project": {
+    "id": "audit_fixture",
+    "name": "异能审查测试",
+    "runId": "fixture_only"
+  },
+  "defaults": {
+    "fps": 24,
+    "baseSeed": 2026100701
+  },
+  "promptPrefix": "",
+  "promptSuffix": "",
+  "continuity": {
+    "mode": "h3_av_latent",
+    "videoContextFrames": 22,
+    "audioContextFrames": 24,
+    "durationMode": "final_output"
+  },
+  "assets": [],
+  "customMetadata": {
+    "preserve": [
+      "unknown",
+      42
+    ]
+  },
+  "shots": [
+    {
+      "id": "timestop_xianxia",
+      "title": "timestop_xianxia",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Daylight falls between tiled roofs onto the blue-grey cobbles, with warm lantern light under the stall awnings. A 35mm wide shot tracks rightward along an ancient market street in one continuous take. Stalls line both sides, with a low street-side step on the left and a tiled rooftop in the upper right. Townspeople scatter around a small boy who has fallen in the street center. A young woman in fitted teal robes, her black hair in a high ponytail and a sheathed longsword on her back, runs in from screen-left with both hands empty. Black-feathered arrows shoot diagonally downward from the upper-right rooftop toward the boy. She raises her left palm; the arrows stop dead above the cobbles, the crowd freezes mid-stride, tilted lanterns hold their angles, and kicked-up dust hangs motionless. The boy holds his fallen pose; she alone continues moving at normal speed. The camera follows her through the suspended arrows, closing to a waist-up view as her right fingertips turn the arrow aimed at the boy toward the empty street on the right. The shaft holds its new angle when her fingers leave it. Keeping her left palm raised, she crouches and scoops the boy against her right hip with her right forearm beneath his thighs, his still body resting against her chest. The camera tracks leftward beside her as she carries him to the left-hand step, then lowers him onto it. His weight leaves her arm as he settles against the stall base. She lowers her left hand. The redirected arrow buries its point in the empty street on the right, while the others strike the vacated street center; dust drops, lanterns swing onward and the crowd completes its interrupted strides. The camera settles beside the step with her on the left and the seated boy on the right, the embedded arrows beyond them. Her sleeve settles as dust thins over the street.\n\noverall_soundscape: Running soles scrape the stone street beneath fluttering cloth and the incoming arrows' sharp whistles. As her palm rises, the street ambience drops into silence, with her footsteps and the soft rub of her clothing against the boy clearly heard while she carries him. When her hand lowers, the arrows strike the cobbles with distinct dry cracks, lantern fittings rattle, and scattered footfalls resume around the seated boy.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 15,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100701,
+      "disabledAssetIds": [],
+      "customField": {
+        "preserve": true
+      }
+    },
+    {
+      "id": "telekinesis_xianxia",
+      "title": "telekinesis_xianxia",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Filtered daylight falls through the bamboo canopy onto the yellow leaves, the old man's grey robe and the wooden gate. A 35mm medium wide shot holds a static view across an autumn bamboo courtyard, including the earth underfoot and the gate at screen-right. Dry yellow bamboo leaves cover the ground between the gate and a thin elderly Daoist at center-left. His white hair is fastened with a wooden hairpin above his grey cotton robe. His left hand rests behind his back as his right hand hangs beside him. He raises the two fingers of his right hand. The scattered leaves first tremble against the earth, then slowly rise to his knees and hover, turning gently around their stems. Their brittle yellow surfaces retain the soft daylight and dark vein patterns as they float. After the leaves settle into their slow rotation, he points his right fingers toward the gate. At the gesture, the suspended leaves tilt rightward together and accelerate across the courtyard in a gust. The stream presses against the closed wooden gate; its planks shudder and it swings outward toward screen-right under the wind and leaves, opening halfway. The leaves surge through the opening and away beyond the right-hand gatepost. The Daoist lowers his right fingers; his left hand remains behind his back, his robe hem stirring in the same rightward airflow. The last yellow leaves clear the threshold as the gate slows and holds its half-open position.\n\noverall_soundscape: Autumn wind rustles the bamboo around the courtyard, forming a continuous bed beneath the scene. As the old man's fingers lift, the dry leaves crackle softly while separating from the dirt, then their rustle grows into a rushing gust as they cross toward the gate. A distinct hinge creak follows the leaf stream's contact with the wood and fades as the gate slows half open, with the last leaves rustling across the threshold.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100702,
+      "disabledAssetIds": [],
+      "customField": {
+        "preserve": true
+      }
+    }
+  ]
+}

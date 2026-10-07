@@ -1,0 +1,14 @@
+{
+  "change": "delete exactly one existing global acting paragraph; no other prompt character changed",
+  "case": "timestop_xianxia",
+  "seeds": [
+    2026100701,
+    2026100702
+  ],
+  "nominal_seconds": 60,
+  "rendered": false,
+  "kept_sha256": "4e7c14c7dd224d6b175d2f7e3b0b6d6d0e544ebc3fa538bef435f982c2ce3c8a",
+  "deleted_sha256": "6d191620f4ff31ff64c989fee65c0f30b04841fdeb8f995679d31a24cfa5c5f2",
+  "removed_text": "Nobody stands idle or poses for the camera. Every character is always occupied with some small piece of business — handling an object, finishing a movement, glancing at something off-topic. In every exchange one character acts while the other reacts, and reactions arrive a beat late, the way real people respond while their attention is still somewhere else. Small involuntary gestures (swallowing, shifting weight, thumb rubbing an edge, a delayed look-up) matter more than polished facial expressions.",
+  "limitation": "Deleting the paragraph also changes prompt length; content and length effects are not isolated."
+}

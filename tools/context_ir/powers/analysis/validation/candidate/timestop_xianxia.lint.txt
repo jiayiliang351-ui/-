@@ -1,0 +1,2 @@
+mode=T2VA  shots=1  real_duration=15.083s  words=403  spoken_zh=0
+OK

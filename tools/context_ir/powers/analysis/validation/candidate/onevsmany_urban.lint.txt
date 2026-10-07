@@ -1,0 +1,5 @@
+mode=T2VA  shots=9  real_duration=15.083s  words=650  spoken_zh=0
+WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)
+WARN  shot before [Shot 4] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)
+WARN  shot before [Shot 5] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)
+WARN  shot before [Shot 8] lasts 1.40s (< 1.5s; fine only for fast-action quick cuts)

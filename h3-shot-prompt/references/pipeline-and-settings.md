@@ -18,6 +18,8 @@
 - 挑 3–5 段典型戏（对话、动作、安静戏），用 API 各改写一次，存进 `official-calibration.md` 当参照（官方改写有随机性，一条只是一次采样；`examples.md` 第 1 节只放 MiniMax README 和官方 skill 里的原样示例）。仓库 `tools/context_ir/` 里有批量调用脚本和 8 条现成的测试需求，这 8 条的官方改写已经收进 `official-calibration.md`，审核结论见 `tools/context_ir/analysis/REVIEW.md`。
 - 同一段用 API 改写版和本 skill 写的版本，同种子各跑一次，对比哪里不同。
 
+现有样本已覆盖 8 条剧情戏与 12 条异能 T2VA（后者原文见 `official-powers-calibration.md`，条件用法见 `powers-and-effects.md`）。不要为“继续学习”自动追加付费调用；先用已有样本核对用户意图，再看出片的具体缺口。官方文本、写手测试和真实出片分别记录，不能互相代替。新异能规则尚无渲染结果，不因其官方镜头数少就改动已验证的快剪写法。
+
 本地替代（不花钱，效果是近似的）：
 - `lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA`（Qwen3.6-27B 上训练的 LoRA，另有 8B 版），有 ComfyUI 节点 `MiniMax-H3-Prompt-Rewriter-ComfyUI`。只做 T2VA。
 - `ruashots/open-h3-ir`（开源的 Context-IR 复刻，带格式校验，有 ComfyUI 节点 `ComfyUI-OpenH3-IR`）。它的作者用同种子同参考图对比：原样输入的视频"走不到目的地"，改写后按要求完成了动作和切镜。
@@ -84,6 +86,8 @@
 | 20 | 细小物件动作 | 掰开、搓筷子 | 筷子已经掰开，直接夹菜 ★ | **B 胜，证据只有一对**（《临期》段 04 v2 只改了筷子动作：正文一句和声音段对应的一句。第一轮只有段 10（skill 种子 2）报了筷子变形，同样写了掰筷子的另外 5 段没报；v2 两个种子都没变形，2026-10-07 第二轮。同种子从变形到不变形的只有种子 2 这一对，种子 1 两轮都没报变形） |
 
 **第二轮已渲染**（`tools/context_ir/round2/render_round2.json`，4 段，结果见 `tools/context_ir/analysis/RENDER_RESULTS_2.md`）。
+
+**异能补充尚未渲染**：新增的是适用边界（显式能力与结果优先、时间静止省去全员活动段、念力推动固定物、人数/武器状态及声源限制），不是已验证的画质规则。优先比较时间静止的第二版写法和补充版，同配置同两个种子；再测其他异能。完整候选版与旧版有多处文字差异，属于整体对比；若要验证“省去表演段”单条的作用，复制同一版只删该段，其他字不动，再做对照。尚未记录任何新视频通过。
 
 **第一轮已渲染**（结果见 `tools/context_ir/analysis/RENDER_RESULTS_1.md`）：
 ```bash
