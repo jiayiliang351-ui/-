@@ -1,0 +1,21 @@
+{
+  "task": {
+    "id": "449718498673061",
+    "model": "MiniMax-H3",
+    "status": "succeeded",
+    "created_at": 1791347841,
+    "updated_at": 1791347874,
+    "content": {
+      "prompt": "integrated_multimodal_description: [Shot 1] Cinematic, Medium Wide Shot at a low angle. In the gloomy main hall of an ancient papercraft shop on a rainy night, the camera pans right, following the frantic movement of a small handmade papercraft tiger. The highly textured set features black wooden pillars, a wet stone floor reflecting the ambient lighting, and white paper lotus lanterns hanging heavily from the overhead beams. In the back-left midground, an iron brazier casts a warm orange glow, while cold blue rain light spills through the wide-open doors in the center background. The stiff paper tiger (crafted from thick white paper with visible rough fibers, thick black ink stripes, a small bronze bell on his neck, one amber ink eye, and one blank paper eye) sprints aggressively on all fours, his limbs bending only at his stiff paper joints. A small cluster of real fire burns intensely on the tip of his tail. He charges toward a black bronze water basin resting on a wooden stool on the right side of the frame. Suddenly, a tall, thin papercraft crane (with a long beak, a white paper crown, one pristine white wing, and one charred black wing) steps into the frame from the right. The crane swings her charred wing, batting the tiger away. He tumbles backward, rolling helplessly across the wet stone floor. [Shot 2] At 00:03.200, the camera cuts to a Medium Close-Up and holds a static shot at floor level. The paper tiger from Shot 1 scrambles back onto his stiff paper feet, leans his weight forward, and lunges aggressively toward the basin again. The tall crane from Shot 1 abruptly brings her large stiff claw down, violently stomping directly onto the burning tip of the tiger's tail. Bright orange sparks and thick black paper ash explode outward upon impact, instantly extinguishing the flame under the heavy claw. [Shot 3] At 00:05.500, the camera cuts to a Close-Up and pushes in slowly. Jerked to a sudden, jarring halt by his pinned tail, the paper tiger falls back into a seated position on the wet stone floor. He stiffly turns his head to look over his shoulder at his charred, smoking tail, his paper shoulders slumping slightly in defeat. He then turns his head back forward to stare quietly at the out-of-focus water basin in the background, freezing completely motionless as a thin wisp of smoke rises from behind him.\noverall_soundscape: A steady, dominant downpour of heavy rain and the snapping crackle of a burning brazier establish the ambient room tone. Rapid, stiff paper rustling and the light clatter of rigid paper paws scratching against wet stone are clearly heard as the tiger sprints, accompanied by the bright, rhythmic ringing of a small bronze bell. A distinct whoosh of air and a loud thud mark the moment the crane's wing strikes the tiger, followed by the raspy, frictional sliding sound of stiff paper skidding across the wet stone. A sharp, pronounced crunch and a loud sizzle highlight the claw stomping out the flame, fading into a delicate, lingering hiss of rising smoke in the final seconds.\nnon_diegetic_music: N/A"
+    },
+    "duration": 8,
+    "usage": {
+      "total_tokens": 9625,
+      "prompt_tokens": 5871,
+      "completion_tokens": 3754
+    },
+    "ratio": "16:9",
+    "task_type": "h3_context_ir",
+    "modality": "text"
+  }
+}

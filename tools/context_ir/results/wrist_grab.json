@@ -1,0 +1,21 @@
+{
+  "task": {
+    "id": "449719668031775",
+    "model": "MiniMax-H3",
+    "status": "succeeded",
+    "created_at": 1791348015,
+    "updated_at": 1791348048,
+    "content": {
+      "prompt": "integrated_multimodal_description: [Shot 1] Cinematic, Medium Close-Up, pushing in slowly. The scene is set in a dimly lit archive room with faintly visible blurred metal shelving in the background. In the center, a scratched wooden table is heavily illuminated by a single warm desk lamp, casting stark, harsh shadows. A young man on the left, in his mid-20s with a slim build, wearing a crisp white button-up shirt with rolled-up sleeves, reaches his right hand toward a thick kraft paper document spread open on the table. Just as his fingertips graze the paper, an older man on the right—mid-50s, heavy-set, wearing a textured dark charcoal suit jacket over a grey shirt—lunges forward. The older man forcefully grabs the young man's wrist with a thick hand, pressing his arm violently back down onto the tabletop. The young man's shoulders tense sharply as his forward momentum is halted. [Shot 2] At 00:03.200, the camera cuts to an Extreme Close-Up of the hands on the table, holding a static shot. The hand of the older man from Shot 1 grips the wrist of the young man from Shot 1 tightly, pinning his arm against the edge of the kraft paper document from Shot 1. Their hands tremble visibly under the intense physical strain, the older man's knuckles turning pale white under the bright beam of the desk lamp. After a tense, motionless standoff, the young man slowly relaxes his fingers. He drags his hand backward, his fingertips scraping heavily across the rough surface of the document, slowly sliding out from under the older man's unyielding grip and retreating into the dark shadows at the edge of the frame.\noverall_soundscape: A thick, dead room tone establishes the quiet archive, suddenly broken by a sharp rustle of cotton fabric as an arm extends. A loud, forceful thud dominates the foreground as flesh and bone hit the solid wooden table, immediately followed by the crisp, dry crinkle of stiff paper being compressed. Distinct, strained nasal exhales and heavy, trembling breaths from both men fill the audio track during the physical standoff. This tension seamlessly transitions into a pronounced, prolonged scraping sound as fingertips drag slowly across the textured surface of the heavy paper.\nnon_diegetic_music: N/A"
+    },
+    "duration": 8,
+    "usage": {
+      "total_tokens": 9328,
+      "prompt_tokens": 5717,
+      "completion_tokens": 3611
+    },
+    "ratio": "16:9",
+    "task_type": "h3_context_ir",
+    "modality": "text"
+  }
+}

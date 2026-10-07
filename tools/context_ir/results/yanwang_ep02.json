@@ -1,0 +1,21 @@
+{
+  "task": {
+    "id": "449719072723364",
+    "model": "MiniMax-H3",
+    "status": "succeeded",
+    "created_at": 1791347892,
+    "updated_at": 1791347923,
+    "content": {
+      "prompt": "integrated_multimodal_description: [Shot 1] Cinematic, medium shot, holding a Static Shot. The scene is set in an executive office at dusk, anchored by a long walnut tea table in the midground. In the background, floor-to-ceiling windows reveal a cold blue city skyline, contrasting with the warm, directional glow of an amber pendant light hanging directly above the desk. On the left side of the frame stands the King of Hell (S1), an on-screen middle-aged man disguised as a new employee, wearing a dark gray, slightly-too-small suit with a bronze earphone in his left ear. On the right, Boss Qian—a man with silver-gray slicked-back hair and a charcoal gray mandarin-collar top—sits behind the desk, holding a string of black prayer beads. At the far right edge stands Xiao Zhang, a younger, exhausted-looking colleague with slumped shoulders. The King of Hell (S1) reaches into his tight suit jacket, pulls out a traditional vermilion wooden brush, and slaps it forcefully onto the tea table. Staring directly at Boss Qian, the King of Hell (S1) says in a low, steady voice, <d>[Chinese] 他的活本王干，一分钱不要。</d> Boss Qian and Xiao Zhang watch silently, their mouths kept firmly closed. [Shot 2] At 00:05.200, the camera cuts to a close-up of the walnut tea table, executing a slow Push In. The amber light overhead suddenly dims, then abruptly brightens. On the desk, the wisps of white steam rising from Boss Qian's ceramic teacup instantly freeze, hanging entirely motionless in mid-air. In Boss Qian's resting hands, the string holding the black prayer beads from Shot 1 snaps without warning. The beads violently burst apart, rolling and scattering chaotically across the smooth wooden surface. [Shot 3] At 00:08.000, the shot transitions to a close-up of Boss Qian's face from Shot 1, using a Static Shot. He slowly tilts his head down to look toward the scattered beads out of frame. The confident composure he previously maintained completely vanishes; his eyes widen slightly and his jaw slackens as he processes the physically impossible events in front of him.\noverall_soundscape: Subtle ambient city hum is audible in the background. A distinct fabric rustle is followed by a loud, sharp wooden thwack as the vermilion brush strikes the tea table. A faint electrical buzz accompanies the dimming light, transitioning into a sudden, eerie silence as the steam freezes. The silence is abruptly broken by a crisp snap, immediately followed by the loud, pronounced clatter and rhythmic tapping of hard wooden beads bouncing and rolling rapidly across the solid walnut desk.\nnon_diegetic_music: Low-frequency ambient drone, slow tempo, featuring a deep, sustained synth bass that subtly underscores the supernatural tension without overpowering the physical foreground sounds."
+    },
+    "duration": 10,
+    "usage": {
+      "total_tokens": 9491,
+      "prompt_tokens": 5860,
+      "completion_tokens": 3631
+    },
+    "ratio": "16:9",
+    "task_type": "h3_context_ir",
+    "modality": "text"
+  }
+}

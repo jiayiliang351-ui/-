@@ -1,0 +1,21 @@
+{
+  "task": {
+    "id": "449718740881839",
+    "model": "MiniMax-H3",
+    "status": "succeeded",
+    "created_at": 1791347930,
+    "updated_at": 1791347956,
+    "content": {
+      "prompt": "integrated_multimodal_description: [Shot 1] Cinematic, a medium two-shot holds on a quiet sycamore-lined sidewalk at night, illuminated by overhead sodium street lamps that cast warm yellow halos onto the paved ground. A young on-screen woman (S1) with shoulder-length straight black hair, wearing an oatmeal-colored long coat and a small black crossbody bag, stands on the left side of the frame. Facing her on the right is a young on-screen man (S2) in a black bomber jacket over a gray hoodie. The woman (S1), her eyes glistening with unshed tears, looks directly at him and says in a low, trembling voice, <d>[Chinese] 你每次都说下次。</d> The man (S2) breaks eye contact, looking away towards the dark street while awkwardly rubbing the back of his neck with his right hand. He exhales heavily and replies tiredly, <d>[Chinese] 我今天真的很累。</d> Staring at him for a brief second, the woman (S1) softens her posture slightly and murmurs even more quietly, <d>[Chinese] 那你回去休息吧。</d> Without waiting for a response, she immediately turns to her left and begins walking away down the shadowy, leaf-strewn sidewalk, never looking back. The man (S2) stands frozen for a beat, then takes three slow steps towards the right side of the frame. He abruptly stops and turns his head to look back over his left shoulder at her departing figure. The camera initiates a smooth arc shot, tracking to the right and moving in to position itself just behind the man's right shoulder, keeping him continuously in the foreground frame while the woman (S1) grows smaller and smaller in the distant warm street light, continuing her steady walk away into the night without turning around.\noverall_soundscape: A soft ambient rumble of distant city traffic and the gentle rustle of sycamore leaves in the wind establish the quiet night setting. The distinct rustle of heavy nylon fabric is clearly heard as the man rubs his neck, followed by his audible, heavy exhalation. A sharp, rhythmic clack of the woman's hard-soled shoes begins on the pavement as she turns, overlapping with the loud, muffled thud of the man's sneakers taking three slow steps, which then transitions into the steady, fading tap of the woman's footsteps echoing into the distance.\nnon_diegetic_music: Solo acoustic piano playing slow, sparse chords, with a subtle, sustained low cello drone underneath, maintaining a quiet, restrained dynamic throughout without any swell."
+    },
+    "duration": 15,
+    "usage": {
+      "total_tokens": 8891,
+      "prompt_tokens": 5814,
+      "completion_tokens": 3077
+    },
+    "ratio": "16:9",
+    "task_type": "h3_context_ir",
+    "modality": "text"
+  }
+}

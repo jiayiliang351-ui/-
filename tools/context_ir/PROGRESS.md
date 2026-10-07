@@ -5,7 +5,7 @@ PY = python
 - [x] 第 1 步 环境检查：Python 3.14.5；临时密钥 KEY OK；基础 lint OK；results 尚不存在。
 - [x] 第 2 步 Codex 按 skill 写 8 条：8 个文件首次 lint OK，全部原句台词由脚本核对一致，官方接口尚未调用。
 - [x] 第 3 步 试跑一条接口：国内站新密钥成功；tea_pour 290 words，tokens=8173；第一行 integrated_multimodal_description: 已确认。
-- [ ] 第 4 步 跑全部接口：
+- [x] 第 4 步 跑全部接口：8 / 8 成功，合计 68562 tokens；tea_pour 已自动跳过，未重复调用。
 - [ ] 第 5 步 自动分析：
 - [ ] 第 6 步 对比报告 REPORT.md：
 - [ ] 第 7 步 修改建议 PROPOSALS.md：

@@ -1,0 +1,21 @@
+{
+  "task": {
+    "id": "449720355991951",
+    "model": "MiniMax-H3",
+    "status": "succeeded",
+    "created_at": 1791347959,
+    "updated_at": 1791347967,
+    "content": {
+      "prompt": "integrated_multimodal_description: [Shot 1] Cinematic, medium shot, the camera slowly pushes in toward a dimly lit, weathered paper craft shop at night. The room is cluttered with hanging paper lanterns and skeletal bamboo frames, illuminated primarily by the orange, flickering glow of a cast-iron brazier in the lower foreground and the cold, desaturated blue light filtering through the rain-streaked wooden shop door. Shen Niangzi (S1), a woman in her thirties with a simple low hair bun secured by a single polished wood hairpin, wearing a muted light-grey-green linen top and a dusty grey-blue skirt, is crouched on the uneven floorboards before the brazier. Her face is partially bathed in warm embers-light, contrasting with the dark, moody shadows of the shop. She carefully feeds a single sheet of yellow ritual paper into the flames, her expression focused and solemn. Suddenly, a distinct sound of dry paper rustling emanates from the dark corner behind her, prompting the woman (S1) to freeze mid-motion; her eyes shift sharply toward the source of the noise before her head turns slowly and cautiously to inspect the shadows, her grip tightening on the remaining yellow paper, before she relaxes slightly but maintains her vigilance, head still angled toward the void as the camera closes in on the flickering flames and her contemplative profile.\noverall_soundscape: The constant, rhythmic patter of heavy rain against the wooden shop exterior provides a base layer of ambient sound, punctuated by the sharp, crackling hiss of the burning yellow paper as it catches in the brazier. A crisp, brittle rustle of paper occurs from the dark corner, followed by the faint, rhythmic creaking of old floorboards under the woman's weight shift, and the soft, labored breathing of the woman (S1) as she reacts to the noise.\nnon_diegetic_music: N/A"
+    },
+    "duration": 10,
+    "usage": {
+      "total_tokens": 6196,
+      "prompt_tokens": 5792,
+      "completion_tokens": 404
+    },
+    "ratio": "16:9",
+    "task_type": "h3_context_ir",
+    "modality": "text"
+  }
+}
