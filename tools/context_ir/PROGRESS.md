@@ -4,7 +4,7 @@ PY = python
 
 - [x] 第 1 步 环境检查：Python 3.14.5；临时密钥 KEY OK；基础 lint OK；results 尚不存在。
 - [x] 第 2 步 Codex 按 skill 写 8 条：8 个文件首次 lint OK，全部原句台词由脚本核对一致，官方接口尚未调用。
-- [ ] 第 3 步 试跑一条接口：国内默认地址首次返回 HTTP 401；确认海外站后改用 https://api.minimax.io 重试 tea_pour，返回 HTTP 402 insufficient balance (1008)。未获得官方结果或 token 用量，停止。
+- [x] 第 3 步 试跑一条接口：国内站新密钥成功；tea_pour 290 words，tokens=8173；第一行 integrated_multimodal_description: 已确认。
 - [ ] 第 4 步 跑全部接口：
 - [ ] 第 5 步 自动分析：
 - [ ] 第 6 步 对比报告 REPORT.md：
@@ -15,6 +15,8 @@ PY = python
 - [ ] 第 11 步 收尾：
 
 ## 阻塞
+
+当前无；国内站新密钥已于 2026-10-07 成功完成 tea_pour，以下为历史故障记录。
 
 2026-10-07：第 3 步真实接口认证失败。未重试、未调用其余 7 条、未修改脚本或 skill。需要本机环境中可用于目标 H3 接口的 MiniMax 开放平台密钥；如果使用海外站密钥，还需确认 API 基址。已完成第 1、2 步，保留独立写作结果。第 4–11 步未执行，校准未完成，分支尚未推送。
 
