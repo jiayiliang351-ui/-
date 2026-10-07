@@ -6,6 +6,10 @@
 
 严格按 `tools/context_ir/CODEX_RUNBOOK.md` 的第二部分逐步执行，从第 1 步开始，不跳步，遵守其中的硬规则。
 
+## 如果你被要求跑"异能用例"或"超能力用例"
+
+严格按 `tools/context_ir/powers/CODEX_RUNBOOK_POWERS.md` 的第二部分逐步执行，从第 1 步开始，不跳步，遵守其中的硬规则。
+
 ## 通用规则
 
 - 不打印、不写入、不提交任何 API Key 或密钥；不运行打印全部环境变量的命令。
