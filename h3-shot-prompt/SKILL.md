@@ -31,11 +31,13 @@ description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官�
 - **否定分两种**：修饰动作方式的否定可以写（官方原句 `walks away, never looking back`、`Without lifting his head, he …`、`though she does not turn around`），最好同句再给一个正向状态；点名不存在的东西（`no X`、`nobody`、`nothing`）不写——本地实测写 `no subtitles` 反而招来了字幕。简报里"没有/不要 X"：物件和特效改写成正向的具体外观；"没有配乐"写 `N/A`；"没有台词"什么都不写。
 
 **固定句例外**：下面几句是本地实测过、或官方原文的固定句，照抄原文，不改写，也不仿写新的同类句子；它们不受可观察测试约束：
-1. 电影感底座（`references/cinematography.md` 第 1 节）和项目卡的画风开头；
+1. 电影感底座（`references/cinematography.md` 第 1 节）和项目卡的画风开头（项目卡写明的删句例外照项目卡，如《纸引》没有纸扎角色的段删掉 creatures 那一句）；
 2. 全局表演段（`references/performance-and-dialogue.md` 第 1 节）；
-3. 单声源句（同文件第 2 节，单人说话的段可选用）；
+3. 单声源句（同文件第 2 节，单人说话的段可选用；只换人名，或用该节给出的 T2VA 人物复指版），以及可选的 `Only the person speaking moves their lips.`；
 4. 字幕防护句 `The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.`；
-5. 挂纯色底角色卡时的 `Behind them is ONLY <Subject N>: …` 背景句，和挤构图的人数句（见 `h3-action-prompt-design` 第 1、3 节）。
+5. 挂纯色底角色卡时的背景句（EP02 实测原文是 `Behind the people is ONLY <Subject 1>: …`，`Behind them is ONLY …` 是等价写法），和挤构图的人数句（见 `h3-action-prompt-design` 第 1、3 节）。
+
+本场光源句不是固定句：每场新写，一句、约 30 词以内，也要过可观察测试。
 
 ## 工作流程（每段都走）
 
@@ -59,30 +61,34 @@ description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官�
 |---|---|---|---|
 | 5–8 秒 | 1–2 镜 | 1 镜 | 2–3 镜 |
 | 10 秒 | 1–3 镜 | 1 镜 | 2–4 镜 |
+| 11–14 秒 | 1–4 镜 | 1–2 镜 | 2–5 镜 |
 | 15 秒 | 1–5 镜 | 1–2 镜 | 3–6 镜 |
 
-官方改写每段 1–3 个镜头，平均约 2 个，第一镜通常占全长的四成到一半（`examples.md` 第 1 节和 `official-calibration.md` 的 8 条；两条 15 秒的校准分别只用了 2 个和 1 个镜头）。时长变长不等于要多切；节拍允许时少切。本地跑通的范例（`examples.md` 2.1–2.3）是 4–6 镜，仍然合规——两种密度在本地谁更好还没对比过（A/B 表第 8 项）。不写短于 1.5 秒的镜头；一打多爽片按 `physics-and-action.md` 第 3B 节。
+- 官方改写每段 1–3 个镜头，平均约 2 个，第一镜通常占全长的四成到一半（`examples.md` 第 1 节和 `official-calibration.md` 的 8 条；两条 15 秒的校准分别只用了 2 个和 1 个镜头）。时长变长不等于要多切；表里的数是上限范围，节拍允许时取下半段。
+- 只有一两句台词、其余是小动作的段，按对话戏一栏，优先取下半段（15 秒 2–3 镜），听的人用有动机的运镜带出来（官方：`The camera pans slowly rightward to follow his gaze toward the cashier`），不另切。
+- 对话戏取 1 镜，只适用于单人说话，或外形差别大的两人在双人镜里轮流说（见"台词"）。
+- 本地跑通的旧范例（`examples.md` 2.1–2.3）是 4–6 镜的旧密度：2.2 第 1 镜只有 1.2 秒，2.2、2.3 的镜头数也超出对话戏一栏。它们只作 A/B 表第 8 项的对照，不照抄密度。新写的段按上表来，每镜至少 1.5 秒；一打多爽片按 `physics-and-action.md` 第 3B 节。
 
-**正文字数**（`integrated_multimodal_description` 或 `detailed_description`）：照抄的固定段不计入预算——电影感底座（约 105 词）、本场光源一句、全局表演段（约 75 词）、项目卡的画风开头。固定段以外：
-- T2VA / I2VA / FL2VA / L2VA：单镜头、简单段 150–300 个英文词；多镜头 250–450 词；台词多的段可到 550 词左右。
+**正文字数**（`integrated_multimodal_description` 或 `detailed_description`）：照抄的固定段不计入预算——电影感底座（约 105 词）、全局表演段（约 75 词）、字幕防护句、项目卡的画风开头；本场光源句（约 30 词）也不计入。固定段以外：
+- T2VA / I2VA / FL2VA / L2VA：单镜头、简单段 150–300 个英文词，一般写 150–220；多镜头 250–450 词，一般写 250–320；台词多的段（3 句以上或 24 个字以上）上限 550 词左右。范围的上限是天花板，不是目标：官方改写平均约 275 词，这还包括了场景、光线和画风。
 - Ref2VA：按官方指南 350–500 词；单镜头不因此缩短。
 
-固定段以外，镜头里再写画风、光线的句子合计不超过这部分的五分之一（底座已经管了画风，镜头里只补这一镜看得见的光）；规则说明为零。写得太短也是常见的失败。lint 报的词数包含固定段，套了底座和表演段的段会比上面的数多 130–210 词，超过 650 词的 WARN 看过即可。
+超预算时先减镜头（合并没有新信息的镜头，用有动机的运镜代替切镜），再删陈设清单和重复的外形描写；切镜句里的景别、运镜状态、左右站位保留。固定段以外，镜头里再写画风、光线的句子合计不超过这部分的五分之一（底座已经管了画风，镜头里只补这一镜看得见的光）；规则说明为零。写得太短也是常见的失败。lint 报的词数包含固定段，套了底座、光源句和表演段的段会比上面的数多约 200–230 词，超过 650 词的 WARN 看过即可。
 
 **台词预算**（只数说出口的中文字）：10 秒 20–28 字，12 秒 28–36 字，15 秒 36–44 字，上限 48 字；硬上限约每秒 3.5 字。有哽咽、长停顿、走路转身多的段，再少两成以上。一句最好十个字以内。
 
 ## 文体：正文怎么写
 
 **[Shot 1]**（不带时间戳）依次写：
-1. 画风：写实真人戏照抄电影感底座整段，再接一句本场光源；项目卡有自己的画风开头的照抄项目卡；其他题材写一两句（`Photoreal cinematic, 16:9, …`）。
-2. 场景：空间和陈设。
-3. 在场的人：外形、在画面哪一侧、手里拿着什么。会说话的人在这一句就挂编号并写 `on-screen`：`A young on-screen woman (S1) with shoulder-length black hair … stands on the left of the frame.` 在场人数写一句短的陈述（`Only the two of them are in the room.`，或先写空间再写人数 `empty desks stretch into the background; only the two of them are here`）。
-4. 两人以上的写实真人戏：照抄全局表演段。
-5. 第一句构图句写清景别和运镜状态：`A 50mm medium two-shot, holding a static shot with a faint handheld breath, shows …`。
+1. 画风：写实真人戏照抄电影感底座整段，再接一句本场光源；项目卡有自己的画风开头的照抄项目卡（《纸引》的开头已经写了火盆和门口的光，不再接光源句）；其他题材写一两句（`Photoreal cinematic, 16:9, …`）。
+2. 第一句构图句：紧接画风，写清景别和运镜状态，并带出场景（`A 50mm medium two-shot, holding a static shot with a faint handheld breath, looks across a quiet night sidewalk …`；单人安静戏可以直接带出人物：`In a medium shot, the camera slowly pushes in toward …`）。官方改写 8/8 条第一句就有景别。
+3. 场景陈设：只写这一段会用到、或交代空间的几样，不列清单。
+4. 在场的人：外形、在画面哪一侧、手里拿着什么。会说话的人在这一句就挂编号并写 `on-screen`：`A young on-screen woman (S1) with shoulder-length black hair … stands on the left of the frame.` 在场人数写一句短的陈述（`Only the two of them are in the room.`，或先写空间再写人数 `empty desks stretch into the background; only the two of them are here`）。
+5. 两人以上的写实真人戏：照抄全局表演段；不要字幕时接字幕防护句。
 6. 第一个动作。
 
-**后续镜头**：`[Shot N] At 00:04.500, the camera cuts to an extreme close-up of the hands on the table, holding a static shot.` 切镜句里同时写景别和运镜状态。然后：
-- 前面出现过的人、动物、关键道具，在这个镜头第一次提到时一律写 `<短外形或身份> from Shot N`：`the paper tiger from Shot 1`、`the black prayer beads from Shot 1`、`the young man from Shot 1 (S1)`。Ref2VA 写成 `<Subject 4> (S2), the young man in the dark-grey hoodie from Shot 1`。
+**后续镜头**：`[Shot N] At 00:04.500, the camera cuts to an extreme close-up of the hands on the table, holding a static shot.` 切镜句里同时写景别和运镜状态，运镜状态写短的就行（`static shot`、`pushing in slowly`、`holding steady`）；`with a faint handheld breath` 这类长写法只在第一句构图句里用一次（底座已经写了手持）。然后：
+- 前面出现过的人、动物、关键道具，在这个镜头第一次提到时写 `<短外形或身份> from Shot N`：`the paper tiger from Shot 1`、`the black prayer beads from Shot 1`、`the young man from Shot 1 (S1)`。每个镜头 1–2 处，先给人物；道具只在它是这一镜动作的对象时写；同一句只写一次；门、柜台、窗这类布景不用。Ref2VA 写成 `<Subject 4> (S2), the young man in the dark-grey hoodie from Shot 1`。
 - 切镜后至少交代一次左右站位（`visible as an out-of-focus silhouette in the right foreground`）。
 
 **动作**：一个镜头只有一条主动作链，外加最多一个反应。一条链指同一个人、同一个目的、一步接一步的动作（提壶 → 倒茶 → 放壶 → 推杯）；同一个镜头里不并行第二条链。一镜到底的安静戏就是一条链：触发 → 反应 → 余波。用先后词串起来（`first … a beat later … only then …`，`as …`，`until …`）。每个物理动作写全"起因 → 用力 → 对方或物体的反应 → 落定"，例如 `the wing catches him mid-stride; he is knocked sideways, rolls once on the wet stone and slides to a stop`。接触戏的写法（力度副词、受力方的身体反应、僵持）见 `references/physics-and-action.md` 第 2 节。
@@ -95,7 +101,7 @@ description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官�
 - **说话人收口**：说话人在画内、镜头还停在他脸上时，`</d>` 后写一句收口，二选一：闭嘴并进下一个动作（`She closes her lips and guards the cookie …`；`Exactly as his voice stops, his lips meet in a tired half-smile, and his jaw ceases speaking motion; he drops his hand.`），或紧接一个接管脸和身体的动作（`Immediately after speaking, he pivots on his heel …`）。同一人连说几句，只在最后一句后写。说话人在画外（用画外音句）、台词跨切点（`<scenetrans>`）、被段尾截断（`<cutoff>`）、台词一结束就切走时不写。它防的是"说完嘴还在动、补出没写的话"，不防串词。来源是官方文本，本地还没单独 A/B（A/B 表第 12 项）。
 - **听的人**：先写对这句话看得见的反应（慢半拍、手停一下、视线移开；有编号就带编号：`The man (S2) breaks eye contact, …`）。只在三种情况再写嘴闭着：① 切到听的人、说话人不在画面里——用画外音句；② 一段只有一个人说话、画面里还有别人——`… watch silently, their mouths kept firmly closed.`；③ 听者的脸和说话人同时清楚在画里——把闭嘴并进反应句（`…, his lips pressed together.`）。听者不在画面里、背对镜头、只剩前景虚化的肩膀或后脑，或者这个镜头里没人说话时，不写闭嘴。
 - **画外音句**（已实测不串词）：`… (S1) says in an off-screen voiceover: <d>[Chinese] ……</d> while the woman's lips remain completely closed.`——闭嘴的是画面里的听者。说话人自己在画里、声音是内心独白时，写 `while his lips remain completely closed`。
-- 防串词：长得像、挨得近的两个人，一段只让一个人说话，按说话人拆段。闭嘴句代替不了拆段。细则见 `references/performance-and-dialogue.md`。
+- 防串词：性别、年龄段、服装都相近，并且近距离同框的两个人（实测：钱总和阎王隔一张茶台），一段只让一个人说话，按说话人拆段。年龄段或服装明显不同、分处画面两侧的两个人，可以在同一段轮流说，每句写清说话人在哪一侧。闭嘴句代替不了拆段。细则见 `references/performance-and-dialogue.md`。
 
 **跨镜状态**：要一路记住的东西（火还着不着、手里还攥着什么、谁已经离开），在每个相关镜头里用一句陈述写出来，不写括号标签。
 
@@ -130,7 +136,7 @@ non_diegetic_music: ...
 
 - **电影感底座**：每段开头照抄，再接一句本场光源。见 `references/cinematography.md`。项目卡有自己的画风开头时（《纸引》），用项目卡那段代替底座，两段不叠加；项目卡写明套用底座的（《阎王打工记》）照常用底座。
 - **活人感**：有两个以上人物的段，在人物和站位之后、第一个动作之前，照抄全局表演段（`Nobody stands idle or poses for the camera. …`，一字不改）。镜头里再写：一人行动、一人慢半拍反应；隐藏目的；用大动作盖住小动作；情绪写先后过程；每镜小动作不超过 2 个。见 `references/performance-and-dialogue.md`。
-- **防串词**：长得像、挨得近的两个人，一次生成只让一个人说话，用接力拆段。
+- **防串词**：性别、年龄段、服装都相近并且近距离同框的两个人，一次生成只让一个人说话，用接力拆段。
 
 ## 出片后怎么改
 

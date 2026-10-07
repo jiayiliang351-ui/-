@@ -34,13 +34,13 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 - 环境一起动：风同时吹动头发、衣角和灰尘，方向一致；人走过时水洼起波纹
 - 落定：`settles`、`comes to rest`、`stops against`、`holds its new shape`
 
-**接触戏怎么写得有分量**（官方改写的写法，四步之内补细节；本地还没出片验证，A/B 用 wrist_grab）：
+**接触戏怎么写得有分量**（官方改写的写法，四步之内补细节；本地还没出片验证，见 `pipeline-and-settings.md` A/B 表第 18 项）：
 - **起因**带时机词：`Just as his fingertips graze the paper, …`。没交代原因的物理变化，补一个看得见的起因（官方把"念珠散开"写成 `the string holding the black prayer beads from Shot 1 snaps without warning`）。
 - **用力**：主动方先整个身体动，再接触（`lunges forward`）；每个接触最多一个力度或突然副词（`forcefully`、`abruptly`、`sharply`）。入画的全身大景别里不用 `violently`，免得动作过猛、肢体变形。
-- **反应**：既写接触点，也写受力方上游的身体（`The young man's shoulders tense sharply as his forward momentum is halted.`、`Jerked to a sudden halt by his pinned tail, …`）。
+- **反应**：既写接触点，也写受力方上游的身体（`The young man's shoulders tense sharply as his forward momentum is halted.`、`Jerked to a sudden halt by his pinned tail, …`）。快的接触放在插入特写里时（只拍手和物件，看不到肩膀），上游身体的反应写在紧接的下一镜里。
 - **僵持**（有就写）：写持续受力——指节发白、手背青筋、呼吸声（`the older man's knuckles turning pale`）；手抖最多写 `a faint tremor`，不写 `tremble visibly`。
 - **落定或抽离**：落定照常写；"在对方没松的手下面滑出"（`slowly sliding out from under the older man's unyielding grip`）只在只拍手和物件的特写里慢速写，配摩擦声。
-- 快的接触那一下仍按第 3A 节只放在插入特写里，不学官方在双人中近景里写擒腕。
+- 快的接触那一下仍按第 3A 节只放在插入特写里，不学官方在双人中近景里写擒腕。常用结构：中景写起因（伸手）→ 插入特写写接触（只拍手和桌面，`holding a static shot`）→ 切回中景写受力方的身体反应、僵持和抽离。插入特写保持静止，接触的冲击感交给声音和下一镜的身体反应。
 
 **方向跟着力走**：横砍碎片往侧面飞，下砸往下塌，撞墙裂纹从接触点散开，被推的人往推的方向退。
 
@@ -56,7 +56,7 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 - 慢的接触（拥抱、搀扶、递东西）要么写完整过程，一步不跳：放下手里的东西 → 走近 → 伸手 → 对方先愣一下再回应；要么停在"将触未触"。
 - 每次交锋至少改变一样东西：位置、高度、方向、谁占上风。写清结果状态：人停在哪、哪只手还握着什么。
 - 武器和能力只用参考图里有的或用户指定的，没有就徒手，不凭称号（"剑客"）补武器。能力写清从身体哪里发出、往哪去、碰到什么、怎么消散。
-- 情绪升级时镜头晃动也升级：开头 `the camera shakes slightly`，最激烈那一下 `shakes strongly`。
+- 情绪升级时镜头晃动也升级：开头 `the camera shakes slightly`，最激烈那一下 `shakes strongly`。晃动写在中景、反应镜头上；接触的插入特写保持静止。
 
 ### B. 一打多（爽片）
 
@@ -66,7 +66,7 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 |---|---|---|
 | 0–2.0s | 俯拍甩到仰拍 | 登场、落地、武器亮起，还不打 |
 | 2.0–4.5s | 低角度从背后跟拍 | 冲进敌群，第一击，前排敌人碎掉 |
-| 4.5–7.0s | 侧面跟拍，接一个快速推近特写 | 跃起砸地，地面炸开；特写眼睛、面具或枪口 |
+| 4.5–7.0s | 侧面跟拍，同一镜里快速推近到眼睛、面具或枪口的特写（不切） | 跃起砸地，地面炸开；推近到特写 |
 | 7.0–9.5s | 侧面跟拍，一个镜头（不拆成两三个角度的快切：拆开后每镜不到 1.5 秒，全段也会超过 6 个镜头） | 原地连击，每一下都有敌人碎掉 |
 | 9.5–11.5s | 静止特写 | 一拍静：轻轻一碰，没反应，然后一击，全场同时碎 |
 | 11.5–15.08s | 弧形绕拍后拉远 | 终结：主角自己的手做一个动作，全屏特效炸开，慢慢停在主角身上 |
@@ -83,7 +83,7 @@ He plants his palm on the desk and pushes himself up; the desk shifts a centimet
 - 反应链保留"眼先动、头慢半拍"的明确时间差（`her eyes move first, sliding toward the sound; only a beat later does her head turn a fraction`），写一两句都可以。
 - 运镜终点挂在最后一个从句上（`as the camera closes in on the flickering flames and her profile`），同时写清人停在什么状态。
 - 画外声音的方位按简报写，不挪进画面（官方把"画外"的窸窣改成了 `the dark corner behind her`，不学）；手里道具的状态前后一致。
-- 声音里写一处由动作引起的环境反馈（重心移动时地板吱呀）和人物的呼吸；配乐写 `N/A`。
+- 声音里写一处由动作引起的环境反馈，地面材质按项目卡（《纸引》大殿是湿石地，不是木地板），绑在反应链里已有的动作上（受惊后重心落回脚跟时的一下摩擦）；反应链里没有碰到地面的动作时，这个反馈可以不写，不要为它新加动作。再写人物的呼吸。配乐写 `N/A`。
 
 ## 4. 通用技巧
 
@@ -105,7 +105,8 @@ She sets the cup down first, then reaches across the table; her fingertips stop 
 He takes half a step forward, heel first in the soft dirt, and a small puff of dust drifts and thins.
 The door swings shut behind her, bounces once against the frame and clicks closed.
 The beads scatter across the walnut tabletop, roll, slow down and stop one by one against the teapot.
-Just as his fingertips graze the paper, the older man lunges forward and forcefully grabs his wrist, pressing it down onto the tabletop; the young man's shoulders tense sharply as his forward momentum is halted.
+（插入特写）Just as his fingertips graze the paper, a thick hand clamps down on his wrist and forcefully presses it flat against the tabletop.
+（切回中景）At the cut, the young man's shoulders tense sharply as his forward momentum is halted.
 The string holding the black prayer beads from Shot 1 snaps without warning, and the beads scatter across the walnut.
 The two hands hold there against each other, the older man's knuckles turning pale, both men breathing hard through the nose.
 ```

@@ -8,7 +8,7 @@ Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy s
 ```
 （原句末尾的 `never soft or stretchy` 改成了正向写法，不要加回去。没有纸扎角色出镜的段（例如沈娘子独自守火），照抄时只删掉 `All creatures are real handmade paper craft: stiff folded paper with visible fibres, brush-ink lines and burnt edges; they bend only at the joints.` 这一句，其余一字不改，然后接沈娘子的角色插句。有纸扎角色出镜时保留这一句。）
 
-画风开头之后的第一句构图句写清景别和运镜状态（`A low tracking shot at paw height follows …`、`a medium shot, the camera slowly pushes in toward …`），后续切镜句同样写景别和运镜状态。
+画风开头已经写了火盆和门口的光，不再接本场光源句。画风开头之后的第一句构图句写清景别和运镜状态（`A low tracking shot at paw height follows …`、`a medium shot, the camera slowly pushes in toward …`），后续切镜句同样写景别和运镜状态。
 
 大殿里固定的位置：火盆在左后，黑铜水盆在右侧木凳上，大门在正中后方（冷蓝雨夜），工作台在左前。
 
@@ -35,6 +35,6 @@ Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy s
 **《纸引》专属规则（1-02 试跑踩过的坑）：**
 1. 持续状态（尾巴火、焦痕、湿痕、火势、天色）在第一个镜头就写出来，之后每个相关镜头用一句陈述跟住（`the flame is still burning on his tail tip`）。
 2. 纸身硬挺，只在关节处弯：写 `his stiff legs fold at the joints`、`his paper body jerks taut`，不写压扁、拉伸。
-3. 说话时：鹤婆写 `her beak parting slightly with each word`；阿糊写 `his painted paper mouth opening with each word`；背对镜头或在画外时，写明嘴不在画内。
+3. 说话时：鹤婆写 `her beak parting slightly with each word`；阿糊写 `his painted paper mouth opening with each word`；在画外说话时用 SKILL.md 的画外音句（`… says in an off-screen voiceover: <d>[Chinese] ……</d> while <画内听者>'s lips remain completely closed.`）；背对镜头时写看得见的姿态（`her back to the camera, her beak turned away toward the doorway`）。
 4. 倒放生成的段静音生成，台词后期配。
 5. 人眼规则（本集如仍适用）：人的视角镜头里看不见鹤婆，阿糊一动不动。

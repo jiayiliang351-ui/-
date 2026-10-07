@@ -1,7 +1,7 @@
 # 示例
 
 三类示例，用途不同：
-1. **官方改写原样示例**：H3-Base 训练时见过的就是这种文体。拿不准怎么写时，先读这一节，照它的语气、密度、句式写。
+1. **官方改写原样示例**：H3-Base 训练时见过的就是这种文体。拿不准怎么写时，先读这一节，照它的语气和句式写；字数、声音段长度和配乐按 SKILL.md 的预算和默认来。官方示例里这些不照学：配乐情绪词（`mournful`、`heartwarming`、`joyful`）和配乐渐强、1.2 那种约 530 词的单镜头长段、1.3 只有一句的声音段。
 2. **你本地跑通的范例**：内容和结构验证过。它们是旧文体（带 `IMPORTANT`、括号标签、按秒列声音），照抄内容思路，不照抄这些写法。
 3. **新旧写法 A/B 对照**：同一段戏的旧版和新版，用来在本地验证新文体。跑完把结果回填到 `pipeline-and-settings.md` 的 A/B 表。
 
@@ -16,7 +16,7 @@
 - 按时间顺序写，用 `Early in the clip`、`As the clip progresses`、`Throughout the remainder of the clip`、`Suddenly`、`As … fades` 交代先后；
 - 物理过程写全：`The sheer spatial force violently jolts the bridge, causing the captain to stagger slightly forward, her shoulders tensing as she braces herself`；
 - 后面的镜头复指前面的人：`the captain from Shot 1`、`the young man in the dark-grey hoodie from Shot 1`；
-- 台词前写声线，台词后写收口：闭嘴并进下一个动作（`He closes his mouth into an apologetic smile and strokes the dog's thick white fur.`），或紧接一个动作（`She folds the letter along its existing crease.`）；
+- 台词前写声线，台词后写收口：闭嘴并进下一个动作（`He closes his mouth into an apologetic smile and strokes the dog's thick white fur.`），或紧接一个动作（官方指南 I2VA 示例 `… says: <d>[English] I get off at the next station.</d> She folds the letter along its existing crease.`；`official-calibration.md` 的 office_two_speakers `Immediately after speaking, he pivots smoothly on his heel …`）；
 - 一段 1–3 个镜头（1.1、1.3 和 1.4 的 T2VA 是多镜头；1.2 和 1.4 的 FL2VA、L2VA 是单镜头）。
 - 台词标签后有一个空格：`<d>[English] I get off at the next station.</d>`。
 
@@ -215,7 +215,7 @@ non_diegetic_music: Sparse solo piano at a slow tempo enters at about 5.0 second
 
 跑法：同一个种子（至少 2 个），A、B 各跑一次，其他设置一字不动。看四件事：动作是否按顺序完成、物理是否可信、人物表演是否自然、台词和嘴型是否对得上。
 
-注意，这两组 B 是对照用的，不是模板：3.1 B 是 8 秒 4 镜；3.2 B 为了只比文体，沿用了 A 的 15 秒 6 镜，还去掉了全局表演段（那是 A/B 表第 9 项的测试变量，不是默认写法）。它们写于 2026-10-07 校准之前，没有用到后来的规则（台词标签空格、`from Shot N` 复指、切镜句写景别和运镜、说话人收口二选一、声音段写法）。新写的段按 SKILL.md 当前的规则和默认层来写；`official-calibration.md` 里有同一批戏的官方改写，可以三方对照。
+注意，这两组 B 是对照用的，不是模板：3.1 B 是 8 秒 4 镜；3.2 B 为了只比文体，沿用了 A 的 15 秒 6 镜，还去掉了全局表演段（那是 A/B 表第 9 项的测试变量，不是默认写法）。它们写于 2026-10-07 校准之前，没有用到后来的规则（台词标签空格、`from Shot N` 复指、切镜句写景别和运镜、说话人收口二选一、声音段写法、否定写法如 3.2 B 的 `he says nothing`、说话人第一次出场挂 `(S1)` 和 `on-screen`、固定段以外的字数预算）。3.1 B 的 8 秒 4 镜也超出现行镜头表 5–8 秒动作戏 2–3 镜的上限。新写的段按 SKILL.md 当前的规则和默认层来写；`official-calibration.md` 里有同一批戏的官方改写，可以三方对照。
 
 ### 3.1 《纸引》EP1-06 扑水被截、踩灭尾火（8 秒）
 

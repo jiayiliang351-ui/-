@@ -16,9 +16,9 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 - `IMPORTANT —` 段、`FORBIDDEN`、`Line lands about …`、`Total runtime is exactly …` → 改成可观察的陈述句，或者删掉。
 - 对话戏里的 `hard cut to` → 官方切镜动词 `the camera cuts to`。
 - 旧的整段模板（1v1、1vN、追逐、跑酷、写实）和 `ANCHORS LOCKED / RED LINES / END STATE` 那一套格式。
-- 字数：按 `h3-shot-prompt` 的预算（简单段 150–300 词，复杂段 350–500 词）。绝不为凑字数加事件、道具或规则；写得太短也是常见失败。
+- 字数：按 `h3-shot-prompt` 的预算（照抄的固定段——电影感底座、本场光源句、全局表演段、字幕防护句、项目卡画风开头——不计入；其余 T2VA/I2VA 单镜头 150–300 词、多镜头 250–450 词，一般写在下半段；Ref2VA 350–500 词）。范围上限是天花板，不是目标。绝不为凑字数加事件、道具或规则；写得太短也是常见失败。
 
-例外：下面几句是本地实测有效的固定句，虽然带否定或大写，照样保留原文：单声源句（第 6 节）、`Behind them is ONLY <Subject N>` 背景句（第 1 节）、统一的文字防护句（第 9 节）、挤构图的人数句（第 3 节）。
+例外：下面几句是本地实测过、或官方原文的固定句，虽然带否定或大写，照样保留原文：单声源句（第 6 节；EP02 同时拆了段，这句单独的作用没有分离测过，代替不了拆段）、`Behind them is ONLY <Subject N>` 背景句（第 1 节）、统一的文字防护句（第 9 节）、挤构图的人数句（第 3 节）。
 
 仍然不能进提示词的：内部编号（镜头 ID、P1、FAN_A、声线代号）、给人看的制作备注（"后期处理""为了接力"）、LoRA 触发词之外的工作流说明。
 
@@ -39,7 +39,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 - 同一个人、地方或道具的几张图合成**一个**主体：`shown in {{ref:A}} (lamp on) and {{ref:B}} (lamp off)`。一个人两个标签，就会多出一个人。
 - **每张图只干一件事，写明它提供什么、不提供什么。** 角色卡：`The image supplies identity, hair, proportions and costume only; its backdrop, standing pose and portrait camera are not reproduced, and it is not a first frame.`
 - **挂上的素材必须在文字里用到。** 接了线却没提的图照样进模型，模型自己决定拿它干什么。原生 ComfyUI 里标签顺序等于接线顺序（`<Picture 1>` 就是 `ref_image_0`）；参考节点没真正接上会悄悄退回文生视频，看日志确认参考数。
-- **纯色底的角色卡会把背景带进片子**，场景变成影棚。要同时挂场景图做单独的主体，镜头里写：`Behind them is ONLY <Subject N>: [三个具体特征]. There is no grey wall, no studio backdrop and no plain seamless background anywhere in the frame.`
+- **纯色底的角色卡会把背景带进片子**，场景变成影棚。要同时挂场景图做单独的主体，镜头里写：`Behind them is ONLY <Subject N>: [三个具体特征]. There is no grey wall, no studio backdrop and no plain seamless background anywhere in the frame.`（EP02 实测原文是 `Behind the people is ONLY <Subject 1>: …`，两种主语等价。）
 - **手、鞋、道具的插入特写不要挂角色卡。** 实测：挂了完整人物又只拍不露脸的局部，出了半透明的重影。
 - **关键道具**指向图，不要描述造型；它出现的每个镜头都写 `matches <Subject N> exactly`，只留状态和位置词（完好、在玻璃柜里、同样大小）。道具走样时先删描述词；还走样，再加一两个和图一致的材质词，或者做一张道具摆在场景里的参考图。
 - **临时状态不是改设计**："车灯亮着、手刹拉起"写成那辆车的状态。
@@ -65,7 +65,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
   - `weak_reference`：只借风格、构图、氛围；本段看不见的主体也勉强用它，但更好的做法是在这段禁用那个素材。
   - 音频只用 `fully_copy / partially_copy / reference / weak_reference`。
   - retention 里不写 `(S1)` 这类说话人编号。
-- 只借音色的声线参考：`Use it only to guide vocal timbre and delivery; do not copy it into the final soundtrack.` 参考音频里原来的话不能出现在片子里。
+- 只借音色的声线参考，用官方的描述句：`<Audio 1> is the voice-timbre reference for <Subject 1> (S1); its vocal timbre guides the delivery without copying the original signal.` 参考音频里原来的话不能出现在片子里。
 
 ### 导播台 JSON 里的素材
 
@@ -128,7 +128,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 - **尺度写成实际距离**，模型爱把东西压扁：风扇在躺着的人上方整整一个身长、柜台齐腰、车隔两条车道。相隔远的两样东西要用够宽的景别；硬塞进一个特写，房间就被压缩了。
 - **大全之后的近景，把背景重写一遍**：用全景里的具体东西（墙色、招牌或门牌号、窗、灯），留够头顶空间放关键标志，景深适中。只写 "shallow depth of field, soft bokeh" 会让模型自己编一个黑背景。
 - **同类东西多个时说清是哪一个**："他自己那层楼梯口、头顶那盏灯"。
-- **两人戏左右锁定**：第一个镜头定下，之后每个镜头用同一句陈述重复（`She stays on the left of the frame, he on the right.`；参考 `h3-shot-prompt` 的 `examples.md` 2.1）。镜子和玻璃里的倒影除外，出现时说明。单人戏不需要左右规则，免得套用系列模板。
+- **两人戏左右锁定**：第一个镜头定下，之后每个镜头交代一次左右站位（`She stays on the left of the frame, he on the right.`，或 `visible as an out-of-focus silhouette in the right foreground`；见 `h3-shot-prompt` SKILL.md"后续镜头"和 `official-calibration.md` 的 office_two_speakers）。镜子和玻璃里的倒影除外，出现时说明。单人戏不需要左右规则，免得套用系列模板。
 - **挤的构图写死人数**：`Exactly 2 distinct people are represented in this crop. No extra body, duplicate face or mirror double enters.`
 - **画框边缘用身体部位说**："画框下缘止于她胸口"。必须完整的道具：`the WHOLE television, with a margin around it`，屏幕内容写具体。
 - **模型想填的空，用真东西填。** 空的前景总被编出家具或人时，把场景里真有的东西放到前景、隔着它拍。第三方实例：隔着茶几和果盘拍，床就不再凭空出现；"她必须躺在沙发上"这句话没用。
@@ -178,7 +178,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 
 - 台词原样放进 `<d>[语言] ...</d>`，语言标签后一个半角空格，写真正的语言：粤语写 `[Cantonese]`，不用 `[Chinese]`。`<d>` 里只放语言标签和台词，完整句子带句末标点；被打断的保留省略号。
 - 说话人编号每段从 S1 重新编，按开口顺序；画外的声音也给编号。同一人的第二句也要标。挂素材时写成 `<Subject 2> (S1), at screen-left, says flatly ..., <d>[Cantonese] 喂，借借。</d>`；不挂素材写 `The woman (S1) says:`。说话人在第一次出场的句子里就挂编号并写 `on-screen`（`h3-shot-prompt` 的写法）。
-- 画面里有两人以上时，写说话人在画面哪侧。听的人先写反应（眼睛、呼吸、喉咙、手）；闭嘴只在三种情况写：切到听者用画外音句、单人说话但画里有别人、听者的脸和说话人同时清楚在画里（细则见 `h3-shot-prompt`）。听者看不到脸、只剩虚化的肩膀或后脑、镜头里没人说话时不写。多人段加一句 "Only the person speaking moves their lips."
+- 画面里有两人以上时，写说话人在画面哪侧。听的人先写反应（眼睛、呼吸、喉咙、手）；闭嘴只在三种情况写：切到听者用画外音句、单人说话但画里有别人、听者的脸和说话人同时清楚在画里（细则见 `h3-shot-prompt`）。听者看不到脸、只剩虚化的肩膀或后脑、镜头里没人说话时不写。多人在画、又没法拆段时，可以加一句 "Only the person speaking moves their lips."（可选，没有单独实测）
 - **一次生成尽量只有一个声源。** 第三方实例：一次生成里几个人说话会串台，模型还会补没写的回话。必须两人时，台词隔开，看得见脸的听者写闭嘴。单人说话时，台词后可接单声源句，照《阎王打工记》EP02 实际跑过的原文结构写，只换人名：`Only this one vocal source is heard: Yama. <Subject 3> and <Subject 4> keep their mouths closed. Do not repeat, paraphrase or continue beyond the listed spoken content.` EP02 同时拆了段，修好串词的主因是拆段，这句单独的作用没有分离测过。
 - 说台词时避免快跑、捂脸、转开和大的运镜；画内说话人说完写收口：闭嘴并进下一个动作（`closes his mouth and …`），或紧接一个动作（`Immediately after speaking, he …`）。
 - 旁白用固定说法 `says in an off-screen voiceover`，`</d>` 后面紧跟一句画面里的人嘴闭着：切到听者时是听者（`while the woman's lips remain completely closed`，已实测），内心独白时是说话人自己（`while his lips remain completely closed`）。
@@ -227,7 +227,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 - **本地没有改写器。** 官方 App/API 会先用 H3-Context-IR 把输入整理成结构化格式，所以那里写自然语言、`[0s-2s]` 时间码、"no push in, no cuts" 这类短否定都行。本地 ComfyUI 模型读到的就是你写的字。
 - **本地正向里写"没有 X"也算提到 X。** 第三方实例："no subtitles"反而招来了字幕。改成写结束状态、写出所有该有的东西；全项目只留一句文字防护：`The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.`，以及紧跟在 "ONLY <场景>" 后面的那句背景排除。
   - 出片后修具体毛病，也不加 `IMPORTANT` / `FORBIDDEN`，而是在出问题的那个镜头里加一句可观察的正向陈述（`h3-shot-prompt` 的修改原则）。
-- 不在正向里点缺席的角色或东西（这镜没有阿婆就别写"no granny"），写 "nobody else is in frame"。
+- 不在正向里点缺席的角色或东西（这镜没有阿婆就别写"no granny"），改写在场人数的正向句：`Only the two of them are in the room.`，或先写空间再写人数 `empty desks stretch into the background; only the two of them are here`（`h3-shot-prompt` SKILL.md"[Shot 1]"第 4 条）。
 - **negativePrompt**：H3 权重是 CFG 蒸馏的，没有原生负向输入，只有工作流加了 NAG 这类节点才起作用。V7.3 导播台（`BasicGuider`）没接，就留空，防护全写成正向句。接了的话写短而具体的几项。
 - **LoRA 触发词和效果 embedding** 放在描述正文里（`detailed_description` 或 `integrated_multimodal_description`），不放在最后一段后面，否则会被当成配乐说明。触发词原样写，不让模型改写。
   - 武术 LoRA（Jojocodex wushu）：触发词 `wushu_action`，强度 0.5，写成 `wushu_action, [谁] + [具体招式和力] + [场景/镜头]`。

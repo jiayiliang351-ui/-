@@ -35,15 +35,15 @@ Nobody stands idle or poses for the camera. Every character is always occupied w
 
 ## 2. 台词与防串词
 
-**台词预算**（只数说出口的字）：10 秒 20–28 字，12 秒 28–36 字，15 秒 36–44 字，最多 48 字；硬上限约每秒 3.5 字。有哽咽、结巴、长停顿、拥抱，或走路、转身多的段，再少两成以上。一句最好十个字以内，一个镜头只有一个人说话（画外音句除外）。台词不到 24 字、又只有简单动作的段，先试着并进前后段；但为防串词按说话人拆开的单人段不并回去，宁可短。
+**台词预算**（只数说出口的字）：10 秒 20–28 字，12 秒 28–36 字，15 秒 36–44 字，最多 48 字；硬上限约每秒 3.5 字。有哽咽、结巴、长停顿、拥抱，或走路、转身多的段，再少两成以上。一句最好十个字以内。一个镜头最好只有一个人说话（画外音句除外）；外形差别大的两人在同一个双人镜里轮流说时，听者按下文"听的人"第③种处理。台词不到 24 字、又只有简单动作的段，先试着并进前后段；但为防串词按说话人拆开的单人段不并回去，宁可短。
 
 **一段只装**：一个场景、一次关系变化（追问 → 否认、靠近 → 拉开）、一条动作链、一个落点。
 
-**防串词（已实测）**：长得像、挨得近的两个人，一次生成只放一个人说话。实测：钱总和阎王（两个中年男人、隔一张茶台）同一段各说一句，两个种子都把台词配错了脸；拆成"钱总说完 → 接力 → 阎王说"两段就不串。两人外形、位置差别大时，一段放两人轮流说跑通过，但每句都要写明说话人在画面哪一侧、另一个人嘴闭着。一旦串过一次，这一场后面全部按单人段 + 接力写。
+**防串词（已实测）**：性别、年龄段、服装都相近，并且近距离同框的两个人，一次生成只放一个人说话。实测：钱总和阎王（两个中年男人、隔一张茶台）同一段各说一句，两个种子都把台词配错了脸；拆成"钱总说完 → 接力 → 阎王说"两段就不串。两人年龄段或服装明显不同、分处画面两侧时，一段放两人轮流说跑通过，每句都要写明说话人在画面哪一侧；另一个人写不写闭嘴，按下文"听的人"的三种情况决定（脸和说话人同时清楚在画里时，把闭嘴并进反应句；只剩虚化的肩膀或后脑时不写）。一旦串过一次，这一场后面全部按单人段 + 接力写。
 
-**怎么写一句台词（官方文体 + 实测句式）**
+**怎么写一句台词（官方文体；画外音句已实测，说话人收口来自官方文本、本地未单独 A/B）**
 ```text
-[Shot 2] At 00:02.400, the camera cuts to an over-the-shoulder close shot of the young man from Shot 1 (S2) on the right of the frame, holding a static shot with a faint handheld breath, her shoulder a soft blur in the left foreground. He rubs the back of his neck and does not meet her eyes, then replies tiredly, <d>[Chinese] 我今天真的很累。</d> Exactly as his voice stops, his lips press together and his jaw ceases speaking motion; he drops his hand and keeps looking away down the street.
+[Shot 2] At 00:02.400, the camera cuts to an over-the-shoulder close shot of the young man from Shot 1 (S2) on the right of the frame, static shot, the shoulder of the woman from Shot 1 a soft blur in the left foreground. He rubs the back of his neck and does not meet her eyes, then, in a young man's tired, clipped mid-low voice, replies, <d>[Chinese] 我今天真的很累。</d> Exactly as his voice stops, his lips press together and his jaw ceases speaking motion; he drops his hand and keeps looking away down the street.
 ```
 - **编号和声线**：说话人在第一次出场的句子里（外形加站位）就挂编号并写 `on-screen`（`A young on-screen man (S2) in a black bomber jacket …`）；第一次开口时在 `<d>` 外写清声线（见下文"声线"）；之后的台词，语气写在动词上（`replies tiredly`、`murmurs even more quietly`）。动词后用冒号或逗号都可以。
 - **台词标签**：`<d>[Chinese] 台词</d>`，标签后一个半角空格（官方指南和官方改写全部带空格）。本地实测通过的旧段（`examples.md` 2.2、2.3）是不带空格的写法，不回改；有空格和没空格的对比见 A/B 表第 14 项。
