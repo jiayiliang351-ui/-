@@ -1,6 +1,6 @@
 # 给 AI 编程助手的说明
 
-本仓库存放 MiniMax H3 本地视频生成用的提示词 skill（`h3-shot-prompt`、`h3-action-prompt-design`、`h3-director-json-review`）和校准工具（`tools/context_ir/`）。
+本仓库存放 MiniMax H3 本地视频生成用的提示词 skill（`h3-shot-prompt`、`h3-action-prompt-design`、`h3-director-json-review`、异能配套 `h3-power-fx`）和校准工具（`tools/context_ir/`）。
 
 ## 如果你被要求执行"校准"或"调用学习"
 

@@ -1,0 +1,108 @@
+{
+  "status": "installed_and_verified",
+  "date": "2026-10-08",
+  "checks": {
+    "four_skill_metadata_valid": true,
+    "nine_protected_files_exact_bytes": true,
+    "powers-and-effects.md_moved_exact_bytes": true,
+    "powers-and-effects.md_legacy_headings_preserved": true,
+    "official-powers-calibration.md_moved_exact_bytes": true,
+    "official-powers-calibration.md_legacy_headings_preserved": true,
+    "all_local_links_and_anchors_valid": true,
+    "two_blind_prompts_lint_ok": true,
+    "director_resolves_shared_linter": true,
+    "seven_repository_scripts_unchanged": true,
+    "four_archives_exact_final_payload": true,
+    "credential_scan_zero_matches": true,
+    "installed_baseline_still_matches": true,
+    "new_skill_target_absent": true
+  },
+  "packages": [
+    {
+      "name": "h3-shot-prompt",
+      "sha256": "ac30de5ead3295a10796d6aee54a8337a08c42915081984fbcd59f6a89786c1c",
+      "files": {
+        "SKILL.md": "1543c6ec32cf47d5331fe3a3e19801d3783620542d5b5d74b8f3eda61c7ea4e5",
+        "references/cinematography.md": "2c7336f2c241ca3f26fab871c30a3810b48e448d19823a2bcd3f06a2c85a7507",
+        "references/examples.md": "babdb72dc501d90c6b74cab532d3b5ef1954711f93d9bb8ca0a8366293f7ba49",
+        "references/official-calibration.md": "bb15ceea4e3b7ef9bea1836fdd432443c122b8c475fc80b659db1cc8b6328f69",
+        "references/official-format.md": "cadb82e211ee88d3c3cf16a20aa9aaeccef8a599be005967ab92c6e62266e740",
+        "references/official-powers-calibration.md": "3b464f2e0be91cb9696d3949b8120b45a4c4ed649b107df76ebdfaf8970e42a0",
+        "references/performance-and-dialogue.md": "8ff97d7f6a9abfef31f074b720554176d623a1fd7421a92d29c054f76292ee0e",
+        "references/physics-and-action.md": "40b702c5e66d911f2656212aad64c8427dc9beecf1fbf6586a32035a33b9591f",
+        "references/pipeline-and-settings.md": "737574249483cc1ede7787cba30668d722a1cac8327aad2f0396cdfc8bf0ef80",
+        "references/powers-and-effects.md": "78f5dc033bf2393a1a7b1d15de215db8fc5942740a17bdf36fd2abc1380b2e13",
+        "references/troubleshooting.md": "a6e8d790eda3b2a21e668bc3a9c27e6d47b0b3ea58b7553c11044863bb4892fd",
+        "scripts/lint_prompt.py": "421fd17917351eb16af2ed16126904eb575530a3c774cea86d26cb3a10cfe200",
+        "references/projects/yanwang.md": "4f2a8f12953f7ead8ddf03e1ca0dbf53253250e4fedd2c915bb93e0c4bdade3d",
+        "references/projects/zhiyin.md": "0f980cdf83675ac47024042285adff7ec5dafab070dee73ecf998d61a8dd3ec8"
+      }
+    },
+    {
+      "name": "h3-action-prompt-design",
+      "sha256": "6dcdc1e4a3fa5ed985ff0b0b22a024fcf7dc40309e427924e5de4478f4fb7bf6",
+      "files": {
+        "SKILL.md": "900568c3f446f004028e8e7e7d4eed1ef5036973a9d9b77641e7bb9b7211181b"
+      }
+    },
+    {
+      "name": "h3-director-json-review",
+      "sha256": "0f9daa11f4f2461a5d3c373520e5dba4cf70864f1ea23c976f9f427e4ddb77fe",
+      "files": {
+        "SKILL.md": "3fc9f7fb0fb74c0d54464c95eb59bda4384ad88f5aada5b20f7fd1d0c5fdce80",
+        "scripts/lint_json.py": "b6661da8567800cefe5ea5a907ea00f274000cbc02019e6283c8f4fbda3a9f43"
+      }
+    },
+    {
+      "name": "h3-power-fx",
+      "sha256": "b9b751071aac01f5d2eaf7532ec51320664dd4a3824050a96d9c0726c9639011",
+      "files": {
+        "SKILL.md": "e25e29780310526888f9d8f63a5c51ea678151c659b4287921a465909fda94a2",
+        "references/effects-embeddings.md": "f309e9eb009a6a488f425e918fc584d4b32d5289e36e41ae92c363d526165124",
+        "references/official-powers-calibration.md": "13c489ba84b5f924a16f7b2d3db61eb874c08b76b9b0c52d5fee29211feceff1",
+        "references/powers-and-effects.md": "7de94d8bdb69071ec33935ea21814e093ea17754c50ec6f9d66740aba188302a"
+      }
+    }
+  ],
+  "credential_scan_files": 28,
+  "credential_matches": 0,
+  "api_calls": 0,
+  "render_jobs": 0,
+  "backup": "D:\\Codex\\Users\\Administrator\\.codex\\skill-backups\\h3_power_fx_split_20261008_082844",
+  "installed_root": "D:\\Codex\\Users\\Administrator\\.codex\\skills",
+  "installed_payload_matches_final": true,
+  "installed_verification": [
+    {
+      "name": "h3-shot-prompt",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "name": "h3-action-prompt-design",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "name": "h3-director-json-review",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "name": "h3-power-fx",
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "prompt": "scene1_telekinesis_10s.txt",
+      "exit_code": 0,
+      "output": "mode=T2VA  shots=1  real_duration=10.125s  words=370  spoken_zh=0\nOK\n"
+    },
+    {
+      "prompt": "scene2_timestop_15s.txt",
+      "exit_code": 0,
+      "output": "mode=T2VA  shots=1  real_duration=15.083s  words=437  spoken_zh=0\nOK\n"
+    }
+  ],
+  "base_commit": "cdce8337d3d279e62633d765faf444f2a4fb5132",
+  "branch": "codex/h3-powers-skill-calibration"
+}

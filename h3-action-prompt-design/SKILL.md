@@ -7,7 +7,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 
 **先用 `h3-shot-prompt` 写。** 文体、分镜、镜头头、运镜、动作、台词、合法时长、范例，都以它为准。这本手册补充本地经验与适用边界，按主题查，用不到的章节不读；异能相关的边界修正来自简报与官方文本核对，尚未验证渲染收益。
 
-两者冲突时听 `h3-shot-prompt`。核心一句：本地没有官方 Context-IR，提示词要写成 Context-IR 改写后的样子——按播放顺序的英文描述，每句都是看得见或听得见的东西（"可观察测试"）。
+格式与通用写法以 `h3-shot-prompt` 为准；有异能特效时同时使用 [h3-power-fx](../h3-power-fx/SKILL.md) 的条件细则。核心一句：本地没有官方 Context-IR，提示词要写成 Context-IR 改写后的样子——按播放顺序的英文描述，每句都是看得见或听得见的东西（"可观察测试"）。
 
 已经作废、不要再用的写法：
 - `[Shot N · 1.5–2.8s]` 区间镜头头 → 用 `[Shot N] At 00:01.500, the camera cuts to …`，`[Shot 1]` 不带时间。
@@ -148,7 +148,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 
 ## 4. 门和其他会动的固定物
 
-以下防止普通写实戏中无缘无故的自行动作。用户指定念力、风、能量冲击或纸扎自行动作时，保留该因果，不补一只开门的手：写施力者的触发、受力物、方向、幅度和停在哪；规则是有可见的触发与结果，力量本身可以不可见。异能细则见 `h3-shot-prompt/references/powers-and-effects.md`。
+以下防止普通写实戏中无缘无故的自行动作。用户指定念力、风、能量冲击或纸扎自行动作时，保留该因果，不补一只开门的手：写施力者的触发、受力物、方向、幅度和停在哪；规则是有可见的触发与结果，力量本身可以不可见。异能细则见 [h3-power-fx](../h3-power-fx/SKILL.md)。
 
 实测：只写 "the door opens"，门和铁闸就会自己开。在写实故事里这就成了闹鬼。
 
@@ -234,7 +234,7 @@ description: "h3-shot-prompt 的补充手册：H3 提示词涉及挂素材六段
 - **LoRA 触发词和效果 embedding** 放在描述正文里（`detailed_description` 或 `integrated_multimodal_description`），不放在最后一段后面，否则会被当成配乐说明。触发词原样写，不让模型改写。
   - 武术 LoRA（Jojocodex wushu）：触发词 `wushu_action`，强度 0.5，写成 `wushu_action, [谁] + [具体招式和力] + [场景/镜头]`。
   - 写实 LoRA（fal）：`r34l1sm` 放最前面，强度 1.0，想轻一点 0.6–0.8。
-  - MiniMax 自带 10 个效果 embedding（`minimaxh3_art_is_explosion` `_blooming_flowers` `_bullet_time` `_dark_magic` `_fire_breath` `_four_seasons` `_kiss_camera` `_spiral_ascent` `_storm_magic` `_truman_show`）。放进 `ComfyUI/models/embeddings/`，写成 ` embedding:minimaxh3_bullet_time`：小写、前面有空格、名字后没有句号，否则会被悄悄丢掉。只有全开或不开，改措辞调不了强度。
+  - 可选效果 embedding 的来源、文件名和启用条件统一见 [h3-power-fx 的效果参考](../h3-power-fx/references/effects-embeddings.md)。这是社区资源，先确认实际编码路径支持且文件已安装，不默认添加，也不从模型名字推断支持范围。
 - **加速 LoRA**：larryvrh v4 强度 1.0，6–8 步，simple 调度器；4 步糊快动作，超过 8 步过锐。加速 LoRA 在 1344×768 训练，直接出 1920×1088 会偏软，1080p 用后期放大。
 - 打戏 LoRA、文戏高配流程、CFG、多跑几个种子：见 `h3-shot-prompt` 的 `references/pipeline-and-settings.md` 第 3 节。
 - 每次改配置后看日志：有些设置会悄悄关掉缓存或换成别的注意力后端。

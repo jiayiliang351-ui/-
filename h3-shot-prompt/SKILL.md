@@ -1,6 +1,6 @@
 ---
 name: "h3-shot-prompt"
-description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官方 Context-IR 改写层）写写实真人 AI 剧的分镜提示词：对话戏、安静戏、动作戏、都市异能、仙侠与多段接力。按官方 Context-IR 的文体输出 T2VA/I2VA/FL2VA/L2VA 三段式或 Ref2VA 六段式，可再输出 V7.3 导播台 JSON。写《纸引》《阎王打工记》等项目某一段、把剧情变成 H3 提示词、或出片后按病症改提示词时使用。"
+description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官方 Context-IR 改写层）写写实真人 AI 剧的分镜提示词：对话戏、安静戏、动作戏与多段接力；涉及异能特效时配合 h3-power-fx。按官方 Context-IR 的文体输出 T2VA/I2VA/FL2VA/L2VA 三段式或 Ref2VA 六段式，可再输出 V7.3 导播台 JSON。写《纸引》《阎王打工记》等项目某一段、把剧情变成 H3 提示词、或出片后按病症改提示词时使用。"
 ---
 
 # H3 分镜提示词（本地 H3-Base 版）
@@ -44,7 +44,7 @@ description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官�
 ## 工作流程（每段都走）
 
 1. **确认输入**：哪个项目（只读 `references/projects/` 里对应那张卡）、时长、模式（有无首帧、尾帧、参考素材）、一句话剧情（原因 → 动作 → 结果，原因要在画面里看得见）、台词逐字、谁说。缺了会改变结果的才问，其余按常理补。每个项目第一次写时，问一次配乐是后期统一加还是每段自带（见下文"输出格式"）。
-2. **可行性检查**：对照 `references/physics-and-action.md` 第 1 节"H3 做不好的事"。命中就先换景别、拆动作或用插入特写，保留用户指定的能力、命中结果、人数、声音限制和一镜到底要求。风险不能靠多写字解决，但也不能静默把打飞改成踉跄、把真人改成碎灰；确需改剧情时在提示词之外提出替代方案。异能、元素变化、时间静止、御剑或一打多时，先读 `references/powers-and-effects.md`。
+2. **可行性检查**：对照 `references/physics-and-action.md` 第 1 节"H3 做不好的事"。命中就先换景别、拆动作或用插入特写，保留用户指定的能力、命中结果、人数、声音限制和一镜到底要求。风险不能靠多写字解决，但也不能静默把打飞改成踉跄、把真人改成碎灰；确需改剧情时在提示词之外提出替代方案。异能、元素变化、时间静止、御剑或异能一打多时，配合使用 [h3-power-fx](../h3-power-fx/SKILL.md)。
 3. **定时长和切点**：用下面的合法时长表；切点严格递增，全部小于实际时长。快动作每镜至少 1.0 秒，其余每镜至少 1.5 秒，最后一个镜头至少 1.5 秒。切点优先放在节拍边界上：换说话人、从起因切到后果的插入、从后果切到反应脸、两次交锋之间、从一个段落切到下一个段落（对话 → 离场）。两个角色交互的那一下（扫开、拦截、抓住、踩住）放进一个 1.0–1.5 秒的短镜头：这一镜从起跳或冲刺的最后一步开始，接触落在这一镜里；不要用一个长镜头从远处一路跑到接触。依据（证据弱）：《纸引》旧版和第二轮 v2 都这样写，第 2 镜 1.3 秒，从起跳开始，在空中被翅膀扫开，4 段都没报停顿，旧版也是快动作出片最好的一版；把冲刺和接触放进一个长镜头的 4 段里，有 1 段（段 6，官方种子 2，3.2 秒的第 1 镜）先停顿一下再被扫开，同一提示词的种子 1 和 skill 4 镜版（2.5 秒的第 1 镜）没报。没有和"在接触处切镜"对比过。
 4. **定镜头数**：先判断戏的类型，再按下表。给每个镜头写一句中文"这一镜新增什么信息"（主体、空间、状态、视角或时间），写不出来就合并。只想换距离或视角时，用有动机的运镜代替切镜（跟着视线横摇、弧形绕到肩后）。
 5. **写正文**：按下文"文体"。写实真人戏默认叠加"电影感底座"和"活人感"。
@@ -76,7 +76,7 @@ description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官�
 | 15 秒 | 6–9 镜 | 4–7 镜 | 2–6 镜 | 1–2 镜 |
 
 - 一段里混了两类（先对话、后连续走远）：按段落分别算，例如前半段对话切 2–3 镜，后半段走远一镜拉完。
-- 异能按动作结构归类：一个杯子悬浮、一次结霜、连续觉醒不因有特效就套快剪；多次交锋仍按快动作。用户指定一镜到底时保留单镜头，用运镜串起事件，表内镜头数不用于强行拆镜（见 `references/powers-and-effects.md`）。
+- 异能按动作结构归类：一个杯子悬浮、一次结霜、连续觉醒不因有特效就套快剪；多次交锋仍按快动作。用户指定一镜到底时保留单镜头，用运镜串起事件，表内镜头数不用于强行拆镜（细则见配套 `h3-power-fx`）。
 - 官方 Context-IR 改写偏少切（每段 1–3 镜，`official-calibration.md`），本地出片只在"连续移动 + 运镜"这一类里更好；快动作和多节拍文戏不学它的密度。
 - 只有一两句台词、其余是一连串小动作的段，按多节拍文戏一栏。
 - 对话戏取 1 镜，只适用于单人说话，或外形差别大的两人在双人镜里轮流说（见"台词"）。
@@ -98,7 +98,7 @@ description: "为本地部署的开源 MiniMax H3（只有 H3-Base，没有官�
 2. 第一句构图句：紧接画风，写清景别和运镜状态，并带出场景（`A 50mm medium two-shot, holding a static shot with a faint handheld breath, looks across a quiet night sidewalk …`；单人安静戏可以直接带出人物：`In a medium shot, the camera slowly pushes in toward …`）。官方改写 8/8 条第一句就有景别。
 3. 场景陈设：只写这一段会用到、或交代空间的几样，不列清单。
 4. 在场的人：外形、在画面哪一侧、手里拿着什么。会说话的人在这一句就挂编号并写 `on-screen`：`A young on-screen woman (S1) with shoulder-length black hair … stands on the left of the frame.` 在场人数写一句短的陈述（`Only the two of them are in the room.`，或先写空间再写人数 `empty desks stretch into the background; only the two of them are here`）。
-5. 两人以上的写实真人戏：照抄全局表演段；时间静止、集体定身等明确要求人物保持不动的段不加这一段，改写谁能动、谁保持什么姿态（见 `references/powers-and-effects.md`）。不要字幕时接字幕防护句。
+5. 两人以上的写实真人戏：照抄全局表演段；时间静止、集体定身等明确要求人物保持不动的段不加这一段，改写谁能动、谁保持什么姿态（细则见配套 `h3-power-fx`）。不要字幕时接字幕防护句。
 6. 第一个动作。
 
 **后续镜头**：`[Shot N] At 00:04.500, the camera cuts to an extreme close-up of the hands on the table, holding a static shot.` 切镜句里同时写景别和运镜状态，运镜状态写短的就行（`static shot`、`pushing in slowly`、`holding steady`）；`with a faint handheld breath` 这类长写法只在第一句构图句里用一次（底座已经写了手持）。然后：
@@ -185,8 +185,7 @@ non_diegetic_music: ...
 | `references/examples.md` | 第一次用、或拿不准文体时：官方改写原样示例 + 你本地跑通的范例 + 本地验证过的新文体范例 |
 | `references/official-calibration.md` | 用官方接口改写的本项目测试需求（对话、动作、安静戏、接触、手部道具各有一条），找最接近的一条参照 |
 | `references/physics-and-action.md` | 有动作、接触、打斗、道具操作时 |
-| `references/powers-and-effects.md` | 异能、元素变化、觉醒、时间静止、御剑、一打多：保留剧情的条件写法与风险；新样本尚未渲染 |
-| `references/official-powers-calibration.md` | 12 条都市/仙侠官方改写原文，按能力找参照；只作文本证据，先看开头的误差说明 |
+| [配套 h3-power-fx](../h3-power-fx/SKILL.md) | 有异能或超自然特效时：六类能力的条件写法、官方原文和证据边界；普通文戏不读 |
 | `references/performance-and-dialogue.md` | 有人物表演、台词时 |
 | `references/cinematography.md` | 写实真人戏的电影感底座、光、色、运镜动机 |
 | `references/pipeline-and-settings.md` | 接力、首帧流程、导播台 JSON、采样设置、A/B 方法 |
@@ -195,4 +194,4 @@ non_diegetic_music: ...
 | `references/projects/yanwang.md` | 写《阎王打工记》时 |
 | `scripts/lint_prompt.py` | 写完后跑：查规则词、括号标签、全角符号、台词标签空格、切点、时长、`from Shot` 复指、台词字数、Ref2VA 标签和标记词 |
 
-配套 skill：`h3-action-prompt-design`（补充手册：挂素材细则、空间方向、门、手和道具、粤语、接力、车辆、LoRA 触发词）；`h3-director-json-review`（整份导播台 JSON 的审查、批量重写和校验）。
+配套 skill：`h3-power-fx`（异能与超自然特效，和本 skill 共用格式及检查脚本）；`h3-action-prompt-design`（补充手册：挂素材细则、空间方向、门、手和道具、粤语、接力、车辆、LoRA 触发词）；`h3-director-json-review`（整份导播台 JSON 的审查、批量重写和校验）。

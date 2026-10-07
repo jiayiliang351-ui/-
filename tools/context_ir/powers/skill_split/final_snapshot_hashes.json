@@ -1,0 +1,23 @@
+{
+  "h3-action-prompt-design/SKILL.md": "900568c3f446f004028e8e7e7d4eed1ef5036973a9d9b77641e7bb9b7211181b",
+  "h3-director-json-review/SKILL.md": "3fc9f7fb0fb74c0d54464c95eb59bda4384ad88f5aada5b20f7fd1d0c5fdce80",
+  "h3-power-fx/SKILL.md": "e25e29780310526888f9d8f63a5c51ea678151c659b4287921a465909fda94a2",
+  "h3-shot-prompt/SKILL.md": "1543c6ec32cf47d5331fe3a3e19801d3783620542d5b5d74b8f3eda61c7ea4e5",
+  "h3-director-json-review/scripts/lint_json.py": "b6661da8567800cefe5ea5a907ea00f274000cbc02019e6283c8f4fbda3a9f43",
+  "h3-power-fx/references/effects-embeddings.md": "f309e9eb009a6a488f425e918fc584d4b32d5289e36e41ae92c363d526165124",
+  "h3-power-fx/references/official-powers-calibration.md": "13c489ba84b5f924a16f7b2d3db61eb874c08b76b9b0c52d5fee29211feceff1",
+  "h3-power-fx/references/powers-and-effects.md": "7de94d8bdb69071ec33935ea21814e093ea17754c50ec6f9d66740aba188302a",
+  "h3-shot-prompt/references/cinematography.md": "2c7336f2c241ca3f26fab871c30a3810b48e448d19823a2bcd3f06a2c85a7507",
+  "h3-shot-prompt/references/examples.md": "babdb72dc501d90c6b74cab532d3b5ef1954711f93d9bb8ca0a8366293f7ba49",
+  "h3-shot-prompt/references/official-calibration.md": "bb15ceea4e3b7ef9bea1836fdd432443c122b8c475fc80b659db1cc8b6328f69",
+  "h3-shot-prompt/references/official-format.md": "cadb82e211ee88d3c3cf16a20aa9aaeccef8a599be005967ab92c6e62266e740",
+  "h3-shot-prompt/references/official-powers-calibration.md": "3b464f2e0be91cb9696d3949b8120b45a4c4ed649b107df76ebdfaf8970e42a0",
+  "h3-shot-prompt/references/performance-and-dialogue.md": "8ff97d7f6a9abfef31f074b720554176d623a1fd7421a92d29c054f76292ee0e",
+  "h3-shot-prompt/references/physics-and-action.md": "40b702c5e66d911f2656212aad64c8427dc9beecf1fbf6586a32035a33b9591f",
+  "h3-shot-prompt/references/pipeline-and-settings.md": "737574249483cc1ede7787cba30668d722a1cac8327aad2f0396cdfc8bf0ef80",
+  "h3-shot-prompt/references/powers-and-effects.md": "78f5dc033bf2393a1a7b1d15de215db8fc5942740a17bdf36fd2abc1380b2e13",
+  "h3-shot-prompt/references/troubleshooting.md": "a6e8d790eda3b2a21e668bc3a9c27e6d47b0b3ea58b7553c11044863bb4892fd",
+  "h3-shot-prompt/scripts/lint_prompt.py": "421fd17917351eb16af2ed16126904eb575530a3c774cea86d26cb3a10cfe200",
+  "h3-shot-prompt/references/projects/yanwang.md": "4f2a8f12953f7ead8ddf03e1ca0dbf53253250e4fedd2c915bb93e0c4bdade3d",
+  "h3-shot-prompt/references/projects/zhiyin.md": "0f980cdf83675ac47024042285adff7ec5dafab070dee73ecf998d61a8dd3ec8"
+}

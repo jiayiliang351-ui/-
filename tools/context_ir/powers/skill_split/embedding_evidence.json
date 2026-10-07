@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-10-07",
+  "runtime_source_sha256": {
+    "D:\\MiniMaxH3\\runtime\\v73-test\\ComfyUI\\comfy\\text_encoders\\minimax.py": "0e16e44100d6db2bdfd1292eafd1b2f8d71147c546f49afe292fe4d2cdcefe8a",
+    "D:\\MiniMaxH3\\runtime\\v73-test\\ComfyUI\\comfy\\sd1_clip.py": "cada45bf2cd1e2e20d24a46b959d86fc9f5529953456bb21471735f036e2dc70",
+    "D:\\MiniMaxH3\\runtime\\v73-test\\ComfyUI\\comfy_extras\\nodes_minimax_h3.py": "33cb3cd5cec07ccdbacb244e0d1f141abc9959553b746e55756058afd3713a09"
+  },
+  "embedding_files": [
+    "put_embeddings_or_textual_inversion_concepts_here"
+  ],
+  "cloud_runtime_checked": false,
+  "downloads": 0,
+  "render_jobs": 0,
+  "sources": [
+    "https://docs.comfy.org/tutorials/video/minimax/minimax-h3-prompt-guide",
+    "https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/embeddings",
+    "https://github.com/Comfy-Org/ComfyUI/pull/15697"
+  ],
+  "primary_source_excerpts": [
+    {
+      "url": "https://docs.comfy.org/tutorials/video/minimax/minimax-h3-prompt-guide",
+      "excerpt": "These files are unofficial: they were contributed by community member silveroxides",
+      "interpretation": "Community-contributed, not MiniMax bundled resources."
+    },
+    {
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/embeddings",
+      "observed_file_count": 10,
+      "example_files": [
+        "minimaxh3_art_is_explosion.safetensors",
+        "minimaxh3_bullet_time.safetensors"
+      ]
+    },
+    {
+      "url": "https://github.com/Comfy-Org/ComfyUI/pull/15697",
+      "observed_status": "Merged",
+      "date": "Aug 18, 2026",
+      "scope": "Adds embedding syntax support to H3 text tokenizer."
+    }
+  ],
+  "local_source_excerpts": [
+    {
+      "path": "D:\\MiniMaxH3\\runtime\\v73-test\\ComfyUI\\comfy\\text_encoders\\minimax.py",
+      "sha256": "0e16e44100d6db2bdfd1292eafd1b2f8d71147c546f49afe292fe4d2cdcefe8a",
+      "lines": [
+        136,
+        162
+      ],
+      "text": "class MiniMaxH3Tokenizer(comfy.sd1_clip.SD1Tokenizer):\n    def __init__(self, embedding_directory=None, tokenizer_data={}):\n        tokenizer = lambda *a, **kw: MiniMaxQwenSDTokenizer(*a, **kw, embedding_size=5120, embedding_key=\"qwen3vl_32b\")\n        super().__init__(embedding_directory=embedding_directory, tokenizer_data=tokenizer_data, name=\"qwen3vl_32b\", tokenizer=tokenizer)\n\n    @staticmethod\n    def _vision_entry(data, video_block=False):\n        emb = {\"type\": \"image\", \"data\": data, \"original_type\": \"image\"}\n        if video_block:\n            emb[\"minimax_video_block\"] = True\n        return emb\n\n    def tokenize_with_weights(self, text, return_word_ids=False, images=[],\n                              minimax_ref_items=None, **kwargs):\n        entries = []\n\n        def add_text(s):\n            if not s:\n                return\n            token_batches = self.qwen3vl_32b.tokenize_with_weights(\n                s,\n                return_word_ids=False,\n                disable_weights=True,\n            )\n            if len(token_batches) != 1:\n                raise ValueError(\"MiniMax H3 text segment exceeds the supported prompt length.\")\n            entries.extend(token_batches[0])"
+    },
+    {
+      "path": "D:\\MiniMaxH3\\runtime\\v73-test\\ComfyUI\\comfy\\sd1_clip.py",
+      "sha256": "cada45bf2cd1e2e20d24a46b959d86fc9f5529953456bb21471735f036e2dc70",
+      "lines": [
+        543,
+        563
+      ],
+      "text": "    def _try_get_embedding(self, embedding_name:str):\n        '''\n        Takes a potential embedding name and tries to retrieve it.\n        Returns a Tuple consisting of the embedding, the cleaned embedding name, and any leftover string, embedding can be None.\n        '''\n        split_embed = embedding_name.split()\n        embedding_name = split_embed[0]\n        leftover = ' '.join(split_embed[1:])\n\n        match = re.search(r'[<\\[]', embedding_name)\n        if match is not None:\n            leftover = embedding_name[match.start():] + (\" \" + leftover if leftover else \"\")\n            embedding_name = embedding_name[:match.start()]\n\n        embed = load_embed(embedding_name, self.embedding_directory, self.embedding_size, self.embedding_key)\n        if embed is None:\n            stripped = embedding_name.strip(',')\n            if len(stripped) < len(embedding_name):\n                embed = load_embed(stripped, self.embedding_directory, self.embedding_size, self.embedding_key)\n                return (embed, embedding_name, \"{} {}\".format(embedding_name[len(stripped):], leftover))\n        return (embed, embedding_name, leftover)"
+    },
+    {
+      "path": "D:\\MiniMaxH3\\runtime\\v73-test\\ComfyUI\\comfy\\sd1_clip.py",
+      "sha256": "cada45bf2cd1e2e20d24a46b959d86fc9f5529953456bb21471735f036e2dc70",
+      "lines": [
+        590,
+        611
+      ],
+      "text": "        # tokenize words\n        tokens = []\n        for weighted_segment, weight in parsed_weights:\n            to_tokenize = unescape_important(weighted_segment)\n            split = re.split(r'(?<=\\s){}'.format(re.escape(self.embedding_identifier)), to_tokenize)\n            to_tokenize = [split[0]]\n            for i in range(1, len(split)):\n                to_tokenize.append(\"{}{}\".format(self.embedding_identifier, split[i]))\n\n            to_tokenize = [x for x in to_tokenize if x != \"\"]\n            for word in to_tokenize:\n                # if we find an embedding, deal with the embedding\n                if word.startswith(self.embedding_identifier) and self.embedding_directory is not None:\n                    embedding_name = word[len(self.embedding_identifier):].strip('\\n')\n                    embed, embedding_name, leftover = self._try_get_embedding(embedding_name)\n                    if embed is None:\n                        logging.warning(f\"warning, embedding:{embedding_name} does not exist, ignoring\")\n                    else:\n                        if len(embed.shape) == 1:\n                            tokens.append([(embed, weight)])\n                        else:\n                            tokens.append([(embed[x], weight) for x in range(embed.shape[0])])"
+    },
+    {
+      "path": "D:\\MiniMaxH3\\runtime\\v73-test\\ComfyUI\\comfy_extras\\nodes_minimax_h3.py",
+      "sha256": "33cb3cd5cec07ccdbacb244e0d1f141abc9959553b746e55756058afd3713a09",
+      "lines": [
+        150,
+        156
+      ],
+      "text": "            img = _resize(last_frame[:1], width, height, \"center\")\n            images.append(img)\n            keyframes.append({\"resolved_frame_index\": frame_count - 1, \"image\": img})\n\n        tokens = clip.tokenize(prompt, images=images)\n        cond = clip.encode_from_tokens_scheduled(tokens)\n"
+    },
+    {
+      "path": "D:\\MiniMaxH3\\runtime\\v73-test\\ComfyUI\\comfy_extras\\nodes_minimax_h3.py",
+      "sha256": "33cb3cd5cec07ccdbacb244e0d1f141abc9959553b746e55756058afd3713a09",
+      "lines": [
+        355,
+        361
+      ],
+      "text": "                audio_latent, ref_audio_t = _encode_ref_audio(audio_vae, audio)\n                ref_blocks.append({\"kind\": \"audio\", \"ref_audio_t\": ref_audio_t, \"audio_latent\": audio_latent})\n\n        tokens = clip.tokenize(prompt, minimax_ref_items=ref_items)\n        cond = clip.encode_from_tokens_scheduled(tokens)\n        if ref_blocks:\n            cond = node_helpers.conditioning_set_values(cond, {\"minimax_refs\": ref_blocks})"
+    }
+  ],
+  "local_source_check_scope": "Available installed source only; no tokenizer execution, no active workflow or effect-file load test.",
+  "live_source_rechecked_date": "2026-10-08"
+}

@@ -1,0 +1,321 @@
+{
+  "checks": {
+    "four_skill_metadata_valid": true,
+    "nine_protected_files_exact_bytes": true,
+    "powers-and-effects.md_moved_exact_bytes": true,
+    "powers-and-effects.md_legacy_headings_preserved": true,
+    "official-powers-calibration.md_moved_exact_bytes": true,
+    "official-powers-calibration.md_legacy_headings_preserved": true,
+    "all_local_links_and_anchors_valid": true,
+    "two_blind_prompts_lint_ok": true,
+    "director_resolves_shared_linter": true,
+    "seven_repository_scripts_unchanged": true,
+    "four_archives_exact_final_payload": true,
+    "credential_scan_zero_matches": true,
+    "installed_baseline_still_matches": true,
+    "new_skill_target_absent": true
+  },
+  "details": {
+    "h3-shot-prompt": {
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    "h3-action-prompt-design": {
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    "h3-director-json-review": {
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    "h3-power-fx": {
+      "exit_code": 0,
+      "output": "Skill is valid!\n"
+    },
+    "director_integration": {
+      "exit_code": 0,
+      "output": "\n=== timestop_xianxia  timestop_xianxia  (15s)\n    mode=T2VA  shots=1  real_duration=15.083s  words=422  spoken_zh=0\n\n=== telekinesis_xianxia  telekinesis_xianxia  (10s)\n    mode=T2VA  shots=1  real_duration=10.125s  words=345  spoken_zh=0\n\nlinter: C:\\Users\\Administrator\\Videos\\提示词参考视频\\H3异能配套skill_20261007\\final-skills\\h3-shot-prompt\\scripts\\lint_prompt.py\nid           sec  err warn  summary\ntimestop_xianxia  15    0    0  mode=T2VA  shots=1  real_duration=15.083s  words=422  spoken_zh=0\ntelekinesis_xianxia  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=345  spoken_zh=0\n\n2 shots checked, 0 with errors\n"
+    },
+    "forward_prompts": [
+      {
+        "file": "scene1_telekinesis_10s.txt",
+        "seconds": 10,
+        "exit_code": 0,
+        "output": "mode=T2VA  shots=1  real_duration=10.125s  words=370  spoken_zh=0\nOK\n"
+      },
+      {
+        "file": "scene2_timestop_15s.txt",
+        "seconds": 15,
+        "exit_code": 0,
+        "output": "mode=T2VA  shots=1  real_duration=15.083s  words=437  spoken_zh=0\nOK\n"
+      }
+    ],
+    "links": [
+      {
+        "from": "h3-action-prompt-design\\SKILL.md",
+        "target": "../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-action-prompt-design\\SKILL.md",
+        "target": "../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-action-prompt-design\\SKILL.md",
+        "target": "../h3-power-fx/references/effects-embeddings.md",
+        "valid": true
+      },
+      {
+        "from": "h3-director-json-review\\SKILL.md",
+        "target": "../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-director-json-review\\SKILL.md",
+        "target": "../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-director-json-review\\SKILL.md",
+        "target": "../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\SKILL.md",
+        "target": "../h3-shot-prompt/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\SKILL.md",
+        "target": "references/powers-and-effects.md",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\SKILL.md",
+        "target": "../h3-action-prompt-design/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\SKILL.md",
+        "target": "../h3-director-json-review/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\SKILL.md",
+        "target": "references/powers-and-effects.md#2-按能力选择因果链",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\SKILL.md",
+        "target": "references/official-powers-calibration.md",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\SKILL.md",
+        "target": "references/effects-embeddings.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\SKILL.md",
+        "target": "../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\SKILL.md",
+        "target": "../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#blast_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#blast_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#telekinesis_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#telekinesis_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#element_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#element_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#awaken_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#awaken_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#timestop_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#timestop_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#onevsmany_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-power-fx\\references\\official-powers-calibration.md",
+        "target": "#onevsmany_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#阅读前先核对",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#用例目录",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#blast_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#blast_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#telekinesis_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#telekinesis_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#element_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#element_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#awaken_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#awaken_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#timestop_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#timestop_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#onevsmany_urban",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\official-powers-calibration.md",
+        "target": "../../h3-power-fx/references/official-powers-calibration.md#onevsmany_xianxia",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\performance-and-dialogue.md",
+        "target": "../../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\physics-and-action.md",
+        "target": "../../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\physics-and-action.md",
+        "target": "../../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\physics-and-action.md",
+        "target": "../../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\pipeline-and-settings.md",
+        "target": "../../h3-power-fx/SKILL.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\powers-and-effects.md",
+        "target": "../../h3-power-fx/references/powers-and-effects.md",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\powers-and-effects.md",
+        "target": "../../h3-power-fx/references/powers-and-effects.md#1-先保留能力再降低镜头难度",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\powers-and-effects.md",
+        "target": "../../h3-power-fx/references/powers-and-effects.md#2-按能力选择因果链",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\powers-and-effects.md",
+        "target": "../../h3-power-fx/references/powers-and-effects.md#3-时间静止的动作与声音",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\powers-and-effects.md",
+        "target": "../../h3-power-fx/references/powers-and-effects.md#4-多人兵器与受力连续性",
+        "valid": true
+      },
+      {
+        "from": "h3-shot-prompt\\references\\powers-and-effects.md",
+        "target": "../../h3-power-fx/references/powers-and-effects.md#5-不照学与出片验收",
+        "valid": true
+      }
+    ]
+  }
+}

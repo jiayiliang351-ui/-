@@ -1,0 +1,23 @@
+{
+  "h3-action-prompt-design\\SKILL.md": "900568c3f446f004028e8e7e7d4eed1ef5036973a9d9b77641e7bb9b7211181b",
+  "h3-director-json-review\\SKILL.md": "3fc9f7fb0fb74c0d54464c95eb59bda4384ad88f5aada5b20f7fd1d0c5fdce80",
+  "h3-power-fx\\SKILL.md": "e25e29780310526888f9d8f63a5c51ea678151c659b4287921a465909fda94a2",
+  "h3-shot-prompt\\SKILL.md": "1543c6ec32cf47d5331fe3a3e19801d3783620542d5b5d74b8f3eda61c7ea4e5",
+  "h3-director-json-review\\scripts\\lint_json.py": "a10d5f0a3f11f8037fcb25d0bbd834efd05aae7788dfe4311dabe971f1732806",
+  "h3-power-fx\\references\\effects-embeddings.md": "f309e9eb009a6a488f425e918fc584d4b32d5289e36e41ae92c363d526165124",
+  "h3-power-fx\\references\\official-powers-calibration.md": "13c489ba84b5f924a16f7b2d3db61eb874c08b76b9b0c52d5fee29211feceff1",
+  "h3-power-fx\\references\\powers-and-effects.md": "7de94d8bdb69071ec33935ea21814e093ea17754c50ec6f9d66740aba188302a",
+  "h3-shot-prompt\\references\\cinematography.md": "97c0968972ace62b316fb7c6dddb03e6f45c007acff25a9e6a2f23df6ef6dab1",
+  "h3-shot-prompt\\references\\examples.md": "b4787493da7a1a71ad35bcb8d21e1f797d51b5bd61128c7efa6789e8da33d21f",
+  "h3-shot-prompt\\references\\official-calibration.md": "32b8e9e4c7a9a1b122c1d8fc4799a56eed5a4016b65d3f456763bdfe6a2e1d73",
+  "h3-shot-prompt\\references\\official-format.md": "defb7604877f722fac6d8aa55f18a873913ec5fa3a454738c9a89a80278c421c",
+  "h3-shot-prompt\\references\\official-powers-calibration.md": "13af451dd061133d51c4ea0da0beea2f5357865623361bad45f671571dcbaf35",
+  "h3-shot-prompt\\references\\performance-and-dialogue.md": "8ff97d7f6a9abfef31f074b720554176d623a1fd7421a92d29c054f76292ee0e",
+  "h3-shot-prompt\\references\\physics-and-action.md": "40b702c5e66d911f2656212aad64c8427dc9beecf1fbf6586a32035a33b9591f",
+  "h3-shot-prompt\\references\\pipeline-and-settings.md": "737574249483cc1ede7787cba30668d722a1cac8327aad2f0396cdfc8bf0ef80",
+  "h3-shot-prompt\\references\\powers-and-effects.md": "181925546845d8f68a44b8fbbd7da1449eab0784875cd81c50ef5dbd4a1b1959",
+  "h3-shot-prompt\\references\\troubleshooting.md": "846c5e8e554e64f0a885c9e62bb3af968ff7f3186dc20e5bb0d239327ca79242",
+  "h3-shot-prompt\\scripts\\lint_prompt.py": "80ca029a1b972e5dd8e9194b1a6c879140815c3e32abed49bf035a91f1ebdf93",
+  "h3-shot-prompt\\references\\projects\\yanwang.md": "c6a915971d741967570f6544b8bedfd3c61168dc7a26207a42194d60bbab73e7",
+  "h3-shot-prompt\\references\\projects\\zhiyin.md": "ba307f41d55a55a74cbf6bbb70fa3d1a283f588a91f05c3daa752d5dac9b6fe9"
+}

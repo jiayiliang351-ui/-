@@ -18,7 +18,7 @@
 - 挑 3–5 段典型戏（对话、动作、安静戏），用 API 各改写一次，存进 `official-calibration.md` 当参照（官方改写有随机性，一条只是一次采样；`examples.md` 第 1 节只放 MiniMax README 和官方 skill 里的原样示例）。仓库 `tools/context_ir/` 里有批量调用脚本和 8 条现成的测试需求，这 8 条的官方改写已经收进 `official-calibration.md`，审核结论见 `tools/context_ir/analysis/REVIEW.md`。
 - 同一段用 API 改写版和本 skill 写的版本，同种子各跑一次，对比哪里不同。
 
-现有样本已覆盖 8 条剧情戏与 12 条异能 T2VA（后者原文见 `official-powers-calibration.md`，条件用法见 `powers-and-effects.md`）。不要为“继续学习”自动追加付费调用；先用已有样本核对用户意图，再看出片的具体缺口。官方文本、写手测试和真实出片分别记录，不能互相代替。新异能规则尚无渲染结果，不因其官方镜头数少就改动已验证的快剪写法。
+现有样本已覆盖 8 条剧情戏与 12 条异能 T2VA（后者原文与条件用法归入 [h3-power-fx](../../h3-power-fx/SKILL.md)）。不要为“继续学习”自动追加付费调用；先用已有样本核对用户意图，再看出片的具体缺口。官方文本、写手测试和真实出片分别记录，不能互相代替。新异能规则尚无渲染结果，不因其官方镜头数少就改动已验证的快剪写法。
 
 本地替代（不花钱，效果是近似的）：
 - `lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA`（Qwen3.6-27B 上训练的 LoRA，另有 8B 版），有 ComfyUI 节点 `MiniMax-H3-Prompt-Rewriter-ComfyUI`。只做 T2VA。

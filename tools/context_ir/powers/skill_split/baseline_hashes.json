@@ -1,0 +1,19 @@
+{
+  "h3-action-prompt-design\\SKILL.md": "b2b9793fccf37f930747c8a67c9a2a05fd7538231de218ff431cea98c34b5527",
+  "h3-director-json-review\\SKILL.md": "4d11a315c8c81006e32c41700889e560d3ee0ec254cf51d987f6ab0c8c7dff31",
+  "h3-shot-prompt\\SKILL.md": "fc890fac4e519654b4bea933174741ddb3b61607471bd4c47b683d914065278a",
+  "h3-director-json-review\\scripts\\lint_json.py": "b6661da8567800cefe5ea5a907ea00f274000cbc02019e6283c8f4fbda3a9f43",
+  "h3-shot-prompt\\references\\cinematography.md": "2c7336f2c241ca3f26fab871c30a3810b48e448d19823a2bcd3f06a2c85a7507",
+  "h3-shot-prompt\\references\\examples.md": "babdb72dc501d90c6b74cab532d3b5ef1954711f93d9bb8ca0a8366293f7ba49",
+  "h3-shot-prompt\\references\\official-calibration.md": "bb15ceea4e3b7ef9bea1836fdd432443c122b8c475fc80b659db1cc8b6328f69",
+  "h3-shot-prompt\\references\\official-format.md": "cadb82e211ee88d3c3cf16a20aa9aaeccef8a599be005967ab92c6e62266e740",
+  "h3-shot-prompt\\references\\official-powers-calibration.md": "13c489ba84b5f924a16f7b2d3db61eb874c08b76b9b0c52d5fee29211feceff1",
+  "h3-shot-prompt\\references\\performance-and-dialogue.md": "15589767da8db4133343620cf462b9a39fd2680cd09fe46a894b046218fbbc5c",
+  "h3-shot-prompt\\references\\physics-and-action.md": "136b8e30ae3073ac9c57fb0e6dfcc3d883b9c80c465fd31b5ac46e5570d421c2",
+  "h3-shot-prompt\\references\\pipeline-and-settings.md": "247f9ae03e65b63102a4539edeae3de207a523a8adcd3395374449928fc81002",
+  "h3-shot-prompt\\references\\powers-and-effects.md": "7de94d8bdb69071ec33935ea21814e093ea17754c50ec6f9d66740aba188302a",
+  "h3-shot-prompt\\references\\troubleshooting.md": "a6e8d790eda3b2a21e668bc3a9c27e6d47b0b3ea58b7553c11044863bb4892fd",
+  "h3-shot-prompt\\scripts\\lint_prompt.py": "421fd17917351eb16af2ed16126904eb575530a3c774cea86d26cb3a10cfe200",
+  "h3-shot-prompt\\references\\projects\\yanwang.md": "4f2a8f12953f7ead8ddf03e1ca0dbf53253250e4fedd2c915bb93e0c4bdade3d",
+  "h3-shot-prompt\\references\\projects\\zhiyin.md": "0f980cdf83675ac47024042285adff7ec5dafab070dee73ecf998d61a8dd3ec8"
+}

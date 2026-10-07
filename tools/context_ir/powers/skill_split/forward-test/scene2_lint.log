@@ -1,0 +1,4 @@
+command: provided Python + candidate-skills/h3-shot-prompt/scripts/lint_prompt.py scene2_timestop_15s.txt --seconds 15
+exit_code: 0
+mode=T2VA  shots=1  real_duration=15.083s  words=437  spoken_zh=0
+OK
