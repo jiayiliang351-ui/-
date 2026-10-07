@@ -32,6 +32,12 @@ CAPS_ALLOW = {"ARRI", "LF", "LED", "CCTV", "ATM", "UI", "TV", "POV", "ID", "OK",
 LAND_TIME = re.compile(r"[Ll]ine lands about|Total runtime is exactly")
 CLIP_SECONDS = re.compile(r"\b(?:by|at|until|around|after)\s+(?:about\s+)?\d+(?:\.\d+)?\s*(?:s|sec|seconds)\b", re.I)
 ABSENT_THING = re.compile(r"\b(?:no|nobody|nothing)\b(?!\s+longer)", re.I)
+# Fixed sentences the skill tells writers to copy verbatim; exempt from style checks.
+FIXED_SENTENCES = [
+    "Nobody stands idle or poses for the camera.",
+    "The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.",
+    "Do not repeat, paraphrase or continue beyond the listed spoken content.",
+]
 CJK = re.compile(r"[　-〿㐀-鿿＀-￯‘’“”]")
 
 
@@ -156,6 +162,9 @@ def lint(text, seconds):
     if LAND_TIME.search(plain):
         warns.append("timing note ('Line lands about' / 'Total runtime') — not in the official format")
     desc_plain = strip_allowed(desc)
+    for fixed in FIXED_SENTENCES:
+        desc_plain = desc_plain.replace(fixed, " ")
+    desc_plain = re.sub(r"Behind them is ONLY[^\n]*?(?:anywhere in the frame\.|$)", " ", desc_plain)
     for m in sorted(set(x.group(0) for x in CLIP_SECONDS.finditer(desc_plain))):
         warns.append(f"in-clip time '{m}' — anchor timing to events instead")
     absent = sorted(set(w.lower() for w in ABSENT_THING.findall(desc_plain)))
