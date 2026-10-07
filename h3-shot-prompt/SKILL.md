@@ -140,6 +140,7 @@ non_diegetic_music: ...
 |---|---|
 | `references/official-format.md` | 每次都读：对齐句、切点、运镜词表、台词标记、Ref2VA 六段式 |
 | `references/examples.md` | 第一次用、或拿不准文体时：官方改写原样示例 + 你本地跑通的范例 + 新写法 A/B 对照 |
+| `references/official-calibration.md` | 用官方接口改写的本项目测试需求（对话、动作、安静戏、接触、手部道具各有一条），找最接近的一条参照 |
 | `references/physics-and-action.md` | 有动作、接触、打斗、道具操作时 |
 | `references/performance-and-dialogue.md` | 有人物表演、台词时 |
 | `references/cinematography.md` | 写实真人戏的电影感底座、光、色、运镜动机 |

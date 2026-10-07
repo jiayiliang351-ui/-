@@ -1,0 +1,17 @@
+integrated_multimodal_description:
+Photoreal cinematic, 16:9. A vast dark hall of an ancient Chinese paper-effigy shop on a rainy night: black wooden pillars, wet stone floor, white paper lotus lanterns hanging from the beams, white paper horses standing in the shadows. Warm orange light from an iron fire brazier at the back left, cold blue rain light from the open doorway at the back. All creatures are real handmade paper craft: stiff folded paper with visible fibres, brush-ink lines and burnt edges; they bend only at the joints, never soft or stretchy. Film grain.
+
+[Shot 1 · 0.00–1.5s] LOW-ANGLE GROUND TRACKING at paw height. A small tiger cub made of stiff white folded paper — black brush-painted stripes, torn red paper ribbons at his neck and wrists, a tiny bronze bell at his throat, one amber ink-painted eye and one blank white paper eye — SPRINTS on all fours across the wet stone toward a black bronze water basin on a low wooden stool. A small FLAME burns on the very tip of his tail and streaks behind him like a lit fuse. (flame: ON)
+
+[Shot 2 · 1.5–2.8s] SIDE TRACKING, WHIP PAN. He LEAPS for the basin, front paws reaching. A tall paper crane-woman — long thin beak, spiky white paper crown, layered white paper robes trimmed in red, one snow-white wing and one charred black wing — steps in from screen-right and SWEEPS her huge white wing across his path. The wing SLAMS him out of the air; white paper feathers and ash BURST, and he tumbles across the wet stone away from the basin. (flame: ON)
+
+[Shot 3 · 2.8–4.0s] LOW ANGLE, handheld shake. Without stopping, he scrambles up, claws skidding on the wet stone, and LUNGES for the basin again. (flame: ON)
+
+[Shot 4 · 4.0–5.0s] SNAP-ZOOM ECU on his tail tip. A thin white bird claw SLAMS down onto the burning tip. Sparks and black paper ash EXPLODE out from under the claw, and the flame is crushed out in one hit. (flame: OUT)
+
+[Shot 5 · 5.0–6.2s] MEDIUM SHOT, low angle. The cub is YANKED to a dead stop mid-lunge, his stiff paper body snapping taut, the bell at his throat jolting. The crane-woman towers over him, bent forward, her claw still pinning his tail to the stone. (flame: OUT)
+
+[Shot 6 · 6.2–8.0s] SLOW DOLLY-OUT. A beat of stillness. A thin curl of smoke rises from his charred black tail tip. The cub sits on the wet stone, looks back at the burnt tail, then at the water basin, and stays put. The crane-woman lifts her claw and folds her white wing. Only the smoke and the brazier light keep moving.
+
+overall_soundscape:
+(0.0s) Quick patter of paper paws on wet stone, flutter of a small flame, rain outside. (1.8s) Heavy WHUMP of a paper wing and a crunch of paper. (2.2s) Skid and scrape across stone. (4.1s) Sharp HISS and crackle of sparks as the claw slams down. (5.1s) A single jolt of the tiny bell. (6.2s) Near silence: rain, the distant brazier, a thin hiss of smoke.

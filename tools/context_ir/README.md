@@ -2,6 +2,19 @@
 
 用官方 H3-Context-IR 接口把一句话需求改写成官方版提示词，作为"标准答案"来校准 `h3-shot-prompt`。
 
+**交给 Codex 等其他 AI 助手执行时，用 `CODEX_RUNBOOK.md`**：里面有用户要先做的准备，和给助手的逐步指令（调用、分析、填报告、提建议、生成出片对照 JSON、可选的真实项目改写）。
+
+| 文件 | 作用 |
+|---|---|
+| `context_ir_batch.py` | 批量调用官方接口，保存改写结果 |
+| `analyze_ir.py` | 统计官方改写和 skill 版本的特征，生成对照材料 |
+| `append_calibration.py` | 把官方改写写进 `h3-shot-prompt/references/official-calibration.md` |
+| `build_render_json.py` | 生成出片对照用的导播台 JSON（旧写法 / skill / Codex / 官方，同种子） |
+| `rewrite_director_json.py` | 把真实项目导播台 JSON 里不挂素材的段送去官方改写 |
+| `skill_versions/` | Claude 按新 skill 写的 8 条 |
+| `old_versions/` | 其中 3 条的旧写法原文 |
+| `templates/` | 报告、建议、Codex 写作任务的模板 |
+
 ## 准备
 
 1. MiniMax 开放平台的 API Key，放进环境变量 `MINIMAX_API_KEY`（不要写进文件、不要贴到聊天里）。
