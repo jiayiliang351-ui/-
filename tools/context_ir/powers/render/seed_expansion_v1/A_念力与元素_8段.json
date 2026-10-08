@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 5,
+  "project": {
+    "id": "powers_seed_expansion_a_v1",
+    "name": "A_念力与元素_8段",
+    "runId": "powers_seed_expansion_a_20261008_v1"
+  },
+  "defaults": {
+    "fps": 24,
+    "baseSeed": 2026100801
+  },
+  "promptPrefix": "",
+  "promptSuffix": "",
+  "continuity": {
+    "mode": "h3_av_latent",
+    "videoContextFrames": 22,
+    "audioContextFrames": 24,
+    "durationMode": "final_output"
+  },
+  "assets": [],
+  "shots": [
+    {
+      "id": "px_telekinesis_urban_s1",
+      "title": "都市念力_玻璃杯滑移悬浮落回_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. A warm kitchen bulb lights his hands and the glass; dusk through the window edges his grey hood. A 50mm medium shot holds steady across a scratched kitchen table in an old rental flat. A slim teenage boy in a grey hoodie sits at screen-right, watching a half-full clear glass at screen-left. Both empty hands rest on his thighs, visible below the table edge. He is the only person in the kitchen. The glass first trembles, making fine ripples across the water. As his shoulders tighten, it slides slowly rightward toward him, then rises a finger's breadth above the table. A clean strip of air remains visible beneath its base, and its transparent sides keep their ordinary warm reflections. The glass hovers with a slight sway while a bead of sweat runs down his temple and a single drop of blood reaches his upper lip. He exhales and his shoulders ease. The same glass drops the short distance back onto the table; a small splash crosses its rim. It rests upright before him as the water ripples diminish and his hands remain on his thighs. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: The refrigerator's low hum fills the small kitchen throughout the shot. A clearly heard scrape follows the glass base moving over the wooden tabletop, ending as the glass lifts. His breathing grows shallow during the hover and releases into one longer exhale as the glass returns; the refrigerator remains the steady background.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_telekinesis_urban_s2",
+      "title": "都市念力_玻璃杯滑移悬浮落回_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. A warm kitchen bulb lights his hands and the glass; dusk through the window edges his grey hood. A 50mm medium shot holds steady across a scratched kitchen table in an old rental flat. A slim teenage boy in a grey hoodie sits at screen-right, watching a half-full clear glass at screen-left. Both empty hands rest on his thighs, visible below the table edge. He is the only person in the kitchen. The glass first trembles, making fine ripples across the water. As his shoulders tighten, it slides slowly rightward toward him, then rises a finger's breadth above the table. A clean strip of air remains visible beneath its base, and its transparent sides keep their ordinary warm reflections. The glass hovers with a slight sway while a bead of sweat runs down his temple and a single drop of blood reaches his upper lip. He exhales and his shoulders ease. The same glass drops the short distance back onto the table; a small splash crosses its rim. It rests upright before him as the water ripples diminish and his hands remain on his thighs. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: The refrigerator's low hum fills the small kitchen throughout the shot. A clearly heard scrape follows the glass base moving over the wooden tabletop, ending as the glass lifts. His breathing grows shallow during the hover and releases into one longer exhale as the glass returns; the refrigerator remains the steady background.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_telekinesis_xianxia_s1",
+      "title": "仙侠念力_竹叶悬浮推开院门_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Late afternoon light filters through bamboo onto the grey robe, yellow leaves and weathered wooden gate. A 35mm medium-wide shot holds steady across an autumn courtyard in a bamboo grove. A lean, white-haired Taoist in a grey robe and wooden hairpin stands left of center. His left hand rests behind his back. Dry yellow bamboo leaves cover the paving, and an unlatched wooden gate stands closed at screen-right, hinged along its far-right post. He slowly lifts two fingers of his right hand. The leaves shiver against the paving, then rise together to knee height, leaving the stone clearly visible beneath them. They hover with gentle turns, their dry veins and curled edges catching the ordinary sunlight. His eyes shift toward the gate; only then do his two raised fingers point rightward. The hovering leaves stream toward screen-right as one low current, passing clear of his robe. The leaf current strikes the gate boards and pushes the gate outward on its right-hand hinges. It swings open and settles against its outer stop as the leaves spill through the opening. He keeps his left hand behind his back and lets his right fingers relax while the remaining leaves descend onto the paving. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: A mild wind passes through the bamboo with a soft creak from the stalks. Dry leaves rasp as they lift and gather into the rightward current, their collective rustle clearly heard as they reach the gate. The wooden gate groans on its hinges when the leaves push it outward, then gives a dull knock against its stop.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_telekinesis_xianxia_s2",
+      "title": "仙侠念力_竹叶悬浮推开院门_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Late afternoon light filters through bamboo onto the grey robe, yellow leaves and weathered wooden gate. A 35mm medium-wide shot holds steady across an autumn courtyard in a bamboo grove. A lean, white-haired Taoist in a grey robe and wooden hairpin stands left of center. His left hand rests behind his back. Dry yellow bamboo leaves cover the paving, and an unlatched wooden gate stands closed at screen-right, hinged along its far-right post. He slowly lifts two fingers of his right hand. The leaves shiver against the paving, then rise together to knee height, leaving the stone clearly visible beneath them. They hover with gentle turns, their dry veins and curled edges catching the ordinary sunlight. His eyes shift toward the gate; only then do his two raised fingers point rightward. The hovering leaves stream toward screen-right as one low current, passing clear of his robe. The leaf current strikes the gate boards and pushes the gate outward on its right-hand hinges. It swings open and settles against its outer stop as the leaves spill through the opening. He keeps his left hand behind his back and lets his right fingers relax while the remaining leaves descend onto the paving. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: A mild wind passes through the bamboo with a soft creak from the stalks. Dry leaves rasp as they lift and gather into the rightward current, their collective rustle clearly heard as they reach the gate. The wooden gate groans on its hinges when the leaves push it outward, then gives a dull knock against its stop.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_element_urban_s1",
+      "title": "都市元素_咖啡杯结霜_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Cool ceiling tubes light her hands; falling snow outside the window catches the street lamps. A 50mm close-up holds a static shot on a young woman's hands around a plain paper coffee cup standing on a high table beside a convenience-store window. Her beige sweater sleeves end at her wrists; a little steam rises from the dark coffee. The lower edge of her face and long black hair remain visible above her hands. Her fingers tighten against the cup wall. A fine white frost begins exactly beneath her fingertips and branches outward across the paper, following its curved surface. The frost thickens into an opaque coating as the rising steam dwindles and disappears. The coffee surface turns glassy and a thin layer of ice spreads from the edge toward its center. Tiny cracks catch the ceiling light across the frozen surface. She loosens both hands and draws them back, leaving the same cup upright on the tabletop. Turning her palms toward her face, she studies a thin dusting of frost across her fingertips and palm creases. The cup stays where she placed it, its frozen surface and white-coated sides unchanged through the end. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: A subdued refrigerator hum and distant winter traffic sit beneath the close view. A distinct fine crackle accompanies frost spreading across the paper and ice closing over the coffee. Her fingers make a soft dry rub as they withdraw from the cup, followed by the quiet friction of her sweater cuffs as she turns her palms upward.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_element_urban_s2",
+      "title": "都市元素_咖啡杯结霜_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Cool ceiling tubes light her hands; falling snow outside the window catches the street lamps. A 50mm close-up holds a static shot on a young woman's hands around a plain paper coffee cup standing on a high table beside a convenience-store window. Her beige sweater sleeves end at her wrists; a little steam rises from the dark coffee. The lower edge of her face and long black hair remain visible above her hands. Her fingers tighten against the cup wall. A fine white frost begins exactly beneath her fingertips and branches outward across the paper, following its curved surface. The frost thickens into an opaque coating as the rising steam dwindles and disappears. The coffee surface turns glassy and a thin layer of ice spreads from the edge toward its center. Tiny cracks catch the ceiling light across the frozen surface. She loosens both hands and draws them back, leaving the same cup upright on the tabletop. Turning her palms toward her face, she studies a thin dusting of frost across her fingertips and palm creases. The cup stays where she placed it, its frozen surface and white-coated sides unchanged through the end. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: A subdued refrigerator hum and distant winter traffic sit beneath the close view. A distinct fine crackle accompanies frost spreading across the paper and ice closing over the coffee. Her fingers make a soft dry rub as they withdraw from the cup, followed by the quiet friction of her sweater cuffs as she turns her palms upward.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_element_xianxia_s1",
+      "title": "仙侠元素_指间电弧收回_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Cold moonlight through the cave mouth edges her dark-purple sleeves and the rough stone behind her. A 50mm medium close-up holds steady on a young woman sitting cross-legged inside a dark mountain cave. She wears fitted dark-purple robes and a high black ponytail. Her left hand rests on her knee; she lifts her open right hand beside her face, its fingers clearly separated against the dark stone. A few fine violet-white arcs first jump between her right thumb and index finger. As she watches, the arcs thicken and branch across the gaps between her fingers, briefly illuminating the skin of her palm. Their pulses throw violet-white light across one side of her face and the nearby cave wall, while the other side retains its cool moonlit edge. A few loose hairs beside her temple and the end of her ponytail lift gently with the growing charge. She closes the same right hand into a firm fist. The arcs extinguish at the closure, leaving her fist solid in the moonlight. A thin white wisp curls above her knuckles as the loose hairs settle; her left hand remains on her knee. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: A low wind brushes past the cave mouth with a faint hollow resonance. Clearly heard electrical snaps begin with the first arcs, growing into a tight crackle as light spreads between her fingers. The crackle cuts off when her fist closes, leaving the soft cave wind beneath the final curl of smoke.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_element_xianxia_s2",
+      "title": "仙侠元素_指间电弧收回_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Cold moonlight through the cave mouth edges her dark-purple sleeves and the rough stone behind her. A 50mm medium close-up holds steady on a young woman sitting cross-legged inside a dark mountain cave. She wears fitted dark-purple robes and a high black ponytail. Her left hand rests on her knee; she lifts her open right hand beside her face, its fingers clearly separated against the dark stone. A few fine violet-white arcs first jump between her right thumb and index finger. As she watches, the arcs thicken and branch across the gaps between her fingers, briefly illuminating the skin of her palm. Their pulses throw violet-white light across one side of her face and the nearby cave wall, while the other side retains its cool moonlit edge. A few loose hairs beside her temple and the end of her ponytail lift gently with the growing charge. She closes the same right hand into a firm fist. The arcs extinguish at the closure, leaving her fist solid in the moonlight. A thin white wisp curls above her knuckles as the loose hairs settle; her left hand remains on her knee. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: A low wind brushes past the cave mouth with a faint hollow resonance. Clearly heard electrical snaps begin with the first arcs, growing into a tight crackle as light spreads between her fingers. The crackle cuts off when her fist closes, leaving the soft cave wind beneath the final curl of smoke.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    }
+  ]
+}

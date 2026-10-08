@@ -1,0 +1,113 @@
+
+=== px_telekinesis_urban_s1  都市念力_玻璃杯滑移悬浮落回_种子1  (10s)
+    mode=T2VA  shots=1  real_duration=10.125s  words=307  spoken_zh=0
+
+=== px_telekinesis_urban_s2  都市念力_玻璃杯滑移悬浮落回_种子2  (10s)
+    mode=T2VA  shots=1  real_duration=10.125s  words=307  spoken_zh=0
+
+=== px_telekinesis_xianxia_s1  仙侠念力_竹叶悬浮推开院门_种子1  (10s)
+    mode=T2VA  shots=1  real_duration=10.125s  words=322  spoken_zh=0
+
+=== px_telekinesis_xianxia_s2  仙侠念力_竹叶悬浮推开院门_种子2  (10s)
+    mode=T2VA  shots=1  real_duration=10.125s  words=322  spoken_zh=0
+
+=== px_element_urban_s1  都市元素_咖啡杯结霜_种子1  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=315  spoken_zh=0
+
+=== px_element_urban_s2  都市元素_咖啡杯结霜_种子2  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=315  spoken_zh=0
+
+=== px_element_xianxia_s1  仙侠元素_指间电弧收回_种子1  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=311  spoken_zh=0
+
+=== px_element_xianxia_s2  仙侠元素_指间电弧收回_种子2  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=311  spoken_zh=0
+
+=== px_awaken_urban_s1  都市觉醒_金瞳与局部雨滴悬停_种子1  (10s)
+    mode=T2VA  shots=1  real_duration=10.125s  words=400  spoken_zh=0
+
+=== px_awaken_urban_s2  都市觉醒_金瞳与局部雨滴悬停_种子2  (10s)
+    mode=T2VA  shots=1  real_duration=10.125s  words=400  spoken_zh=0
+
+=== px_awaken_xianxia_s1  仙侠觉醒_灵气回收与青瞳_种子1  (10s)
+    mode=T2VA  shots=1  real_duration=10.125s  words=316  spoken_zh=0
+
+=== px_awaken_xianxia_s2  仙侠觉醒_灵气回收与青瞳_种子2  (10s)
+    mode=T2VA  shots=1  real_duration=10.125s  words=316  spoken_zh=0
+
+=== px_timestop_urban_s1  都市时间静止_掉落杯与外卖员定住_种子1  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+
+=== px_timestop_urban_s2  都市时间静止_掉落杯与外卖员定住_种子2  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+
+=== px_timestop_xianxia_s1  仙侠时间静止_冻结后拨偏单箭_种子1  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=331  spoken_zh=0
+
+=== px_timestop_xianxia_s2  仙侠时间静止_冻结后拨偏单箭_种子2  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=331  spoken_zh=0
+
+=== px_blast_urban_s1  都市能量波_蓝光打飞撞柱_种子1  (8s)
+    mode=T2VA  shots=5  real_duration=8.000s  words=555  spoken_zh=0
+    WARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)
+
+=== px_blast_urban_s2  都市能量波_蓝光打飞撞柱_种子2  (8s)
+    mode=T2VA  shots=5  real_duration=8.000s  words=555  spoken_zh=0
+    WARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)
+
+=== px_blast_xianxia_s1  仙侠剑气_断刀滚落断松枝_种子1  (8s)
+    mode=T2VA  shots=5  real_duration=8.000s  words=564  spoken_zh=0
+    WARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)
+
+=== px_blast_xianxia_s2  仙侠剑气_断刀滚落断松枝_种子2  (8s)
+    mode=T2VA  shots=5  real_duration=8.000s  words=564  spoken_zh=0
+    WARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)
+
+=== px_onevsmany_urban_s1  都市一打六_擒棍推飞群压_种子1  (15s)
+    mode=T2VA  shots=8  real_duration=15.083s  words=627  spoken_zh=0
+    WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)
+    WARN  shot before [Shot 5] lasts 1.40s (< 1.5s; fine only for fast-action quick cuts)
+    WARN  shot before [Shot 6] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)
+
+=== px_onevsmany_urban_s2  都市一打六_擒棍推飞群压_种子2  (15s)
+    mode=T2VA  shots=8  real_duration=15.083s  words=627  spoken_zh=0
+    WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)
+    WARN  shot before [Shot 5] lasts 1.40s (< 1.5s; fine only for fast-action quick cuts)
+    WARN  shot before [Shot 6] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)
+
+=== px_onevsmany_xianxia_s1  仙侠一打十二_御剑剑影回鞘_种子1  (15s)
+    mode=T2VA  shots=8  real_duration=15.083s  words=643  spoken_zh=0
+    WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)
+
+=== px_onevsmany_xianxia_s2  仙侠一打十二_御剑剑影回鞘_种子2  (15s)
+    mode=T2VA  shots=8  real_duration=15.083s  words=643  spoken_zh=0
+    WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)
+
+linter: C:\Users\Administrator\Videos\提示词参考视频\h3-calibration\h3-shot-prompt\scripts\lint_prompt.py
+id           sec  err warn  summary
+px_telekinesis_urban_s1  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=307  spoken_zh=0
+px_telekinesis_urban_s2  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=307  spoken_zh=0
+px_telekinesis_xianxia_s1  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=322  spoken_zh=0
+px_telekinesis_xianxia_s2  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=322  spoken_zh=0
+px_element_urban_s1   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=315  spoken_zh=0
+px_element_urban_s2   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=315  spoken_zh=0
+px_element_xianxia_s1   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=311  spoken_zh=0
+px_element_xianxia_s2   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=311  spoken_zh=0
+px_awaken_urban_s1  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=400  spoken_zh=0
+px_awaken_urban_s2  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=400  spoken_zh=0
+px_awaken_xianxia_s1  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=316  spoken_zh=0
+px_awaken_xianxia_s2  10    0    0  mode=T2VA  shots=1  real_duration=10.125s  words=316  spoken_zh=0
+px_timestop_urban_s1   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+px_timestop_urban_s2   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+px_timestop_xianxia_s1   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=331  spoken_zh=0
+px_timestop_xianxia_s2   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=331  spoken_zh=0
+px_blast_urban_s1   8    0    1  mode=T2VA  shots=5  real_duration=8.000s  words=555  spoken_zh=0
+px_blast_urban_s2   8    0    1  mode=T2VA  shots=5  real_duration=8.000s  words=555  spoken_zh=0
+px_blast_xianxia_s1   8    0    1  mode=T2VA  shots=5  real_duration=8.000s  words=564  spoken_zh=0
+px_blast_xianxia_s2   8    0    1  mode=T2VA  shots=5  real_duration=8.000s  words=564  spoken_zh=0
+px_onevsmany_urban_s1  15    0    3  mode=T2VA  shots=8  real_duration=15.083s  words=627  spoken_zh=0
+px_onevsmany_urban_s2  15    0    3  mode=T2VA  shots=8  real_duration=15.083s  words=627  spoken_zh=0
+px_onevsmany_xianxia_s1  15    0    1  mode=T2VA  shots=8  real_duration=15.083s  words=643  spoken_zh=0
+px_onevsmany_xianxia_s2  15    0    1  mode=T2VA  shots=8  real_duration=15.083s  words=643  spoken_zh=0
+
+24 shots checked, 0 with errors

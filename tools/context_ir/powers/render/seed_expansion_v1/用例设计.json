@@ -1,0 +1,399 @@
+{
+  "version": "powers_seed_expansion_v1",
+  "date": "2026-10-08",
+  "seeds": [
+    2026100801,
+    2026100802
+  ],
+  "source_cases": "tools/context_ir/powers/cases.json",
+  "cases": [
+    {
+      "id": "telekinesis_urban",
+      "title": "都市念力_玻璃杯滑移悬浮落回",
+      "category": "念力",
+      "style": "都市",
+      "batch": "A",
+      "seconds": 10,
+      "performance": false,
+      "intent": "少年注视水杯→杯子滑近并离桌悬浮→鼻血显出负荷→松劲后落回桌面。",
+      "checks": [
+        "杯子先滑再离桌，能看见杯底与桌面的空隙",
+        "始终只有同一只玻璃杯，落回桌面而非消失",
+        "力量靠物体运动表现；声音限定冰箱、杯底摩擦与呼吸"
+      ],
+      "adaptation": "沿用原用例核心动作与三类声源限制。",
+      "light": "A warm kitchen bulb lights his hands and the glass; dusk through the window edges his grey hood.",
+      "setup": "A 50mm medium shot holds steady across a scratched kitchen table in an old rental flat. A slim teenage boy in a grey hoodie sits at screen-right, watching a half-full clear glass at screen-left. Both empty hands rest on his thighs, visible below the table edge. He is the only person in the kitchen.",
+      "action": "The glass first trembles, making fine ripples across the water. As his shoulders tighten, it slides slowly rightward toward him, then rises a finger's breadth above the table. A clean strip of air remains visible beneath its base, and its transparent sides keep their ordinary warm reflections. The glass hovers with a slight sway while a bead of sweat runs down his temple and a single drop of blood reaches his upper lip. He exhales and his shoulders ease. The same glass drops the short distance back onto the table; a small splash crosses its rim. It rests upright before him as the water ripples diminish and his hands remain on his thighs.",
+      "shots": [],
+      "sound": "The refrigerator's low hum fills the small kitchen throughout the shot. A clearly heard scrape follows the glass base moving over the wooden tabletop, ending as the glass lifts. His breathing grows shallow during the hover and releases into one longer exhale as the glass returns; the refrigerator remains the steady background."
+    },
+    {
+      "id": "telekinesis_xianxia",
+      "title": "仙侠念力_竹叶悬浮推开院门",
+      "category": "念力",
+      "style": "仙侠",
+      "batch": "A",
+      "seconds": 10,
+      "performance": false,
+      "intent": "老道抬指→竹叶离地悬浮→指向右侧院门→叶流推动门打开。",
+      "checks": [
+        "先离地悬浮，再朝同一扇右侧院门移动",
+        "门被叶流推动后向外晃开，位置和铰链保持一致",
+        "原材质的枯叶呈现力量，人物不靠接触开门"
+      ],
+      "adaptation": "沿用原用例，补明院门未上闩与向外打开的方向。",
+      "light": "Late afternoon light filters through bamboo onto the grey robe, yellow leaves and weathered wooden gate.",
+      "setup": "A 35mm medium-wide shot holds steady across an autumn courtyard in a bamboo grove. A lean, white-haired Taoist in a grey robe and wooden hairpin stands left of center. His left hand rests behind his back. Dry yellow bamboo leaves cover the paving, and an unlatched wooden gate stands closed at screen-right, hinged along its far-right post.",
+      "action": "He slowly lifts two fingers of his right hand. The leaves shiver against the paving, then rise together to knee height, leaving the stone clearly visible beneath them. They hover with gentle turns, their dry veins and curled edges catching the ordinary sunlight. His eyes shift toward the gate; only then do his two raised fingers point rightward. The hovering leaves stream toward screen-right as one low current, passing clear of his robe. The leaf current strikes the gate boards and pushes the gate outward on its right-hand hinges. It swings open and settles against its outer stop as the leaves spill through the opening. He keeps his left hand behind his back and lets his right fingers relax while the remaining leaves descend onto the paving.",
+      "shots": [],
+      "sound": "A mild wind passes through the bamboo with a soft creak from the stalks. Dry leaves rasp as they lift and gather into the rightward current, their collective rustle clearly heard as they reach the gate. The wooden gate groans on its hinges when the leaves push it outward, then gives a dull knock against its stop."
+    },
+    {
+      "id": "element_urban",
+      "title": "都市元素_咖啡杯结霜",
+      "category": "元素特写",
+      "style": "都市",
+      "batch": "A",
+      "seconds": 8,
+      "performance": false,
+      "intent": "双手握着已放稳的热咖啡杯→接触处结霜蔓延→咖啡结冰→松开后看掌心薄霜。",
+      "checks": [
+        "霜从手指接触杯壁处开始，连续蔓延到杯壁与液面",
+        "热气消失、液面成冰发生在结霜过程中",
+        "松手时杯子留在桌面，双手和杯子数量稳定"
+      ],
+      "adaptation": "补明杯子始终放在桌面，避免松开双手后缺少落点。",
+      "light": "Cool ceiling tubes light her hands; falling snow outside the window catches the street lamps.",
+      "setup": "A 50mm close-up holds a static shot on a young woman's hands around a plain paper coffee cup standing on a high table beside a convenience-store window. Her beige sweater sleeves end at her wrists; a little steam rises from the dark coffee. The lower edge of her face and long black hair remain visible above her hands.",
+      "action": "Her fingers tighten against the cup wall. A fine white frost begins exactly beneath her fingertips and branches outward across the paper, following its curved surface. The frost thickens into an opaque coating as the rising steam dwindles and disappears. The coffee surface turns glassy and a thin layer of ice spreads from the edge toward its center. Tiny cracks catch the ceiling light across the frozen surface. She loosens both hands and draws them back, leaving the same cup upright on the tabletop. Turning her palms toward her face, she studies a thin dusting of frost across her fingertips and palm creases. The cup stays where she placed it, its frozen surface and white-coated sides unchanged through the end.",
+      "shots": [],
+      "sound": "A subdued refrigerator hum and distant winter traffic sit beneath the close view. A distinct fine crackle accompanies frost spreading across the paper and ice closing over the coffee. Her fingers make a soft dry rub as they withdraw from the cup, followed by the quiet friction of her sweater cuffs as she turns her palms upward."
+    },
+    {
+      "id": "element_xianxia",
+      "title": "仙侠元素_指间电弧收回",
+      "category": "元素特写",
+      "style": "仙侠",
+      "batch": "A",
+      "seconds": 8,
+      "performance": false,
+      "intent": "女修抬右手→紫白电弧从指间增强并照亮环境→发丝微浮→握拳后电光熄灭。",
+      "checks": [
+        "电弧始于右手指间，亮度照到脸与洞壁",
+        "发梢微浮随电弧增强发生",
+        "握拳后电光结束，环境回到月光，手部数量稳定"
+      ],
+      "adaptation": "沿用原用例，把不可见的焦味改为可见的细白烟。",
+      "light": "Cold moonlight through the cave mouth edges her dark-purple sleeves and the rough stone behind her.",
+      "setup": "A 50mm medium close-up holds steady on a young woman sitting cross-legged inside a dark mountain cave. She wears fitted dark-purple robes and a high black ponytail. Her left hand rests on her knee; she lifts her open right hand beside her face, its fingers clearly separated against the dark stone.",
+      "action": "A few fine violet-white arcs first jump between her right thumb and index finger. As she watches, the arcs thicken and branch across the gaps between her fingers, briefly illuminating the skin of her palm. Their pulses throw violet-white light across one side of her face and the nearby cave wall, while the other side retains its cool moonlit edge. A few loose hairs beside her temple and the end of her ponytail lift gently with the growing charge. She closes the same right hand into a firm fist. The arcs extinguish at the closure, leaving her fist solid in the moonlight. A thin white wisp curls above her knuckles as the loose hairs settle; her left hand remains on her knee.",
+      "shots": [],
+      "sound": "A low wind brushes past the cave mouth with a faint hollow resonance. Clearly heard electrical snaps begin with the first arcs, growing into a tight crackle as light spreads between her fingers. The crackle cuts off when her fist closes, leaving the soft cave wind beneath the final curl of smoke."
+    },
+    {
+      "id": "awaken_urban",
+      "title": "都市觉醒_金瞳与局部雨滴悬停",
+      "category": "觉醒",
+      "style": "都市",
+      "batch": "B",
+      "seconds": 10,
+      "performance": true,
+      "intent": "天台被逼近→男子抬头显出金瞳→身边雨滴悬停→打手后退，远处雨仍正常落下。",
+      "checks": [
+        "眼部变化与局部雨滴停止能分别看清",
+        "只冻结男子身边雨滴，三个打手仍能反应",
+        "湿衣和头发被气流吹动，表演克制且人数稳定"
+      ],
+      "adaptation": "沿用原用例的局部范围，不将全场雨声或打手一并冻结。",
+      "light": "City neon reflects from the wet rooftop; a cold floodlight picks out the white shirt and falling rain.",
+      "setup": "A 35mm medium-wide shot slowly pushes toward a rain-soaked rooftop railing at screen-right. A young man in a wet white shirt and black trousers stands before it, a narrow blood mark at his mouth. Three thugs approach from screen-left: one in a grey hoodie, one in a red bomber jacket and one in a navy shirt. These four occupy the rooftop.",
+      "action": "The man lowers his gaze and draws a rough breath, his hands hanging empty. His jaw tightens; when he lifts his head, a thin gold ring lights around each pupil. Rain immediately around his shoulders stops in midair, each suspended drop keeping its shape while rain beyond that small space continues falling onto the roof. His wet hair and shirt hem stream backward in a localized current. The three thugs halt their approach and take a short step back, their eyes following the gold in his face. He holds their gaze with a restrained expression as the camera draws closer. The suspended drops remain around him, the rain behind the three men keeps falling, and his shirt hem continues lifting in the air.",
+      "shots": [],
+      "sound": "Rain hits the rooftop and railing throughout, clearly continuing outside the man's small suspended pocket. His rough breath is heard before his eyes lift, followed by the scuff of the three thugs stopping and stepping back on wet concrete. A low rush of air accompanies the movement of his shirt and hair, staying beneath the surrounding rain."
+    },
+    {
+      "id": "awaken_xianxia",
+      "title": "仙侠觉醒_灵气回收与青瞳",
+      "category": "觉醒",
+      "style": "仙侠",
+      "batch": "B",
+      "seconds": 10,
+      "performance": false,
+      "intent": "女子闭关→白雾状灵气绕身增强→衣发被带动、石台裂纹出现→灵气收回、青瞳一闪。",
+      "checks": [
+        "灵气由周围薄雾形成并旋转，不凭空换成掌心光球",
+        "衣发、碎石与裂纹的反应跟随灵气增强",
+        "回收后灵气结束、青光只闪一下，衣发落定"
+      ],
+      "adaptation": "沿用原用例，裂纹和碎石保留为觉醒后的环境结果。",
+      "light": "Amber dusk lights her white robe against the cool cloud sea below the cliff.",
+      "setup": "A 50mm medium shot slowly pushes toward a young woman sitting cross-legged on a broad stone platform at a cliff edge. She wears plain white robes, her long black hair loose over her shoulders, her eyes closed and both hands resting on her knees. The platform edge and a rolling cloud sea remain visible around her.",
+      "action": "A faint current first lifts a few strands of hair. Pale, mist-like spiritual vapor gathers from the air beside her and starts circling her seated body, its thin ribbons visible against the darker clouds. The circling vapor speeds up and draws her hair and sleeve edges outward. Fine cracks spread through the stone from the area beneath her knees, and several loose pebbles hop against the surface. Her shoulders draw a short breath. The vapor contracts sharply toward her chest and disappears into her body; the disturbed air quiets around her. She opens her eyes, a brief blue-green glint crossing the pupils before they return to their ordinary dark color. Her hair and sleeves slowly settle, while the fine cracks remain in the stone.",
+      "shots": [],
+      "sound": "Cliff wind moves steadily above the distant low murmur of the cloud-filled valley. A rising airy rush follows the circling vapor, with distinct dry ticks as the stone cracks and loose pebbles tap the platform. The rush subsides as the vapor contracts into her body, leaving the quiet wind while her hair settles."
+    },
+    {
+      "id": "timestop_urban",
+      "title": "都市时间静止_掉落杯与外卖员定住",
+      "category": "时间静止",
+      "style": "都市",
+      "batch": "B",
+      "seconds": 8,
+      "performance": false,
+      "intent": "杯子从外卖员手里掉落→男子响指→杯子和外卖员定住→男子仍能转眼眨眼，保持到结尾。",
+      "checks": [
+        "杯子先有掉落，再在响指后停止，始终悬在地面上方",
+        "外卖员保持同一失手姿态，男子仍能正常动",
+        "静止后声场转静；不取杯、不恢复，人物和杯子数量稳定"
+      ],
+      "adaptation": "新诊断用例：从原十字路口简化为两人一杯，只测局部定住，删除穿行、递杯与解除恢复。",
+      "light": "Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront.",
+      "setup": "A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame.",
+      "action": "The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left snaps the fingers of his right hand. At the snap, the cup stops upright in midair above the paving; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame.",
+      "shots": [],
+      "sound": "Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider."
+    },
+    {
+      "id": "timestop_xianxia",
+      "title": "仙侠时间静止_冻结后拨偏单箭",
+      "category": "时间静止",
+      "style": "仙侠",
+      "batch": "B",
+      "seconds": 8,
+      "performance": false,
+      "intent": "复用正确箭向→抬左掌定住单箭→右手拨成朝下→右手离开后仍悬停，左掌保持。",
+      "checks": [
+        "初始箭头领飞且朝女侠，抬手后先悬停",
+        "右手只操作同一支箭，左手一直维持触发姿态",
+        "手离开后箭保持新角度，箭和手不增生、不穿模"
+      ],
+      "adaptation": "新诊断用例：在通过的单箭冻结上加一次拨偏；缩短掌前间隙以便右手够到，不加抱人和恢复，不视为单句因果对照。",
+      "light": "Soft daylight between the tiled roofs lights her face and hands against a pale plaster wall.",
+      "setup": "A 35mm medium-wide side view holds a static shot across a stone-paved lane in one continuous take. A young woman in fitted teal robes and a high black ponytail stands at screen-left facing right, both hands open at her sides. She is the only person in the lane. A single wooden arrow enters from screen-right at shoulder height, its sharp metal arrowhead leading on the left toward her and its black-feathered tail trailing on the right.",
+      "action": "The arrow flies leftward. She raises her left palm, keeping that elbow bent near her chest. The arrow stops horizontally with its tip a hand's breadth beyond her palm and a visible strip of air between them. Keeping the left palm raised, she brings her right hand beneath the shaft and closes her thumb and forefinger gently around its middle. She turns the arrow until its metal point faces down toward the empty paving and its feathered tail faces up. The shaft stays in the same space before her left palm. Her right fingertips open and withdraw to her hip. The arrow holds its new downward-pointing angle through the final frame, while her left palm remains raised.",
+      "shots": [],
+      "sound": "A faint breeze moves through the lane, with a little cloth rustle as her left sleeve rises. The arrow's distinct thin whistle accompanies its flight and cuts off when it stops in the air. A soft rub of skin against wood is clearly heard as her right fingers turn the shaft, then the breeze remains beneath the suspended hold."
+    },
+    {
+      "id": "blast_urban",
+      "title": "都市能量波_蓝光打飞撞柱",
+      "category": "能量波",
+      "style": "都市",
+      "batch": "C",
+      "seconds": 8,
+      "performance": true,
+      "intent": "掌心聚蓝白光→波击胸口→打手向后飞→撞裂水泥柱、铁棍落水→掌光熄灭。",
+      "checks": [
+        "光从右掌聚集，再向画右飞出并击中胸口",
+        "受击、后飞、撞柱方向连续，柱裂发生于撞击",
+        "铁棍落点清楚，末镜掌光熄灭，仍为原两个人"
+      ],
+      "adaptation": "沿用原用例的打飞撞柱结果，用五镜分开蓄能、命中、后飞、撞击和余波。",
+      "light": "Broken fluorescent tubes cast cold stripes across concrete pillars and shallow puddles in the underground garage.",
+      "setup": "A 35mm medium two-shot holds steady in a derelict underground garage. A short-haired woman in a black motorcycle jacket and jeans stands at screen-left. A bald thug at screen-right rushes leftward with an iron bar in his right hand; a square concrete pillar stands behind him at the far right. Only these two occupy the garage.",
+      "action": "She raises her open right palm toward him. A small blue-white light gathers against its center and grows bright enough to wash her cheek and jacket sleeve with blue-white reflections.",
+      "shots": [
+        {
+          "at": 1.7,
+          "framing": "a 50mm close-up across the gap from the same side",
+          "camera": "holding a static shot",
+          "action": "The woman's glowing right palm from Shot 1 thrusts rightward from the left edge. A compact blue-white wave crosses the visible gap and strikes the bald thug's chest on the right. His shoulders jerk backward at the impact as the light breaks against the fabric."
+        },
+        {
+          "at": 3,
+          "framing": "a 35mm medium shot of the bald thug from Shot 1",
+          "camera": "tracking rightward from the same side",
+          "action": "His feet leave the wet floor and his whole body travels backward toward screen-right. He still grips the iron bar; the concrete pillar remains directly behind him on the right. The blue-white wave thins into short streaks along the same path."
+        },
+        {
+          "at": 4.5,
+          "framing": "a 50mm close-up of the right-side pillar",
+          "camera": "holding a static shot",
+          "action": "The bald thug from Shot 1 strikes it back-first. Cracks radiate from the impact through the concrete, dust bursts downward, and his right fingers release the iron bar. The bar falls beside the pillar into the shallow puddle below as his weight slides down the concrete."
+        },
+        {
+          "at": 6,
+          "framing": "a 50mm medium two-shot across the garage from the same side",
+          "camera": "holding steady",
+          "action": "The short-haired woman from Shot 1 remains left, her right palm now dark and her fingers faintly trembling. The bald thug sits slumped at the cracked pillar on the right, the iron bar lying in its puddle. Dust settles between them while the floor ripples widen and fade."
+        }
+      ],
+      "sound": "A tired fluorescent hum fills the garage beneath fast shoes splashing through shallow water. A sharp compressed rush follows the palm wave and a distinct heavy impact lands as the thug strikes concrete. Cracking concrete and falling grit give way to the iron bar's metallic clatter and splash, then the hum remains under settling dust."
+    },
+    {
+      "id": "blast_xianxia",
+      "title": "仙侠剑气_断刀滚落断松枝",
+      "category": "能量波",
+      "style": "仙侠",
+      "batch": "C",
+      "seconds": 8,
+      "performance": true,
+      "intent": "剑修双指聚金光→金色剑气斩刀→刺客滚下石阶→余势断松枝→剑修收指。",
+      "checks": [
+        "剑气由右手双指形成并沿画右射出",
+        "刀仅断成两段，刺客滚向台阶下方而非换向",
+        "同一股剑气余势斩枝后消散，佩剑始终在鞘"
+      ],
+      "adaptation": "沿用原用例，五镜保持剑修在左上、刺客及落点在右下。",
+      "light": "Early sunlight through mountain mist lights the white robe, grey steps and pine needles.",
+      "setup": "A 35mm medium-wide shot holds steady beside long stone steps before a mountain gate. A white-robed young swordsman with tied black hair stands at upper screen-left, his longsword sheathed at his waist. A masked assassin in black climbs from lower screen-right with a broad saber. A pine branch projects over the right side of the steps. Only these two are present.",
+      "action": "The swordsman joins the index and middle fingers of his right hand. A thin golden light condenses along the fingertips, edging his sleeve as the assassin closes.",
+      "shots": [
+        {
+          "at": 1.5,
+          "framing": "a close-up across the two weapons from the same side",
+          "camera": "holding a static shot",
+          "action": "The white-robed swordsman's fingers from Shot 1 sweep rightward. A curved golden blade of light crosses the gap from left to right and strikes the masked assassin's raised saber. The steel splits once across its middle; the severed tip falls right while the hilt stays in the assassin's hand."
+        },
+        {
+          "at": 2.8,
+          "framing": "a 35mm medium shot down the steps from the same side",
+          "camera": "tracking rightward",
+          "action": "The masked assassin from Shot 1 recoils toward lower screen-right. His heels lose the step and he rolls down the stone, still clutching the saber hilt. The golden arc continues above him toward the pine on the right, while the detached steel tip skips down separate steps."
+        },
+        {
+          "at": 4.3,
+          "framing": "a 50mm close-up of the pine branch on the right",
+          "camera": "holding a static shot",
+          "action": "The same golden arc from Shot 2 slices through the base of the projecting branch. Pale wood parts at the cut; the branch drops rightward beside the steps and shakes loose a shower of needles. The remaining light tapers along its path and fades in the mist."
+        },
+        {
+          "at": 6,
+          "framing": "a 50mm medium-wide shot across the steps from the same side",
+          "camera": "holding steady",
+          "action": "The white-robed swordsman from Shot 1 relaxes his right fingers at upper left, his waist sword still sheathed. The masked assassin rests on a lower step at right with the broken hilt, the blade tip and severed branch nearby. The swordsman's sleeve settles as pine needles descend."
+        }
+      ],
+      "sound": "Mountain wind moves through the pines above quick feet on stone. A distinct ringing snap marks the golden arc cutting the steel, followed by the assassin's heavy rolling impacts down the steps. The sharp crack of the severed pine branch and a dry needle rustle trail the fading rush of the sword energy."
+    },
+    {
+      "id": "onevsmany_urban",
+      "title": "都市一打六_擒棍推飞群压",
+      "category": "一打多",
+      "style": "都市",
+      "batch": "C",
+      "seconds": 15,
+      "performance": true,
+      "intent": "六人围攻→接棍撂倒一人→念力推第二人撞车→四人合扑被压倒→主角整理大衣。",
+      "checks": [
+        "始终六名打手：先倒1人、再倒1人、剩4人，末尾不重新增员",
+        "接棍的手与后续念力手势衔接，推飞方向与车门位置一致",
+        "群压后六人保留落点，真人倒地而非变成碎灰"
+      ],
+      "adaptation": "沿用六人及全部关键结果，八镜记录人数与手部占用。",
+      "light": "Cold fluorescent strips reflect along parked cars and shallow water on the garage floor.",
+      "setup": "A 35mm wide shot holds steady in a garage. A man in a grey overcoat and black turtleneck stands center. Six armed thugs surround him: a hooded club wielder left, a brown-jacketed knife wielder beside a parked car right, and four behind, two each side. Only these seven are present.",
+      "action": "The club wielder advances from screen-left. The man turns toward him, both hands empty.",
+      "shots": [
+        {
+          "at": 1.8,
+          "framing": "a close-up of the approaching club at the left",
+          "camera": "holding a static shot from the same side",
+          "action": "The grey-coated man from Shot 1 catches the wooden club with his right hand. The hooded thug retains its handle on the left, wrists taut as the club stops."
+        },
+        {
+          "at": 3,
+          "framing": "a 35mm medium shot of the left-hand pair",
+          "camera": "holding steady from the same side",
+          "action": "At screen-left, the grey-coated man from Shot 1 twists the club downward, toppling the hooded thug onto his side. He releases the club beside the fallen man; five opponents remain upright."
+        },
+        {
+          "at": 5,
+          "framing": "a 50mm medium shot across the right-hand gap",
+          "camera": "holding steady from the same side",
+          "action": "The brown-jacketed thug from Shot 1 lunges leftward. From center, the grey-coated man opens his empty right palm; the attacker flies backward toward the car at screen-right."
+        },
+        {
+          "at": 6.4,
+          "framing": "a close-up of the right-side car door",
+          "camera": "holding a static shot",
+          "action": "The brown-jacketed thug from Shot 1 hits the right-side car door back-first, denting it. His knife drops by the tire as he slides down; four opponents remain upright."
+        },
+        {
+          "at": 7.7,
+          "framing": "a 35mm medium-wide shot across the remaining four",
+          "camera": "holding steady from the same side",
+          "action": "Four remaining thugs from Shot 1 close in, two each side. The grey-coated man stays center and presses both palms downward; a ring of water and dust bursts outward from his feet."
+        },
+        {
+          "at": 10,
+          "framing": "a 35mm wide shot of the garage floor",
+          "camera": "holding steady from the same side",
+          "action": "The four closing thugs from Shot 1 buckle and fall, knees hitting first. All six opponents stay down: the hooded man left, the brown jacket at the right car, the final four around center."
+        },
+        {
+          "at": 12.5,
+          "framing": "a 50mm medium shot of the grey-coated man from Shot 1",
+          "camera": "pulling back slowly from the same side",
+          "action": "The grey-coated man from Shot 1 smooths his lapels with empty hands while all six opponents remain down. Fluorescent strips flicker above the right-side car; his hands settle as dust thins over the floor."
+        }
+      ],
+      "sound": "A fluorescent hum and approaching shoes establish the garage, followed by a sharp wooden knock as the club is caught and a heavy body impact on concrete. The right-side car door gives a distinct metal crunch and its alarm begins when the second thug strikes it. Water and dust burst beneath the downward gesture, with four closely spaced falls and dropped weapons clattering before the alarm carries the final hold."
+    },
+    {
+      "id": "onevsmany_xianxia",
+      "title": "仙侠一打十二_御剑剑影回鞘",
+      "category": "一打多",
+      "style": "仙侠",
+      "batch": "C",
+      "seconds": 15,
+      "performance": true,
+      "intent": "十二刺客围攻→一把实体剑出鞘→挑飞兵刃并斩竹→九道剑影环绕→刺客退倒→实体剑回鞘。",
+      "checks": [
+        "十二名刺客数量与已失兵刃的四人保持连续",
+        "实体剑、光影区分，飞行端向明确且斩竹有可见断口",
+        "末尾一把实体剑回同一剑鞘，剑影消退，刺客不化灰"
+      ],
+      "adaptation": "将原“十几个”定为十二；一把实体剑与九道光影分开描述，保留御剑、断竹与回鞘。",
+      "light": "Blue moonlight edges the bamboo and white robe; cool sword light adds brief reflections during the attack.",
+      "setup": "A 35mm wide shot holds steady in a moonlit bamboo clearing. A white-robed swordsman with tied black hair stands center with a sheathed longsword on his back. Twelve masked assassins in black surround him, six left and six right, holding knives and swords. The front two on each side crouch closer. Only these thirteen occupy the clearing.",
+      "action": "The swordsman lifts two fingers of his right hand as the front four advance.",
+      "shots": [
+        {
+          "at": 1.8,
+          "framing": "a close-up over the white-robed swordsman's shoulder from Shot 1",
+          "camera": "holding a static shot",
+          "action": "The longsword from Shot 1 rises hilt-first from the white-robed swordsman's back scabbard. Once clear, it turns horizontal: point toward screen-right, hilt trailing left, cold white light along its steel edge."
+        },
+        {
+          "at": 3,
+          "framing": "a 50mm medium shot of the right-side attackers",
+          "camera": "tracking rightward from the same side",
+          "action": "The single steel sword from Shot 2 flies point-first rightward, knocking weapons from the front two assassins from Shot 1 on the right. Both stumble back as their blades fall."
+        },
+        {
+          "at": 4.5,
+          "framing": "a close-up of bamboo at the right edge of the clearing",
+          "camera": "holding a static shot",
+          "action": "The steel sword from Shot 2 severs bamboo on the right. Pale cut ends open; the upper stalks fall rightward behind the disarmed pair. The sword curves leftward across the clearing."
+        },
+        {
+          "at": 6,
+          "framing": "a 50mm medium shot across the left side",
+          "camera": "panning leftward from the same side",
+          "action": "Leading point-first leftward, the sword from Shot 2 knocks away the front left pair's blades. Those two retreat; four assassins are now disarmed, while eight remain armed farther back."
+        },
+        {
+          "at": 8,
+          "framing": "a 35mm medium-wide shot around the white-robed swordsman from Shot 1",
+          "camera": "holding steady from the same side",
+          "action": "The white-robed swordsman from Shot 1 draws the single steel blade near his raised fingers. Nine translucent sword-shaped afterimages revolve around him, distinct from the solid sword beside his right hand."
+        },
+        {
+          "at": 10.2,
+          "framing": "a 35mm wide shot of the clearing",
+          "camera": "pulling back slowly from the same side",
+          "action": "The white-robed swordsman from Shot 1 remains center within the circling light. Four disarmed assassins sink to the ground; the other eight retreat into the bamboo, four each side. Cut stalks stay right."
+        },
+        {
+          "at": 12.6,
+          "framing": "a 50mm medium rear three-quarter shot of the white-robed swordsman from Shot 1",
+          "camera": "holding steady on the same side",
+          "action": "The white-robed swordsman from Shot 1 lowers his fingers. Nine light afterimages fade; the single steel sword turns point-down and slides into his back scabbard. Twelve opponents remain down or withdrawn as leaves settle."
+        }
+      ],
+      "sound": "Night wind and bamboo leaves fill the clearing before the steel blade gives a distinct scrape as it leaves the scabbard. Sharp metal clashes follow each disarm, with dry splitting cracks as the sword severs bamboo and the upper stalks fall. A thin circling rush accompanies the sword images, easing into a clearly heard final sheath scrape while leaves settle."
+    }
+  ]
+}

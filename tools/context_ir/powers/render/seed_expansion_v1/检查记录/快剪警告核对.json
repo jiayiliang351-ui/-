@@ -1,0 +1,30 @@
+{
+  "unique_case_warnings": [
+    {
+      "case": "blast_urban",
+      "warning": "WARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)"
+    },
+    {
+      "case": "blast_xianxia",
+      "warning": "WARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)"
+    },
+    {
+      "case": "onevsmany_urban",
+      "warning": "WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)"
+    },
+    {
+      "case": "onevsmany_urban",
+      "warning": "WARN  shot before [Shot 5] lasts 1.40s (< 1.5s; fine only for fast-action quick cuts)"
+    },
+    {
+      "case": "onevsmany_urban",
+      "warning": "WARN  shot before [Shot 6] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)"
+    },
+    {
+      "case": "onevsmany_xianxia",
+      "warning": "WARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)"
+    }
+  ],
+  "warnings_per_seeded_master": 12,
+  "review": "All warnings concern 1.2–1.4-second fast-action contact/impact shots. Each is >=1.0 seconds, permitted by the canonical fast-action rule; final shots remain >=1.5 seconds. No script or timings changed to suppress warnings."
+}

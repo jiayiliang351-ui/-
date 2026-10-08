@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 5,
+  "project": {
+    "id": "powers_seed_expansion_b_v1",
+    "name": "B_觉醒与时间静止_8段",
+    "runId": "powers_seed_expansion_b_20261008_v1"
+  },
+  "defaults": {
+    "fps": 24,
+    "baseSeed": 2026100801
+  },
+  "promptPrefix": "",
+  "promptSuffix": "",
+  "continuity": {
+    "mode": "h3_av_latent",
+    "videoContextFrames": 22,
+    "audioContextFrames": 24,
+    "durationMode": "final_output"
+  },
+  "assets": [],
+  "shots": [
+    {
+      "id": "px_awaken_urban_s1",
+      "title": "都市觉醒_金瞳与局部雨滴悬停_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. City neon reflects from the wet rooftop; a cold floodlight picks out the white shirt and falling rain. A 35mm medium-wide shot slowly pushes toward a rain-soaked rooftop railing at screen-right. A young man in a wet white shirt and black trousers stands before it, a narrow blood mark at his mouth. Three thugs approach from screen-left: one in a grey hoodie, one in a red bomber jacket and one in a navy shirt. These four occupy the rooftop. Nobody stands idle or poses for the camera. Every character is always occupied with some small piece of business — handling an object, finishing a movement, glancing at something off-topic. In every exchange one character acts while the other reacts, and reactions arrive a beat late, the way real people respond while their attention is still somewhere else. Small involuntary gestures (swallowing, shifting weight, thumb rubbing an edge, a delayed look-up) matter more than polished facial expressions. The man lowers his gaze and draws a rough breath, his hands hanging empty. His jaw tightens; when he lifts his head, a thin gold ring lights around each pupil. Rain immediately around his shoulders stops in midair, each suspended drop keeping its shape while rain beyond that small space continues falling onto the roof. His wet hair and shirt hem stream backward in a localized current. The three thugs halt their approach and take a short step back, their eyes following the gold in his face. He holds their gaze with a restrained expression as the camera draws closer. The suspended drops remain around him, the rain behind the three men keeps falling, and his shirt hem continues lifting in the air. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Rain hits the rooftop and railing throughout, clearly continuing outside the man's small suspended pocket. His rough breath is heard before his eyes lift, followed by the scuff of the three thugs stopping and stepping back on wet concrete. A low rush of air accompanies the movement of his shirt and hair, staying beneath the surrounding rain.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_awaken_urban_s2",
+      "title": "都市觉醒_金瞳与局部雨滴悬停_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. City neon reflects from the wet rooftop; a cold floodlight picks out the white shirt and falling rain. A 35mm medium-wide shot slowly pushes toward a rain-soaked rooftop railing at screen-right. A young man in a wet white shirt and black trousers stands before it, a narrow blood mark at his mouth. Three thugs approach from screen-left: one in a grey hoodie, one in a red bomber jacket and one in a navy shirt. These four occupy the rooftop. Nobody stands idle or poses for the camera. Every character is always occupied with some small piece of business — handling an object, finishing a movement, glancing at something off-topic. In every exchange one character acts while the other reacts, and reactions arrive a beat late, the way real people respond while their attention is still somewhere else. Small involuntary gestures (swallowing, shifting weight, thumb rubbing an edge, a delayed look-up) matter more than polished facial expressions. The man lowers his gaze and draws a rough breath, his hands hanging empty. His jaw tightens; when he lifts his head, a thin gold ring lights around each pupil. Rain immediately around his shoulders stops in midair, each suspended drop keeping its shape while rain beyond that small space continues falling onto the roof. His wet hair and shirt hem stream backward in a localized current. The three thugs halt their approach and take a short step back, their eyes following the gold in his face. He holds their gaze with a restrained expression as the camera draws closer. The suspended drops remain around him, the rain behind the three men keeps falling, and his shirt hem continues lifting in the air. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Rain hits the rooftop and railing throughout, clearly continuing outside the man's small suspended pocket. His rough breath is heard before his eyes lift, followed by the scuff of the three thugs stopping and stepping back on wet concrete. A low rush of air accompanies the movement of his shirt and hair, staying beneath the surrounding rain.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_awaken_xianxia_s1",
+      "title": "仙侠觉醒_灵气回收与青瞳_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Amber dusk lights her white robe against the cool cloud sea below the cliff. A 50mm medium shot slowly pushes toward a young woman sitting cross-legged on a broad stone platform at a cliff edge. She wears plain white robes, her long black hair loose over her shoulders, her eyes closed and both hands resting on her knees. The platform edge and a rolling cloud sea remain visible around her. A faint current first lifts a few strands of hair. Pale, mist-like spiritual vapor gathers from the air beside her and starts circling her seated body, its thin ribbons visible against the darker clouds. The circling vapor speeds up and draws her hair and sleeve edges outward. Fine cracks spread through the stone from the area beneath her knees, and several loose pebbles hop against the surface. Her shoulders draw a short breath. The vapor contracts sharply toward her chest and disappears into her body; the disturbed air quiets around her. She opens her eyes, a brief blue-green glint crossing the pupils before they return to their ordinary dark color. Her hair and sleeves slowly settle, while the fine cracks remain in the stone. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Cliff wind moves steadily above the distant low murmur of the cloud-filled valley. A rising airy rush follows the circling vapor, with distinct dry ticks as the stone cracks and loose pebbles tap the platform. The rush subsides as the vapor contracts into her body, leaving the quiet wind while her hair settles.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_awaken_xianxia_s2",
+      "title": "仙侠觉醒_灵气回收与青瞳_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Amber dusk lights her white robe against the cool cloud sea below the cliff. A 50mm medium shot slowly pushes toward a young woman sitting cross-legged on a broad stone platform at a cliff edge. She wears plain white robes, her long black hair loose over her shoulders, her eyes closed and both hands resting on her knees. The platform edge and a rolling cloud sea remain visible around her. A faint current first lifts a few strands of hair. Pale, mist-like spiritual vapor gathers from the air beside her and starts circling her seated body, its thin ribbons visible against the darker clouds. The circling vapor speeds up and draws her hair and sleeve edges outward. Fine cracks spread through the stone from the area beneath her knees, and several loose pebbles hop against the surface. Her shoulders draw a short breath. The vapor contracts sharply toward her chest and disappears into her body; the disturbed air quiets around her. She opens her eyes, a brief blue-green glint crossing the pupils before they return to their ordinary dark color. Her hair and sleeves slowly settle, while the fine cracks remain in the stone. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Cliff wind moves steadily above the distant low murmur of the cloud-filled valley. A rising airy rush follows the circling vapor, with distinct dry ticks as the stone cracks and loose pebbles tap the platform. The rush subsides as the vapor contracts into her body, leaving the quiet wind while her hair settles.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 10,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_timestop_urban_s1",
+      "title": "都市时间静止_掉落杯与外卖员定住_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront. A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame. The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left snaps the fingers of his right hand. At the snap, the cup stops upright in midair above the paving; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_timestop_urban_s2",
+      "title": "都市时间静止_掉落杯与外卖员定住_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront. A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame. The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left snaps the fingers of his right hand. At the snap, the cup stops upright in midair above the paving; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_timestop_xianxia_s1",
+      "title": "仙侠时间静止_冻结后拨偏单箭_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight between the tiled roofs lights her face and hands against a pale plaster wall. A 35mm medium-wide side view holds a static shot across a stone-paved lane in one continuous take. A young woman in fitted teal robes and a high black ponytail stands at screen-left facing right, both hands open at her sides. She is the only person in the lane. A single wooden arrow enters from screen-right at shoulder height, its sharp metal arrowhead leading on the left toward her and its black-feathered tail trailing on the right. The arrow flies leftward. She raises her left palm, keeping that elbow bent near her chest. The arrow stops horizontally with its tip a hand's breadth beyond her palm and a visible strip of air between them. Keeping the left palm raised, she brings her right hand beneath the shaft and closes her thumb and forefinger gently around its middle. She turns the arrow until its metal point faces down toward the empty paving and its feathered tail faces up. The shaft stays in the same space before her left palm. Her right fingertips open and withdraw to her hip. The arrow holds its new downward-pointing angle through the final frame, while her left palm remains raised. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: A faint breeze moves through the lane, with a little cloth rustle as her left sleeve rises. The arrow's distinct thin whistle accompanies its flight and cuts off when it stops in the air. A soft rub of skin against wood is clearly heard as her right fingers turn the shaft, then the breeze remains beneath the suspended hold.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "px_timestop_xianxia_s2",
+      "title": "仙侠时间静止_冻结后拨偏单箭_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight between the tiled roofs lights her face and hands against a pale plaster wall. A 35mm medium-wide side view holds a static shot across a stone-paved lane in one continuous take. A young woman in fitted teal robes and a high black ponytail stands at screen-left facing right, both hands open at her sides. She is the only person in the lane. A single wooden arrow enters from screen-right at shoulder height, its sharp metal arrowhead leading on the left toward her and its black-feathered tail trailing on the right. The arrow flies leftward. She raises her left palm, keeping that elbow bent near her chest. The arrow stops horizontally with its tip a hand's breadth beyond her palm and a visible strip of air between them. Keeping the left palm raised, she brings her right hand beneath the shaft and closes her thumb and forefinger gently around its middle. She turns the arrow until its metal point faces down toward the empty paving and its feathered tail faces up. The shaft stays in the same space before her left palm. Her right fingertips open and withdraw to her hip. The arrow holds its new downward-pointing angle through the final frame, while her left palm remains raised. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: A faint breeze moves through the lane, with a little cloth rustle as her left sleeve rises. The arrow's distinct thin whistle accompanies its flight and cuts off when it stops in the air. A soft rub of skin against wood is clearly heard as her right fingers turn the shaft, then the breeze remains beneath the suspended hold.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    }
+  ]
+}

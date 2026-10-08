@@ -1,0 +1,62 @@
+[
+  {
+    "id": "telekinesis_urban",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=1  real_duration=10.125s  words=307  spoken_zh=0\nOK\n"
+  },
+  {
+    "id": "telekinesis_xianxia",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=1  real_duration=10.125s  words=322  spoken_zh=0\nOK\n"
+  },
+  {
+    "id": "element_urban",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=1  real_duration=8.000s  words=315  spoken_zh=0\nOK\n"
+  },
+  {
+    "id": "element_xianxia",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=1  real_duration=8.000s  words=311  spoken_zh=0\nOK\n"
+  },
+  {
+    "id": "awaken_urban",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=1  real_duration=10.125s  words=400  spoken_zh=0\nOK\n"
+  },
+  {
+    "id": "awaken_xianxia",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=1  real_duration=10.125s  words=316  spoken_zh=0\nOK\n"
+  },
+  {
+    "id": "timestop_urban",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0\nOK\n"
+  },
+  {
+    "id": "timestop_xianxia",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=1  real_duration=8.000s  words=331  spoken_zh=0\nOK\n"
+  },
+  {
+    "id": "blast_urban",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=5  real_duration=8.000s  words=555  spoken_zh=0\nWARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)\n"
+  },
+  {
+    "id": "blast_xianxia",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=5  real_duration=8.000s  words=564  spoken_zh=0\nWARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)\n"
+  },
+  {
+    "id": "onevsmany_urban",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=8  real_duration=15.083s  words=627  spoken_zh=0\nWARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)\nWARN  shot before [Shot 5] lasts 1.40s (< 1.5s; fine only for fast-action quick cuts)\nWARN  shot before [Shot 6] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)\n"
+  },
+  {
+    "id": "onevsmany_xianxia",
+    "returncode": 0,
+    "output": "mode=T2VA  shots=8  real_duration=15.083s  words=643  spoken_zh=0\nWARN  shot before [Shot 3] lasts 1.20s (< 1.5s; fine only for fast-action quick cuts)\n"
+  }
+]

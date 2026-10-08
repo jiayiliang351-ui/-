@@ -1,0 +1,133 @@
+{
+  "case_count": 12,
+  "categories": 6,
+  "styles": [
+    "都市",
+    "仙侠"
+  ],
+  "clip_count": 24,
+  "seeds": [
+    2026100801,
+    2026100802
+  ],
+  "batch_clip_counts": {
+    "A": 8,
+    "B": 8,
+    "C": 8
+  },
+  "batch_union_equals_master_exactly": true,
+  "seed_pairs_differ_only_in_id_title_seed": true,
+  "source_generation_contract_preserved": true,
+  "all_protected_skill_and_script_files_unchanged": 44,
+  "source_cases_and_previous_json_preserved": true,
+  "preexisting_untracked_file_preserved": true,
+  "prompt_files_match_json_exactly": true,
+  "all_cut_durations_allowed": true,
+  "errors": 0,
+  "reviewed_fast_cut_warnings_unique_cases": 6,
+  "reviewed_fast_cut_warnings_master": 12,
+  "feedback_rows_pending_and_unfilled": true,
+  "copies_identical": true,
+  "nominal_seconds": 236,
+  "effective_seconds": 237.33333333333334,
+  "cloud_import_status": "not_tested",
+  "render_status": "not_rendered",
+  "files": {
+    "A_念力与元素_8段.json": {
+      "sha256": "9a730d3a6a5ab0fe0e6ffc6939234629ddf83ebad20fa495f73675cc8969b9ac",
+      "bytes": 21840
+    },
+    "B_觉醒与时间静止_8段.json": {
+      "sha256": "d75e54566afdb543f0823aa05b1d7bf304410afbe000b3c0073b71bdae7aa26d",
+      "bytes": 23164
+    },
+    "C_能量攻击与一打多_8段.json": {
+      "sha256": "3832c0a05bffc1ececcca954b1126d9e770012ed3bd0abbd7fef1ce2dc6672cf",
+      "bytes": 36871
+    },
+    "H3异能测试_全部12情节24段.json": {
+      "sha256": "b9a7c6c6e904838ce803c0954fb55ea25804c3978e1b407702976f33beabb7d6",
+      "bytes": 80964
+    },
+    "反馈表.csv": {
+      "sha256": "756c07ce5a0960f4d9ba544b092b585f204b1944935b7b9f4659d0932ddb1bb1",
+      "bytes": 9874
+    },
+    "批次清单.json": {
+      "sha256": "7c6fc450c7d6f7c56f337bdf491639ae51399e333aa287ca06dbcfb3fd31965f",
+      "bytes": 18734
+    },
+    "提示词原文/awaken_urban.txt": {
+      "sha256": "e4cece28abb5fcfe2f6f8458d772664b79202c210f31a37a2b64efa9c52cb1a0",
+      "bytes": 2886
+    },
+    "提示词原文/awaken_xianxia.txt": {
+      "sha256": "eea45704945bf37604887b6409c7135c62a46f0b3bf08a7c990d090d4edc790e",
+      "bytes": 2332
+    },
+    "提示词原文/blast_urban.txt": {
+      "sha256": "8a801a6c9c59ede7d1e1f150b05d0e8fce7e90afdf9e45543eaa83d00b50f6c0",
+      "bytes": 3878
+    },
+    "提示词原文/blast_xianxia.txt": {
+      "sha256": "d63b40ea6f87b07d9b5e02288e25c09172aa7c24c6863d9f55c759b5d350e0b5",
+      "bytes": 3891
+    },
+    "提示词原文/element_urban.txt": {
+      "sha256": "4c2b9235c6d7987f238b5baac3d4743c39bb700d2ebab9499107ca60234a4684",
+      "bytes": 2352
+    },
+    "提示词原文/element_xianxia.txt": {
+      "sha256": "2f22b7cb804a4e8a439f3085b11ca8f14c241239ac66c2e092f37870f38c3466",
+      "bytes": 2267
+    },
+    "提示词原文/onevsmany_urban.txt": {
+      "sha256": "d3d5fda58d89a072eae123471985f85e3320315ae5d629b9771e298b705f1341",
+      "bytes": 4393
+    },
+    "提示词原文/onevsmany_xianxia.txt": {
+      "sha256": "fa2ca989125c197284501e6d4f3f641b44548dbbdfb44f1f238dad5f7811db93",
+      "bytes": 4590
+    },
+    "提示词原文/telekinesis_urban.txt": {
+      "sha256": "63f94e98da13e7885b62e9ef86a8ab41d70deb2be2eb258f091b34955b471213",
+      "bytes": 2260
+    },
+    "提示词原文/telekinesis_xianxia.txt": {
+      "sha256": "0ffe0f3a7d84bb5e6342864c6e53808d8ceefb3b9b2d5a28603edbba1a259d2e",
+      "bytes": 2401
+    },
+    "提示词原文/timestop_urban.txt": {
+      "sha256": "a46688c5c41b2522c3c4afd4508be68f2ba3db793fbe64a6a30b0b2652e149b3",
+      "bytes": 2290
+    },
+    "提示词原文/timestop_xianxia.txt": {
+      "sha256": "0569641f5c5ed2d61fb64c40510f65e334ede7be65476fb25154d0155e044609",
+      "bytes": 2415
+    },
+    "检查记录/快剪警告核对.json": {
+      "sha256": "acf94849c6e07511893e88ccba51cf33dd373d2312867cc4a28040b419ad0126",
+      "bytes": 1213
+    },
+    "检查记录/整包lint.txt": {
+      "sha256": "4736790ad9bc1ccdb566ecdd1a93dca129f7ad8fdb81a697cfa4715e9543961c",
+      "bytes": 7289
+    },
+    "检查记录/逐用例lint.json": {
+      "sha256": "810031aa42264f786c24d9c291f2ab7ee00e42409c9337170f4542540d209775",
+      "bytes": 2263
+    },
+    "测试说明.md": {
+      "sha256": "806a05af0febccb4c31a9d5d0ef6fcdbee639d8bfc2704cb49842126f6968695",
+      "bytes": 4781
+    },
+    "生成配置记录.json": {
+      "sha256": "17f9da2a58169ebd534b476ad3a8541a3226a5a2edde4bf6a13c1e6beb282a98",
+      "bytes": 368
+    },
+    "用例设计.json": {
+      "sha256": "78f7ed55a62c6becb9bb4df449b76aef801a1807c58ee98ab5c67d5f0304a21b",
+      "bytes": 33884
+    }
+  }
+}
