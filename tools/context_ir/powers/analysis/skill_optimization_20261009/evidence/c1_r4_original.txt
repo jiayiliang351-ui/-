@@ -1,0 +1,16 @@
+integrated_multimodal_description:
+REALISTIC LIVE-ACTION ACTION SCENE, 16:9. ONE CONTINUOUS LOCKED-OFF MEDIUM-WIDE SIDE VIEW, no cuts, no pan, no push-in. Natural fluorescent garage light; real skin, real human momentum. Keep BOTH characters, their hands, the iron bar, their feet and one pillar clearly visible throughout.
+
+FIXED STAGE: Empty underground garage. Woman with short dark hair and black motorcycle jacket on SCREEN LEFT facing RIGHT, her RIGHT palm initially DOWN. Bald man in dark shirt on SCREEN RIGHT facing LEFT; holds ONE iron bar in HIS RIGHT HAND, raised already near his right shoulder. He stands just outside striking distance, ready to attack. A single square CONCRETE PILLAR is two steps BEHIND him to SCREEN RIGHT. No other people. Left/right positions do not reverse.
+
+00:00.00 [START ONE BEAT BEFORE THE HIT]: Bald attacker is ALREADY CLOSE, shoulders coiled and iron bar cocked back over his RIGHT SHOULDER, about to bring it down. He leans aggressively toward the woman. DO NOT spend time showing him running across the garage.
+00:00.15–00:00.55 [INTERRUPT]: BEFORE the bar begins any downward strike, the woman rapidly whips her RIGHT OPEN PALM from waist level toward HIS CHEST. This is a defensive counter, not a slow pose. The attacker has not hit her.
+00:00.55–00:00.70 [IMMEDIATE FORCE]: The instant her open palm faces him, ONE tight blue-white pressure flash snaps across the short gap and strikes his CHEST. His shoulders and head JOLT BACK on the SAME beat, aborting his attempted swing. NO charging, NO continuous laser beam, NO delay between the gesture and his recoil.
+00:00.70–00:02.50 [BACKWARD MOTION]: He recoils and is forced two strong, awkward steps toward SCREEN RIGHT, away from the woman. His wet shoes skid realistically. Keep his body continuous without disappearing or being flung as a stiff horizontal doll. The bar is still in his right hand until the pillar impact.
+00:02.50–00:03.40 [SINGLE COLLISION]: His upper BACK hits the same concrete pillar behind him at SCREEN RIGHT. ONE brief puff of concrete dust. He lets go of the iron bar ONCE, which drops beside his feet. His knees buckle and he slides down.
+00:03.40–00:08.00 [RESULT]: He remains slumped at the pillar, iron bar on the ground. The woman stays SCREEN LEFT and lowers her open right hand, startled by its power; she does not attack again. Dust settles naturally. No reset, no second hit.
+
+PRIORITY: (1) raised bar about to swing, (2) woman counterattacks BEFORE any downward strike, (3) palm flash and chest recoil synchronized at ~0.6s, (4) victim travels RIGHT to the pillar. Sacrifice dust detail if necessary; NEVER delay the counterattack or reverse left/right direction. No text, captions, titles, or logos.
+
+overall_soundscape: Rustle of raised iron bar, abrupt short WHOOMP exactly synchronized to palm flash, one pained exhale and wet skidding shoes, single back-against-pillar thud and metal clatter. Buzzing fluorescent lights beneath. No speech.
+non_diegetic_music: N/A

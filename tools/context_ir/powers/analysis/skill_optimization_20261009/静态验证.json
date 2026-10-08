@@ -1,0 +1,30 @@
+{
+  "skill_format": {
+    "exit": 0,
+    "output": "Skill is valid!\n"
+  },
+  "historical_prompt_lint": {
+    "exit": 1,
+    "expected_failure": true,
+    "output": "mode=T2VA  shots=0  real_duration=8.000s  words=427  spoken_zh=0\nERROR no [Shot N] headers found\nERROR rule/instruction word 'DO NOT' — rewrite as an observable statement\nERROR rule/instruction word 'NEVER' — rewrite as an observable statement\nWARN  names an absent thing (no) — prefer a positive state; fixed sentences are exempt\nWARN  ALL-CAPS words: ACTION, ALREADY, BACK, BACKWARD, BEAT, BEFORE, BEHIND, BOTH, CHEST, CLOSE, COLLISION, CONCRETE ...\n"
+  },
+  "missing_links": [],
+  "c1_exact_prompt": true,
+  "templates": {
+    "无限视频生成提示词模板V1.MD": "3698534143ee992d80badff06922e4ef4a1c154a60f61e7aab0e5a143fc72b00",
+    "无限视频生成提示词模板V2.MD": "2bfbd16166f0d4d5b4f2edd327aab392f4495bf9bcd86ba3a297ac5ab1104cc1"
+  },
+  "new_prompt_lint": {
+    "exit": 0,
+    "output": "mode=T2VA  shots=1  real_duration=8.000s  words=323  spoken_zh=0\nOK\n"
+  },
+  "deployment": {
+    "installed_path": "D:\\Codex\\Users\\Administrator\\.codex\\skills\\h3-power-fx",
+    "files": 9,
+    "package_sha256": "54c229f6e50f3ae470c2d3c7828b9a065ac46598349234e22ed18cb894c54b5a",
+    "protected_existing_files_unchanged": 165,
+    "backup": "D:\\Codex\\Users\\Administrator\\.codex\\skill-backups\\h3_power_fx_20261009_before_optimization",
+    "repo_installed_package_equal": true,
+    "rendered": false
+  }
+}
