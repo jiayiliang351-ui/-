@@ -1,0 +1,803 @@
+{
+  "version": "powers_seed_expansion_feedback_v1",
+  "date": "2026-10-08",
+  "evidence_type": "user_report_after_cloud_render",
+  "video_directly_inspected": false,
+  "audio_directly_inspected": false,
+  "feedback_raw_file": "RENDER_FEEDBACK_4_user.txt",
+  "feedback_raw_sha256": "716391ef3ddc14eddc07f14b301dede93a635854494801222b87efce222e6097",
+  "config_raw_file": "RENDER_FEEDBACK_4_config_user.txt",
+  "source_json": "tools/context_ir/powers/render/seed_expansion_v1/H3异能测试_全部12情节24段.json",
+  "source_json_sha256": "b9a7c6c6e904838ce803c0954fb55ea25804c3978e1b407702976f33beabb7d6",
+  "seeds": [
+    2026100801,
+    2026100802
+  ],
+  "cases_total": 12,
+  "clips_total": 24,
+  "cases_with_feedback": 11,
+  "cases_not_reported": [
+    "A3"
+  ],
+  "audio_feedback": "not_provided",
+  "actual_video_filenames": "not_provided",
+  "actual_cloud_configuration": {
+    "source": "user_report",
+    "raw_user_reply": "bf16，20步，没开lora，没开启额外提示词改写",
+    "precision": "bf16",
+    "steps": 20,
+    "lora_enabled": false,
+    "additional_prompt_rewrite_enabled": false,
+    "full_model_filename": null,
+    "cfg": null,
+    "resolution": null,
+    "sampler": null,
+    "scheduler": null,
+    "independently_verified": false
+  },
+  "overall_pass_count": null,
+  "overall_pass_count_reason": "未将局部认可或未反馈项目计为整段通过；没有整段量化评分。",
+  "scope": "仅存档与原提示词审查；保留旧输入、skill与脚本；未执行新渲染或API。",
+  "cases": [
+    {
+      "label": "A1",
+      "id": "telekinesis_urban",
+      "mapping": "inferred_from_first_second_video_and_batch_order",
+      "shared": [
+        "两段血迹都像流口水，不像鼻血。"
+      ],
+      "unreported": [
+        "种子2水面及水花",
+        "杯子滑移、悬浮、落回及双手完整过程"
+      ],
+      "finding": "原文只写一滴血到达上唇，未给鼻孔来源和红色；溅水本身已写。",
+      "hypothesis": "鼻血缺起点可能造成定位歧义；水的自然度仍待独立测试。",
+      "next_test": "鼻血定位与落杯水花分开诊断，保留水杯运动目标。",
+      "title": "都市念力_玻璃杯滑移悬浮落回",
+      "seconds": 10,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/telekinesis_urban.txt",
+      "original_prompt_sha256": "63f94e98da13e7885b62e9ef86a8ab41d70deb2be2eb258f091b34955b471213",
+      "original_intent": "少年注视水杯→杯子滑近并离桌悬浮→鼻血显出负荷→松劲后落回桌面。",
+      "original_text_evidence": {
+        "setup": "A 50mm medium shot holds steady across a scratched kitchen table in an old rental flat. A slim teenage boy in a grey hoodie sits at screen-right, watching a half-full clear glass at screen-left. Both empty hands rest on his thighs, visible below the table edge. He is the only person in the kitchen.",
+        "action": "The glass first trembles, making fine ripples across the water. As his shoulders tighten, it slides slowly rightward toward him, then rises a finger's breadth above the table. A clean strip of air remains visible beneath its base, and its transparent sides keep their ordinary warm reflections. The glass hovers with a slight sway while a bead of sweat runs down his temple and a single drop of blood reaches his upper lip. He exhales and his shoulders ease. The same glass drops the short distance back onto the table; a small splash crosses its rim. It rests upright before him as the water ripples diminish and his hands remain on his thighs.",
+        "shots": [],
+        "sound": "The refrigerator's low hum fills the small kitchen throughout the shot. A clearly heard scrape follows the glass base moving over the wooden tabletop, ending as the glass lifts. His breathing grows shallow during the hover and releases into one longer exhale as the glass returns; the refrigerator remains the steady background.",
+        "adaptation": "沿用原用例核心动作与三类声源限制。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_telekinesis_urban_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "水面不自然。",
+            "落杯溅水不自然。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_telekinesis_urban_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "A2",
+      "id": "telekinesis_xianxia",
+      "mapping": "inferred_from_third_fourth_video_and_batch_order",
+      "shared": [
+        "人物动作、手指摆放不好。"
+      ],
+      "new_user_requirement": "双指并拢，拇指跟无名指贴着；小指姿态未指定。",
+      "unreported": [
+        "竹叶升起及飞行",
+        "开门因果与方向"
+      ],
+      "finding": "原文仅写右手抬两根手指，未规定完整手势。",
+      "hypothesis": "手势描述不足以限定用户要求的姿态。",
+      "next_test": "只定义完整施法手势，保持叶流和门的动作块。",
+      "title": "仙侠念力_竹叶悬浮推开院门",
+      "seconds": 10,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/telekinesis_xianxia.txt",
+      "original_prompt_sha256": "0ffe0f3a7d84bb5e6342864c6e53808d8ceefb3b9b2d5a28603edbba1a259d2e",
+      "original_intent": "老道抬指→竹叶离地悬浮→指向右侧院门→叶流推动门打开。",
+      "original_text_evidence": {
+        "setup": "A 35mm medium-wide shot holds steady across an autumn courtyard in a bamboo grove. A lean, white-haired Taoist in a grey robe and wooden hairpin stands left of center. His left hand rests behind his back. Dry yellow bamboo leaves cover the paving, and an unlatched wooden gate stands closed at screen-right, hinged along its far-right post.",
+        "action": "He slowly lifts two fingers of his right hand. The leaves shiver against the paving, then rise together to knee height, leaving the stone clearly visible beneath them. They hover with gentle turns, their dry veins and curled edges catching the ordinary sunlight. His eyes shift toward the gate; only then do his two raised fingers point rightward. The hovering leaves stream toward screen-right as one low current, passing clear of his robe. The leaf current strikes the gate boards and pushes the gate outward on its right-hand hinges. It swings open and settles against its outer stop as the leaves spill through the opening. He keeps his left hand behind his back and lets his right fingers relax while the remaining leaves descend onto the paving.",
+        "shots": [],
+        "sound": "A mild wind passes through the bamboo with a soft creak from the stalks. Dry leaves rasp as they lift and gather into the rightward current, their collective rustle clearly heard as they reach the gate. The wooden gate groans on its hinges when the leaves push it outward, then gives a dull knock against its stop.",
+        "adaptation": "沿用原用例，补明院门未上闩与向外打开的方向。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_telekinesis_xianxia_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_telekinesis_xianxia_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "A3",
+      "id": "element_urban",
+      "mapping": "explicit_case_inventory_no_feedback",
+      "shared": [],
+      "unreported": [
+        "整段画面",
+        "声音"
+      ],
+      "finding": "本轮用户没有提到咖啡结霜。",
+      "hypothesis": null,
+      "next_test": "保留未反馈状态，不当作通过或失败。",
+      "title": "都市元素_咖啡杯结霜",
+      "seconds": 8,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/element_urban.txt",
+      "original_prompt_sha256": "4c2b9235c6d7987f238b5baac3d4743c39bb700d2ebab9499107ca60234a4684",
+      "original_intent": "双手握着已放稳的热咖啡杯→接触处结霜蔓延→咖啡结冰→松开后看掌心薄霜。",
+      "original_text_evidence": {
+        "setup": "A 50mm close-up holds a static shot on a young woman's hands around a plain paper coffee cup standing on a high table beside a convenience-store window. Her beige sweater sleeves end at her wrists; a little steam rises from the dark coffee. The lower edge of her face and long black hair remain visible above her hands.",
+        "action": "Her fingers tighten against the cup wall. A fine white frost begins exactly beneath her fingertips and branches outward across the paper, following its curved surface. The frost thickens into an opaque coating as the rising steam dwindles and disappears. The coffee surface turns glassy and a thin layer of ice spreads from the edge toward its center. Tiny cracks catch the ceiling light across the frozen surface. She loosens both hands and draws them back, leaving the same cup upright on the tabletop. Turning her palms toward her face, she studies a thin dusting of frost across her fingertips and palm creases. The cup stays where she placed it, its frozen surface and white-coated sides unchanged through the end.",
+        "shots": [],
+        "sound": "A subdued refrigerator hum and distant winter traffic sit beneath the close view. A distinct fine crackle accompanies frost spreading across the paper and ice closing over the coffee. Her fingers make a soft dry rub as they withdraw from the cup, followed by the quiet friction of her sweater cuffs as she turns her palms upward.",
+        "adaptation": "补明杯子始终放在桌面，避免松开双手后缺少落点。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_element_urban_s1",
+          "seed": 2026100801,
+          "status": "not_reported",
+          "individual_observations": [],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_element_urban_s2",
+          "seed": 2026100802,
+          "status": "not_reported",
+          "individual_observations": [],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "A4",
+      "id": "element_xianxia",
+      "mapping": "explicit_case_label",
+      "shared": [
+        "组级描述：人物动作、握拳没有问题。",
+        "组级描述：右手指尖有电弧，但照亮效果不够。",
+        "组级描述：握拳后头发仍随风飘，没有落回。",
+        "明确两种子：握拳后拳上均有一丝细白烟。"
+      ],
+      "unreported": [
+        "其他手部形态细节"
+      ],
+      "finding": "原文已写电弧增强、光落在脸和洞壁、握拳熄灭及头发落定。",
+      "hypothesis": "光照反差可能不足，环境风和电荷造成的发丝活动可能未分离；未证实。",
+      "next_test": "分开测电弧照明与握拳后发丝落定，保留已认可动作和白烟。",
+      "title": "仙侠元素_指间电弧收回",
+      "seconds": 8,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/element_xianxia.txt",
+      "original_prompt_sha256": "2f22b7cb804a4e8a439f3085b11ca8f14c241239ac66c2e092f37870f38c3466",
+      "original_intent": "女修抬右手→紫白电弧从指间增强并照亮环境→发丝微浮→握拳后电光熄灭。",
+      "original_text_evidence": {
+        "setup": "A 50mm medium close-up holds steady on a young woman sitting cross-legged inside a dark mountain cave. She wears fitted dark-purple robes and a high black ponytail. Her left hand rests on her knee; she lifts her open right hand beside her face, its fingers clearly separated against the dark stone.",
+        "action": "A few fine violet-white arcs first jump between her right thumb and index finger. As she watches, the arcs thicken and branch across the gaps between her fingers, briefly illuminating the skin of her palm. Their pulses throw violet-white light across one side of her face and the nearby cave wall, while the other side retains its cool moonlit edge. A few loose hairs beside her temple and the end of her ponytail lift gently with the growing charge. She closes the same right hand into a firm fist. The arcs extinguish at the closure, leaving her fist solid in the moonlight. A thin white wisp curls above her knuckles as the loose hairs settle; her left hand remains on her knee.",
+        "shots": [],
+        "sound": "A low wind brushes past the cave mouth with a faint hollow resonance. Clearly heard electrical snaps begin with the first arcs, growing into a tight crackle as light spreads between her fingers. The crackle cuts off when her fist closes, leaving the soft cave wind beneath the final curl of smoke.",
+        "adaptation": "沿用原用例，把不可见的焦味改为可见的细白烟。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_element_xianxia_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "种子2的电弧明显弱于本段。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_element_xianxia_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [
+            "电弧不明显，明显弱于种子1。",
+            "未照亮脸与洞壁。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "B1",
+      "id": "awaken_urban",
+      "mapping": "explicit_case_and_seed_labels",
+      "shared": [],
+      "unreported": [
+        "声音",
+        "金瞳具体位置和效果未独立复述"
+      ],
+      "finding": "两段同一提示词包含相同衣发气流描述，用户报告结果不同。",
+      "hypothesis": "此动作在本次两个种子中有差异；不能推出稳定成功率。",
+      "next_test": "种子2留作局部参照；不为单项遗漏重写整个觉醒链。",
+      "title": "都市觉醒_金瞳与局部雨滴悬停",
+      "seconds": 10,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/awaken_urban.txt",
+      "original_prompt_sha256": "e4cece28abb5fcfe2f6f8458d772664b79202c210f31a37a2b64efa9c52cb1a0",
+      "original_intent": "天台被逼近→男子抬头显出金瞳→身边雨滴悬停→打手后退，远处雨仍正常落下。",
+      "original_text_evidence": {
+        "setup": "A 35mm medium-wide shot slowly pushes toward a rain-soaked rooftop railing at screen-right. A young man in a wet white shirt and black trousers stands before it, a narrow blood mark at his mouth. Three thugs approach from screen-left: one in a grey hoodie, one in a red bomber jacket and one in a navy shirt. These four occupy the rooftop.",
+        "action": "The man lowers his gaze and draws a rough breath, his hands hanging empty. His jaw tightens; when he lifts his head, a thin gold ring lights around each pupil. Rain immediately around his shoulders stops in midair, each suspended drop keeping its shape while rain beyond that small space continues falling onto the roof. His wet hair and shirt hem stream backward in a localized current. The three thugs halt their approach and take a short step back, their eyes following the gold in his face. He holds their gaze with a restrained expression as the camera draws closer. The suspended drops remain around him, the rain behind the three men keeps falling, and his shirt hem continues lifting in the air.",
+        "shots": [],
+        "sound": "Rain hits the rooftop and railing throughout, clearly continuing outside the man's small suspended pocket. His rough breath is heard before his eyes lift, followed by the scuff of the three thugs stopping and stepping back on wet concrete. A low rush of air accompanies the movement of his shirt and hair, staying beneath the surrounding rain.",
+        "adaptation": "沿用原用例的局部范围，不将全场雨声或打手一并冻结。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_awaken_urban_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "头发、衣摆没有被局部气流带动。",
+            "用户称其他都正常，未逐项复述。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_awaken_urban_s2",
+          "seed": 2026100802,
+          "status": "core_actions_user_accepted_audio_unreported",
+          "individual_observations": [
+            "本组最好。",
+            "局部雨滴静止，远处雨继续落。",
+            "三个打手仍能动，总计四人。",
+            "头发和衣服有局部气流带动。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "B2",
+      "id": "awaken_xianxia",
+      "mapping": "explicit_case_and_seed_labels",
+      "shared": [
+        "石台有裂痕，碎石跳动太假。",
+        "衣袖和头发向外扬起。",
+        "睁眼缺青绿色瞳光一闪。"
+      ],
+      "unreported": [
+        "灵气最终回收是否完整",
+        "瞳色恢复与衣发最终落定"
+      ],
+      "finding": "原文已写淡色雾气、碎石跳、瞳孔青绿闪光；没有写眼皮发光。",
+      "hypothesis": "运动、材质颜色、眼部小区域和碎石物理分别存在偏差，原因未隔离。",
+      "next_test": "雾色、瞳光、碎石独立测；种子1运动与种子2颜色分别作局部参照。",
+      "title": "仙侠觉醒_灵气回收与青瞳",
+      "seconds": 10,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/awaken_xianxia.txt",
+      "original_prompt_sha256": "eea45704945bf37604887b6409c7135c62a46f0b3bf08a7c990d090d4edc790e",
+      "original_intent": "女子闭关→白雾状灵气绕身增强→衣发被带动、石台裂纹出现→灵气收回、青瞳一闪。",
+      "original_text_evidence": {
+        "setup": "A 50mm medium shot slowly pushes toward a young woman sitting cross-legged on a broad stone platform at a cliff edge. She wears plain white robes, her long black hair loose over her shoulders, her eyes closed and both hands resting on her knees. The platform edge and a rolling cloud sea remain visible around her.",
+        "action": "A faint current first lifts a few strands of hair. Pale, mist-like spiritual vapor gathers from the air beside her and starts circling her seated body, its thin ribbons visible against the darker clouds. The circling vapor speeds up and draws her hair and sleeve edges outward. Fine cracks spread through the stone from the area beneath her knees, and several loose pebbles hop against the surface. Her shoulders draw a short breath. The vapor contracts sharply toward her chest and disappears into her body; the disturbed air quiets around her. She opens her eyes, a brief blue-green glint crossing the pupils before they return to their ordinary dark color. Her hair and sleeves slowly settle, while the fine cracks remain in the stone.",
+        "shots": [],
+        "sound": "Cliff wind moves steadily above the distant low murmur of the cloud-filled valley. A rising airy rush follows the circling vapor, with distinct dry ticks as the stone cracks and loose pebbles tap the platform. The rush subsides as the vapor contracts into her body, leaving the quiet wind while her hair settles.",
+        "adaptation": "沿用原用例，裂纹和碎石保留为觉醒后的环境结果。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_awaken_xianxia_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "薄雾汇聚、环身旋转并加速最好。",
+            "薄雾颜色太黑。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_awaken_xianxia_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [
+            "白色云雾状颜色更符合要求。",
+            "青绿色光只泛在眼皮上。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "B3",
+      "id": "timestop_urban",
+      "mapping": "explicit_case_and_seed_labels",
+      "shared": [
+        "男子没有打响指。",
+        "杯子滑落后从下方升回外卖员面前，没有停在落途高度。"
+      ],
+      "unreported": [
+        "外卖员是否完全静止",
+        "其他手部异常",
+        "声音"
+      ],
+      "finding": "原文已写右手响指、下落途中停住、保持高度和外卖员姿态。",
+      "hypothesis": "触发动作可见性与下落定高失败需要分别定位；未证实单一原因。",
+      "next_test": "优先诊断下落—定高链，另测响指触发，不加取杯或恢复。",
+      "title": "都市时间静止_掉落杯与外卖员定住",
+      "seconds": 8,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/timestop_urban.txt",
+      "original_prompt_sha256": "a46688c5c41b2522c3c4afd4508be68f2ba3db793fbe64a6a30b0b2652e149b3",
+      "original_intent": "杯子从外卖员手里掉落→男子响指→杯子和外卖员定住→男子仍能转眼眨眼，保持到结尾。",
+      "original_text_evidence": {
+        "setup": "A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame.",
+        "action": "The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left snaps the fingers of his right hand. At the snap, the cup stops upright in midair above the paving; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame.",
+        "shots": [],
+        "sound": "Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.",
+        "adaptation": "新诊断用例：从原十字路口简化为两人一杯，只测局部定住，删除穿行、递杯与解除恢复。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_timestop_urban_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_timestop_urban_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [
+            "用户评价无论哪方面都更差；未提供更多具体症状。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "B4",
+      "id": "timestop_xianxia",
+      "mapping": "explicit_case_and_seed_labels",
+      "shared": [
+        "两段均抓箭头下方而非拇指食指捏箭杆中部。",
+        "箭被转成约向下45度并保持，而非竖直向下。",
+        "箭射来速度均太慢。"
+      ],
+      "terminology_note": "用户称剑、剑杆；按当前场景对象规范记作箭，原话保持原样。",
+      "unreported": [
+        "初始箭头方向",
+        "箭及手的精确数量",
+        "是否穿模",
+        "左手全过程是否维持"
+      ],
+      "finding": "原文已写中段抓点和向下/向上端向，但飞行只写leftward，未定义快速入画。",
+      "hypothesis": "箭速描述有缺口；抓点和角度属于已有指令执行偏差，原因未知。",
+      "next_test": "箭速、抓点、终角各为独立诊断变量，不一次全改后归因。",
+      "title": "仙侠时间静止_冻结后拨偏单箭",
+      "seconds": 8,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/timestop_xianxia.txt",
+      "original_prompt_sha256": "0569641f5c5ed2d61fb64c40510f65e334ede7be65476fb25154d0155e044609",
+      "original_intent": "复用正确箭向→抬左掌定住单箭→右手拨成朝下→右手离开后仍悬停，左掌保持。",
+      "original_text_evidence": {
+        "setup": "A 35mm medium-wide side view holds a static shot across a stone-paved lane in one continuous take. A young woman in fitted teal robes and a high black ponytail stands at screen-left facing right, both hands open at her sides. She is the only person in the lane. A single wooden arrow enters from screen-right at shoulder height, its sharp metal arrowhead leading on the left toward her and its black-feathered tail trailing on the right.",
+        "action": "The arrow flies leftward. She raises her left palm, keeping that elbow bent near her chest. The arrow stops horizontally with its tip a hand's breadth beyond her palm and a visible strip of air between them. Keeping the left palm raised, she brings her right hand beneath the shaft and closes her thumb and forefinger gently around its middle. She turns the arrow until its metal point faces down toward the empty paving and its feathered tail faces up. The shaft stays in the same space before her left palm. Her right fingertips open and withdraw to her hip. The arrow holds its new downward-pointing angle through the final frame, while her left palm remains raised.",
+        "shots": [],
+        "sound": "A faint breeze moves through the lane, with a little cloth rustle as her left sleeve rises. The arrow's distinct thin whistle accompanies its flight and cuts off when it stops in the air. A soft rub of skin against wood is clearly heard as her right fingers turn the shaft, then the breeze remains beneath the suspended hold.",
+        "adaptation": "新诊断用例：在通过的单箭冻结上加一次拨偏；缩短掌前间隙以便右手够到，不加抱人和恢复，不视为单句因果对照。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_timestop_xianxia_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "停箭手势比种子2好。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_timestop_xianxia_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "C1",
+      "id": "blast_urban",
+      "mapping": "explicit_case_and_seed_labels",
+      "shared": [
+        "两段能量特效受到用户认可。",
+        "打手到女子身前站等约一秒，她才举掌聚能出招。"
+      ],
+      "unreported": [
+        "铁棍最终落点等逐项验收",
+        "声音"
+      ],
+      "finding": "开场先写打手冲来，之后串行写女子举掌聚能，下一镜才发射；缺末步与拦截同节拍。",
+      "hypothesis": "先接近再准备蓄能的安排可能给站等留出空间；待对照。",
+      "next_test": "优先只改接敌准备和最后一步/出掌同步，保留认可的能量与撞击描述。",
+      "title": "都市能量波_蓝光打飞撞柱",
+      "seconds": 8,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/blast_urban.txt",
+      "original_prompt_sha256": "8a801a6c9c59ede7d1e1f150b05d0e8fce7e90afdf9e45543eaa83d00b50f6c0",
+      "original_intent": "掌心聚蓝白光→波击胸口→打手向后飞→撞裂水泥柱、铁棍落水→掌光熄灭。",
+      "original_text_evidence": {
+        "setup": "A 35mm medium two-shot holds steady in a derelict underground garage. A short-haired woman in a black motorcycle jacket and jeans stands at screen-left. A bald thug at screen-right rushes leftward with an iron bar in his right hand; a square concrete pillar stands behind him at the far right. Only these two occupy the garage.",
+        "action": "She raises her open right palm toward him. A small blue-white light gathers against its center and grows bright enough to wash her cheek and jacket sleeve with blue-white reflections.",
+        "shots": [
+          {
+            "at": 1.7,
+            "framing": "a 50mm close-up across the gap from the same side",
+            "camera": "holding a static shot",
+            "action": "The woman's glowing right palm from Shot 1 thrusts rightward from the left edge. A compact blue-white wave crosses the visible gap and strikes the bald thug's chest on the right. His shoulders jerk backward at the impact as the light breaks against the fabric."
+          },
+          {
+            "at": 3,
+            "framing": "a 35mm medium shot of the bald thug from Shot 1",
+            "camera": "tracking rightward from the same side",
+            "action": "His feet leave the wet floor and his whole body travels backward toward screen-right. He still grips the iron bar; the concrete pillar remains directly behind him on the right. The blue-white wave thins into short streaks along the same path."
+          },
+          {
+            "at": 4.5,
+            "framing": "a 50mm close-up of the right-side pillar",
+            "camera": "holding a static shot",
+            "action": "The bald thug from Shot 1 strikes it back-first. Cracks radiate from the impact through the concrete, dust bursts downward, and his right fingers release the iron bar. The bar falls beside the pillar into the shallow puddle below as his weight slides down the concrete."
+          },
+          {
+            "at": 6,
+            "framing": "a 50mm medium two-shot across the garage from the same side",
+            "camera": "holding steady",
+            "action": "The short-haired woman from Shot 1 remains left, her right palm now dark and her fingers faintly trembling. The bald thug sits slumped at the cracked pillar on the right, the iron bar lying in its puddle. Dust settles between them while the floor ripples widen and fade."
+          }
+        ],
+        "sound": "A tired fluorescent hum fills the garage beneath fast shoes splashing through shallow water. A sharp compressed rush follows the palm wave and a distinct heavy impact lands as the thug strikes concrete. Cracking concrete and falling grit give way to the iron bar's metallic clatter and splash, then the hum remains under settling dust.",
+        "adaptation": "沿用原用例的打飞撞柱结果，用五镜分开蓄能、命中、后飞、撞击和余波。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_blast_urban_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "特效动作较好；打手冲来后停等。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_blast_urban_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [
+            "特效没有问题；打手慢慢小步走来、停下直视女子才被击飞。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "C2",
+      "id": "blast_xianxia",
+      "mapping": "explicit_case_and_seed_labels",
+      "shared": [
+        "两段剑气斩松枝部分均有问题，特效欠佳。"
+      ],
+      "unreported": [
+        "种子2的刀段数、手势和完整刀重现未单独确认"
+      ],
+      "finding": "原文已有并拢食指中指、刀只断一次、同一剑气朝右松枝；跟拍滚阶再切松枝缺可见路线连接。",
+      "hypothesis": "人物滚落轴与剑气去松枝轴分离可能增加跨镜路线歧义；未证实。",
+      "next_test": "手势、断刀连续性与剑气轨迹分开测，保留断刀/斩枝指定结果。",
+      "title": "仙侠剑气_断刀滚落断松枝",
+      "seconds": 8,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/blast_xianxia.txt",
+      "original_prompt_sha256": "d63b40ea6f87b07d9b5e02288e25c09172aa7c24c6863d9f55c759b5d350e0b5",
+      "original_intent": "剑修双指聚金光→金色剑气斩刀→刺客滚下石阶→余势断松枝→剑修收指。",
+      "original_text_evidence": {
+        "setup": "A 35mm medium-wide shot holds steady beside long stone steps before a mountain gate. A white-robed young swordsman with tied black hair stands at upper screen-left, his longsword sheathed at his waist. A masked assassin in black climbs from lower screen-right with a broad saber. A pine branch projects over the right side of the steps. Only these two are present.",
+        "action": "The swordsman joins the index and middle fingers of his right hand. A thin golden light condenses along the fingertips, edging his sleeve as the assassin closes.",
+        "shots": [
+          {
+            "at": 1.5,
+            "framing": "a close-up across the two weapons from the same side",
+            "camera": "holding a static shot",
+            "action": "The white-robed swordsman's fingers from Shot 1 sweep rightward. A curved golden blade of light crosses the gap from left to right and strikes the masked assassin's raised saber. The steel splits once across its middle; the severed tip falls right while the hilt stays in the assassin's hand."
+          },
+          {
+            "at": 2.8,
+            "framing": "a 35mm medium shot down the steps from the same side",
+            "camera": "tracking rightward",
+            "action": "The masked assassin from Shot 1 recoils toward lower screen-right. His heels lose the step and he rolls down the stone, still clutching the saber hilt. The golden arc continues above him toward the pine on the right, while the detached steel tip skips down separate steps."
+          },
+          {
+            "at": 4.3,
+            "framing": "a 50mm close-up of the pine branch on the right",
+            "camera": "holding a static shot",
+            "action": "The same golden arc from Shot 2 slices through the base of the projecting branch. Pale wood parts at the cut; the branch drops rightward beside the steps and shakes loose a shower of needles. The remaining light tapers along its path and fades in the mist."
+          },
+          {
+            "at": 6,
+            "framing": "a 50mm medium-wide shot across the steps from the same side",
+            "camera": "holding steady",
+            "action": "The white-robed swordsman from Shot 1 relaxes his right fingers at upper left, his waist sword still sheathed. The masked assassin rests on a lower step at right with the broken hilt, the blade tip and severed branch nearby. The swordsman's sleeve settles as pine needles descend."
+          }
+        ],
+        "sound": "Mountain wind moves through the pines above quick feet on stone. A distinct ringing snap marks the golden arc cutting the steel, followed by the assassin's heavy rolling impacts down the steps. The sharp crack of the severed pine branch and a dry needle rustle trail the fading rush of the sword energy.",
+        "adaptation": "沿用原用例，五镜保持剑修在左上、刺客及落点在右下。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_blast_xianxia_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "双指没有聚拢，手势怪但有金光。",
+            "刀成三部分：两段刀身加手持刀柄。",
+            "刺客持刀柄滚下石台。",
+            "剑气先向阶梯下方飘，切镜后再切松枝，连续性割裂。",
+            "镜头二出现断刀和完整刀。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_blast_xianxia_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "C3",
+      "id": "onevsmany_urban",
+      "mapping": "seed1_detail_then_explicit_both_same",
+      "shared": [
+        "用户最后明确视频1、视频2均有同类问题。"
+      ],
+      "new_user_requirement": "四人受力需有击飞/失衡的打击感；原稿仅屈膝落地，不等于已设计四人击飞。",
+      "unreported": [
+        "精确人数及每人落点逐项验收"
+      ],
+      "finding": "原稿写四人膝盖先着地再倒下；车门凹痕只在撞车镜出现，后续未持续描述。",
+      "hypothesis": "下压加膝盖先着地可能诱发跪拜；损伤跨镜保留弱，待候选验证。",
+      "next_test": "群体击飞须标新编排；接敌节拍、车门痕迹与群体受力分别验证。",
+      "title": "都市一打六_擒棍推飞群压",
+      "seconds": 15,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/onevsmany_urban.txt",
+      "original_prompt_sha256": "d3d5fda58d89a072eae123471985f85e3320315ae5d629b9771e298b705f1341",
+      "original_intent": "六人围攻→接棍撂倒一人→念力推第二人撞车→四人合扑被压倒→主角整理大衣。",
+      "original_text_evidence": {
+        "setup": "A 35mm wide shot holds steady in a garage. A man in a grey overcoat and black turtleneck stands center. Six armed thugs surround him: a hooded club wielder left, a brown-jacketed knife wielder beside a parked car right, and four behind, two each side. Only these seven are present.",
+        "action": "The club wielder advances from screen-left. The man turns toward him, both hands empty.",
+        "shots": [
+          {
+            "at": 1.8,
+            "framing": "a close-up of the approaching club at the left",
+            "camera": "holding a static shot from the same side",
+            "action": "The grey-coated man from Shot 1 catches the wooden club with his right hand. The hooded thug retains its handle on the left, wrists taut as the club stops."
+          },
+          {
+            "at": 3,
+            "framing": "a 35mm medium shot of the left-hand pair",
+            "camera": "holding steady from the same side",
+            "action": "At screen-left, the grey-coated man from Shot 1 twists the club downward, toppling the hooded thug onto his side. He releases the club beside the fallen man; five opponents remain upright."
+          },
+          {
+            "at": 5,
+            "framing": "a 50mm medium shot across the right-hand gap",
+            "camera": "holding steady from the same side",
+            "action": "The brown-jacketed thug from Shot 1 lunges leftward. From center, the grey-coated man opens his empty right palm; the attacker flies backward toward the car at screen-right."
+          },
+          {
+            "at": 6.4,
+            "framing": "a close-up of the right-side car door",
+            "camera": "holding a static shot",
+            "action": "The brown-jacketed thug from Shot 1 hits the right-side car door back-first, denting it. His knife drops by the tire as he slides down; four opponents remain upright."
+          },
+          {
+            "at": 7.7,
+            "framing": "a 35mm medium-wide shot across the remaining four",
+            "camera": "holding steady from the same side",
+            "action": "Four remaining thugs from Shot 1 close in, two each side. The grey-coated man stays center and presses both palms downward; a ring of water and dust bursts outward from his feet."
+          },
+          {
+            "at": 10,
+            "framing": "a 35mm wide shot of the garage floor",
+            "camera": "holding steady from the same side",
+            "action": "The four closing thugs from Shot 1 buckle and fall, knees hitting first. All six opponents stay down: the hooded man left, the brown jacket at the right car, the final four around center."
+          },
+          {
+            "at": 12.5,
+            "framing": "a 50mm medium shot of the grey-coated man from Shot 1",
+            "camera": "pulling back slowly from the same side",
+            "action": "The grey-coated man from Shot 1 smooths his lapels with empty hands while all six opponents remain down. Fluorescent strips flicker above the right-side car; his hands settle as dust thins over the floor."
+          }
+        ],
+        "sound": "A fluorescent hum and approaching shoes establish the garage, followed by a sharp wooden knock as the club is caught and a heavy body impact on concrete. The right-side car door gives a distinct metal crunch and its alarm begins when the second thug strikes it. Water and dust burst beneath the downward gesture, with four closely spaced falls and dropped weapons clattering before the alarm carries the final hold.",
+        "adaptation": "沿用六人及全部关键结果，八镜记录人数与手部占用。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_onevsmany_urban_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "左侧持棍者不动，主角主动伸手抓棍撂倒他。",
+            "持刀扑近不自然，刀已经到主角身前才被一巴掌击飞。",
+            "撞凹车门后，打手落跪时车门恢复。",
+            "四人只跪着不动，像跪拜，缺击飞打击感。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_onevsmany_urban_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [
+            "同类问题（用户组级确认，逐项过程以种子1详述为主）。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    },
+    {
+      "label": "C4",
+      "id": "onevsmany_xianxia",
+      "mapping": "explicit_seed1_seed2_plus_unassigned_final_detail",
+      "shared": [
+        "绕转多剑配一把横停剑，缺攻击接触及打击感。",
+        "对手像被击中一样退跪，但看不到对应命中。",
+        "段末描述回剑时右手抓剑身中部、剑影绕身，构图不美；未明确该末句属于哪一或两种子。"
+      ],
+      "unreported": [
+        "实体剑/剑影精确数量",
+        "十二人逐项人数验收",
+        "左侧缴械及最终入鞘完整性"
+      ],
+      "finding": "原文末段只有四人落地、八人退却，并未写新增命中；实体剑在手边+九剑影环绕本来就是设计。",
+      "hypothesis": "视觉编排缺完整接触链；手边停剑可能诱发抓持，出鞘穿模存在种子差异；均未做因果对照。",
+      "next_test": "完整一打十二需重新编排；可另做一剑一目标减负诊断，但不能冒充完成原情节。",
+      "title": "仙侠一打十二_御剑剑影回鞘",
+      "seconds": 15,
+      "original_prompt_file": "tools/context_ir/powers/render/seed_expansion_v1/提示词原文/onevsmany_xianxia.txt",
+      "original_prompt_sha256": "fa2ca989125c197284501e6d4f3f641b44548dbbdfb44f1f238dad5f7811db93",
+      "original_intent": "十二刺客围攻→一把实体剑出鞘→挑飞兵刃并斩竹→九道剑影环绕→刺客退倒→实体剑回鞘。",
+      "original_text_evidence": {
+        "setup": "A 35mm wide shot holds steady in a moonlit bamboo clearing. A white-robed swordsman with tied black hair stands center with a sheathed longsword on his back. Twelve masked assassins in black surround him, six left and six right, holding knives and swords. The front two on each side crouch closer. Only these thirteen occupy the clearing.",
+        "action": "The swordsman lifts two fingers of his right hand as the front four advance.",
+        "shots": [
+          {
+            "at": 1.8,
+            "framing": "a close-up over the white-robed swordsman's shoulder from Shot 1",
+            "camera": "holding a static shot",
+            "action": "The longsword from Shot 1 rises hilt-first from the white-robed swordsman's back scabbard. Once clear, it turns horizontal: point toward screen-right, hilt trailing left, cold white light along its steel edge."
+          },
+          {
+            "at": 3,
+            "framing": "a 50mm medium shot of the right-side attackers",
+            "camera": "tracking rightward from the same side",
+            "action": "The single steel sword from Shot 2 flies point-first rightward, knocking weapons from the front two assassins from Shot 1 on the right. Both stumble back as their blades fall."
+          },
+          {
+            "at": 4.5,
+            "framing": "a close-up of bamboo at the right edge of the clearing",
+            "camera": "holding a static shot",
+            "action": "The steel sword from Shot 2 severs bamboo on the right. Pale cut ends open; the upper stalks fall rightward behind the disarmed pair. The sword curves leftward across the clearing."
+          },
+          {
+            "at": 6,
+            "framing": "a 50mm medium shot across the left side",
+            "camera": "panning leftward from the same side",
+            "action": "Leading point-first leftward, the sword from Shot 2 knocks away the front left pair's blades. Those two retreat; four assassins are now disarmed, while eight remain armed farther back."
+          },
+          {
+            "at": 8,
+            "framing": "a 35mm medium-wide shot around the white-robed swordsman from Shot 1",
+            "camera": "holding steady from the same side",
+            "action": "The white-robed swordsman from Shot 1 draws the single steel blade near his raised fingers. Nine translucent sword-shaped afterimages revolve around him, distinct from the solid sword beside his right hand."
+          },
+          {
+            "at": 10.2,
+            "framing": "a 35mm wide shot of the clearing",
+            "camera": "pulling back slowly from the same side",
+            "action": "The white-robed swordsman from Shot 1 remains center within the circling light. Four disarmed assassins sink to the ground; the other eight retreat into the bamboo, four each side. Cut stalks stay right."
+          },
+          {
+            "at": 12.6,
+            "framing": "a 50mm medium rear three-quarter shot of the white-robed swordsman from Shot 1",
+            "camera": "holding steady on the same side",
+            "action": "The white-robed swordsman from Shot 1 lowers his fingers. Nine light afterimages fade; the single steel sword turns point-down and slides into his back scabbard. Twelve opponents remain down or withdrawn as leaves settle."
+          }
+        ],
+        "sound": "Night wind and bamboo leaves fill the clearing before the steel blade gives a distinct scrape as it leaves the scabbard. Sharp metal clashes follow each disarm, with dry splitting cracks as the sword severs bamboo and the upper stalks fall. A thin circling rush accompanies the sword images, easing into a clearly heard final sheath scrape while leaves settle.",
+        "adaptation": "将原“十几个”定为十二；一把实体剑与九道光影分开描述，保留御剑、断竹与回鞘。"
+      },
+      "seed_reports": [
+        {
+          "shot_id": "px_onevsmany_xianxia_s1",
+          "seed": 2026100801,
+          "status": "issues_reported",
+          "individual_observations": [
+            "剑未完全出鞘就穿鞘模。",
+            "实体剑向右没有呈现预期缴械动作。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        },
+        {
+          "shot_id": "px_onevsmany_xianxia_s2",
+          "seed": 2026100802,
+          "status": "issues_reported",
+          "individual_observations": [
+            "出鞘没有穿模。",
+            "其他问题与种子1相似，缺打击感。"
+          ],
+          "shared_observations_scope": "See shared; group-level claims are not independently measured per seed.",
+          "audio": "not_reported",
+          "actual_filename": null
+        }
+      ]
+    }
+  ]
+}
