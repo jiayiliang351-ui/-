@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 5,
+  "project": {
+    "id": "powers_optimization_r1_b3_v1",
+    "name": "B3时间静止_原版响指定高_6段48秒",
+    "runId": "powers_optimization_r1_b3_20261008_v1"
+  },
+  "defaults": {
+    "fps": 24,
+    "baseSeed": 2026100801
+  },
+  "promptPrefix": "",
+  "promptSuffix": "",
+  "continuity": {
+    "mode": "h3_av_latent",
+    "videoContextFrames": 22,
+    "audioContextFrames": 24,
+    "durationMode": "final_output"
+  },
+  "assets": [],
+  "shots": [
+    {
+      "id": "r1_b3_original_s1",
+      "title": "05_B3原版_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront. A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame. The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left snaps the fingers of his right hand. At the snap, the cup stops upright in midair above the paving; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "r1_b3_original_s2",
+      "title": "06_B3原版_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront. A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame. The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left snaps the fingers of his right hand. At the snap, the cup stops upright in midair above the paving; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "r1_b3_hand_s1",
+      "title": "07_B3响指版_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront. A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame. The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left lifts his right hand to chest height, its fingers outlined against the pale storefront. His right middle fingertip presses against his thumb, then snaps down against the base of his thumb as the thumb releases. At the snap, the cup stops upright in midair above the paving; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "r1_b3_hand_s2",
+      "title": "08_B3响指版_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront. A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame. The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left lifts his right hand to chest height, its fingers outlined against the pale storefront. His right middle fingertip presses against his thumb, then snaps down against the base of his thumb as the thumb releases. At the snap, the cup stops upright in midair above the paving; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "r1_b3_position_s1",
+      "title": "09_B3定高版_种子1",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront. A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame. The cup slips from the rider's right fingers and falls straight down toward the pavement, keeping its lid attached and opening a growing gap beneath his hand. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left snaps the fingers of his right hand. At the snap, the cup's downward movement ends halfway between the height where it left his hand and the pavement, its lid level and its base directly below that release point; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup stays upright at that same halfway height, its base over the same patch of paving, while the rider holds exactly the same reaching posture through the final frame. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100801,
+      "disabledAssetIds": []
+    },
+    {
+      "id": "r1_b3_position_s2",
+      "title": "10_B3定高版_种子2",
+      "prompt": "integrated_multimodal_description: [Shot 1] Photoreal cinematic live-action, 16:9. Shot on ARRI Alexa Mini LF with Cooke Panchro/i Classic primes and a 1/4 Black Pro-Mist filter; 35mm for relationships, 50mm for mid shots, 85mm for faces, T2.0–T2.8 shallow depth of field. Kodak Portra 400 film emulation, about 50% teal-orange grade: teal-leaning shadows, warm amber skin. Fine film grain, soft-focus diffusion, a gentle haze in the air, soft halation on highlights, edges of the frame evenly lit. Lightly handheld throughout: a real handheld micro-shake and breathing motion. Framing stays on the people: chest- or waist-up, with headroom, hands and the key props visible in the lower frame. Real skin texture, visible pores. Soft daylight lights the two men's profiles and the brown coffee cup against a pale storefront. A 35mm medium-wide side view holds a static shot beside a daytime zebra crossing. A short-haired man in a black overcoat stands at screen-left with both hands empty. At screen-right, a delivery rider in a yellow jacket and blue helmet carries a single lidded brown paper coffee cup at waist height. The two men and the gap between them fill the frame. The cup slips from the rider's right fingers and falls straight down toward the pavement, keeping its lid attached and opening a growing gap beneath his hand. His empty hand reaches after it and his upper body pitches forward. Watching the falling cup, the man on the left snaps the fingers of his right hand. At the snap, the cup's downward movement ends halfway between the height where it left his hand and the pavement, its lid level and its base directly below that release point; the rider freezes in his forward lean, fingers outstretched beside the cup. The man alone continues at normal speed. He lowers his snapping hand and shifts his eyes from the cup to the rider, then blinks once. The cup stays upright at that same halfway height, its base over the same patch of paving, while the rider holds exactly the same reaching posture through the final frame. The frame remains free of subtitles, captions, title cards, and text overlays. Dialogue is audible speech only.\n\noverall_soundscape: Soft daytime traffic and the rider's shoe scuff establish the crossing before the cup slips. A clearly heard finger snap coincides with the visible stop, and the street sound falls into silence at that moment. The suspended hold stays silent as the man looks between the cup and the frozen rider.\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "",
+      "durationSeconds": 8,
+      "enabled": true,
+      "latentRelay": false,
+      "secondSamplingMode": "super_resolution_only",
+      "seed": 2026100802,
+      "disabledAssetIds": []
+    }
+  ]
+}

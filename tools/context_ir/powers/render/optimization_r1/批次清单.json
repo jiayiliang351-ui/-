@@ -1,0 +1,166 @@
+{
+  "version": "powers_optimization_r1_v1",
+  "date": "2026-10-08",
+  "status": "not_rendered",
+  "source_json": "tools/context_ir/powers/render/seed_expansion_v1/H3异能测试_全部12情节24段.json",
+  "source_json_sha256": "b9a7c6c6e904838ce803c0954fb55ea25804c3978e1b407702976f33beabb7d6",
+  "spec_sha256": "62aa518b3642d9a1f685921ef323652ff1d20579038024a3c96b5921f13aa5aa",
+  "nominal_seconds": 80,
+  "actual_seconds_at_24fps": 80,
+  "frames_per_clip": 192,
+  "total_clips": 10,
+  "seeds": [
+    2026100801,
+    2026100802
+  ],
+  "project_files": [
+    {
+      "file": "H3异能优化第一轮_10段80秒.json",
+      "sha256": "f31896d542ec3adccec13b96a988cef3df6eee04e8fbe786a2f5ca08765f2653",
+      "shot_count": 10,
+      "duration_seconds": 80
+    },
+    {
+      "file": "C1能量波_原版与时机版_4段32秒.json",
+      "sha256": "62f8f17892690e5aa9f52a35c62090048f21dbb605d42fa954f666237db022d9",
+      "shot_count": 4,
+      "duration_seconds": 32
+    },
+    {
+      "file": "B3时间静止_原版响指定高_6段48秒.json",
+      "sha256": "7a324289911276fce258ca7a980144cdd3c77d24437574f8f226209a4156e5dc",
+      "shot_count": 6,
+      "duration_seconds": 48
+    }
+  ],
+  "variants": [
+    {
+      "variant": "c1_original",
+      "label": "C1原版",
+      "role": "control",
+      "source_case": "blast_urban",
+      "source_shot_ids": [
+        "px_blast_urban_s1",
+        "px_blast_urban_s2"
+      ],
+      "shot_ids": [
+        "r1_c1_original_s1",
+        "r1_c1_original_s2"
+      ],
+      "prompt_file": "提示词原文/c1_original.txt",
+      "prompt_sha256": "8a801a6c9c59ede7d1e1f150b05d0e8fce7e90afdf9e45543eaa83d00b50f6c0",
+      "source_prompt_sha256": "8a801a6c9c59ede7d1e1f150b05d0e8fce7e90afdf9e45543eaa83d00b50f6c0",
+      "target": "同配置复现接近后站等的问题。",
+      "checks": [
+        "打手是否持续冲向女子，还是走近后站等",
+        "女子何时举掌、聚光、发射",
+        "能量命中、后飞撞柱与铁棍落水是否连贯"
+      ],
+      "replacement_count": 0,
+      "status": "not_rendered"
+    },
+    {
+      "variant": "c1_timing",
+      "label": "C1时机版",
+      "role": "candidate",
+      "source_case": "blast_urban",
+      "source_shot_ids": [
+        "px_blast_urban_s1",
+        "px_blast_urban_s2"
+      ],
+      "shot_ids": [
+        "r1_c1_timing_s1",
+        "r1_c1_timing_s2"
+      ],
+      "prompt_file": "提示词原文/c1_timing.txt",
+      "prompt_sha256": "7f56b769863c4136c5873c1f3b2f5b30d64ebc2331f5ca057ee116268ca0eec1",
+      "source_prompt_sha256": "8a801a6c9c59ede7d1e1f150b05d0e8fce7e90afdf9e45543eaa83d00b50f6c0",
+      "target": "提前准备右掌，将打手最后一步与出掌放在同一接触节拍；保持原特效和切点。",
+      "checks": [
+        "女子在打手到身前前已经抬掌准备",
+        "打手最后一步与能量命中衔接，没有站好等待挨打",
+        "能量、后飞、撞柱、铁棍和结尾状态没有退步"
+      ],
+      "replacement_count": 3,
+      "status": "not_rendered"
+    },
+    {
+      "variant": "b3_original",
+      "label": "B3原版",
+      "role": "control",
+      "source_case": "timestop_urban",
+      "source_shot_ids": [
+        "px_timestop_urban_s1",
+        "px_timestop_urban_s2"
+      ],
+      "shot_ids": [
+        "r1_b3_original_s1",
+        "r1_b3_original_s2"
+      ],
+      "prompt_file": "提示词原文/b3_original.txt",
+      "prompt_sha256": "a46688c5c41b2522c3c4afd4508be68f2ba3db793fbe64a6a30b0b2652e149b3",
+      "source_prompt_sha256": "a46688c5c41b2522c3c4afd4508be68f2ba3db793fbe64a6a30b0b2652e149b3",
+      "target": "同配置复现缺响指与杯子下落后回升的问题。",
+      "checks": [
+        "男子是否有可见响指动作",
+        "杯子先下落后定高，还是回升或落地",
+        "外卖员是否完全保持前倾伸手姿态，男子仍能动"
+      ],
+      "replacement_count": 0,
+      "status": "not_rendered"
+    },
+    {
+      "variant": "b3_hand",
+      "label": "B3响指版",
+      "role": "candidate",
+      "source_case": "timestop_urban",
+      "source_shot_ids": [
+        "px_timestop_urban_s1",
+        "px_timestop_urban_s2"
+      ],
+      "shot_ids": [
+        "r1_b3_hand_s1",
+        "r1_b3_hand_s2"
+      ],
+      "prompt_file": "提示词原文/b3_hand.txt",
+      "prompt_sha256": "68a9f732162eb2f69a92cae22aeef24e32641f0f7e3a061fd17834cf3bda2699",
+      "source_prompt_sha256": "a46688c5c41b2522c3c4afd4508be68f2ba3db793fbe64a6a30b0b2652e149b3",
+      "target": "只改触发动作的可见性，保持原杯子轨迹文字。",
+      "checks": [
+        "右手抬至胸前，手指轮廓能看清",
+        "中指与拇指接触后完成弹击动作，而非只抬手或捏指",
+        "杯子轨迹、外卖员静止和声音分别记录，响指成功不等于整段成功"
+      ],
+      "replacement_count": 1,
+      "status": "not_rendered"
+    },
+    {
+      "variant": "b3_position",
+      "label": "B3定高版",
+      "role": "candidate",
+      "source_case": "timestop_urban",
+      "source_shot_ids": [
+        "px_timestop_urban_s1",
+        "px_timestop_urban_s2"
+      ],
+      "shot_ids": [
+        "r1_b3_position_s1",
+        "r1_b3_position_s2"
+      ],
+      "prompt_file": "提示词原文/b3_position.txt",
+      "prompt_sha256": "37061d30f998c0d531628921dd5b8a8db668e14dc868f76fecce849029b90ec7",
+      "source_prompt_sha256": "a46688c5c41b2522c3c4afd4508be68f2ba3db793fbe64a6a30b0b2652e149b3",
+      "target": "只改杯子下落与定高的位置表达，保持原响指文字。",
+      "checks": [
+        "杯子先从手下直落，手与杯的间隙增大",
+        "杯子在离手高度与地面之间的中途停住",
+        "悬停后高度及所在位置不变，不回升、不落地、不换杯",
+        "响指是否可见、外卖员是否静止另外记录"
+      ],
+      "replacement_count": 3,
+      "status": "not_rendered"
+    }
+  ],
+  "identity_changes": "New comparison projects, runId and shot ids/titles; source files retained. Seeds and all generation fields preserved.",
+  "import_choice": "Import master OR C1+B3 parts, never both; the parts contain the same ten shots."
+}

@@ -1,0 +1,85 @@
+{
+  "version": "powers_optimization_r1_v1",
+  "date": "2026-10-08",
+  "source_project": "tools/context_ir/powers/render/seed_expansion_v1/H3异能测试_全部12情节24段.json",
+  "source_project_sha256": "b9a7c6c6e904838ce803c0954fb55ea25804c3978e1b407702976f33beabb7d6",
+  "seeds": [2026100801, 2026100802],
+  "variants": [
+    {
+      "id": "c1_original",
+      "label": "C1原版",
+      "case_id": "blast_urban",
+      "role": "control",
+      "target": "同配置复现接近后站等的问题。",
+      "checks": ["打手是否持续冲向女子，还是走近后站等", "女子何时举掌、聚光、发射", "能量命中、后飞撞柱与铁棍落水是否连贯"],
+      "replacements": []
+    },
+    {
+      "id": "c1_timing",
+      "label": "C1时机版",
+      "case_id": "blast_urban",
+      "role": "candidate",
+      "target": "提前准备右掌，将打手最后一步与出掌放在同一接触节拍；保持原特效和切点。",
+      "checks": ["女子在打手到身前前已经抬掌准备", "打手最后一步与能量命中衔接，没有站好等待挨打", "能量、后飞、撞柱、铁棍和结尾状态没有退步"],
+      "replacements": [
+        {
+          "old": "A short-haired woman in a black motorcycle jacket and jeans stands at screen-left.",
+          "new": "A short-haired woman in a black motorcycle jacket and jeans stands at screen-left with her open right palm already raised toward the approaching thug."
+        },
+        {
+          "old": "She raises her open right palm toward him.",
+          "new": "Her raised palm faces his chest as he runs leftward toward her."
+        },
+        {
+          "old": "The woman's glowing right palm from Shot 1 thrusts rightward from the left edge.",
+          "new": "The woman's glowing right palm from Shot 1 thrusts rightward from the left edge as the bald thug takes his last running stride toward her."
+        }
+      ]
+    },
+    {
+      "id": "b3_original",
+      "label": "B3原版",
+      "case_id": "timestop_urban",
+      "role": "control",
+      "target": "同配置复现缺响指与杯子下落后回升的问题。",
+      "checks": ["男子是否有可见响指动作", "杯子先下落后定高，还是回升或落地", "外卖员是否完全保持前倾伸手姿态，男子仍能动"],
+      "replacements": []
+    },
+    {
+      "id": "b3_hand",
+      "label": "B3响指版",
+      "case_id": "timestop_urban",
+      "role": "candidate",
+      "target": "只改触发动作的可见性，保持原杯子轨迹文字。",
+      "checks": ["右手抬至胸前，手指轮廓能看清", "中指与拇指接触后完成弹击动作，而非只抬手或捏指", "杯子轨迹、外卖员静止和声音分别记录，响指成功不等于整段成功"],
+      "replacements": [
+        {
+          "old": "Watching the falling cup, the man on the left snaps the fingers of his right hand.",
+          "new": "Watching the falling cup, the man on the left lifts his right hand to chest height, its fingers outlined against the pale storefront. His right middle fingertip presses against his thumb, then snaps down against the base of his thumb as the thumb releases."
+        }
+      ]
+    },
+    {
+      "id": "b3_position",
+      "label": "B3定高版",
+      "case_id": "timestop_urban",
+      "role": "candidate",
+      "target": "只改杯子下落与定高的位置表达，保持原响指文字。",
+      "checks": ["杯子先从手下直落，手与杯的间隙增大", "杯子在离手高度与地面之间的中途停住", "悬停后高度及所在位置不变，不回升、不落地、不换杯", "响指是否可见、外卖员是否静止另外记录"],
+      "replacements": [
+        {
+          "old": "The cup slips from the rider's right fingers and visibly falls toward the pavement, keeping its lid attached.",
+          "new": "The cup slips from the rider's right fingers and falls straight down toward the pavement, keeping its lid attached and opening a growing gap beneath his hand."
+        },
+        {
+          "old": "At the snap, the cup stops upright in midair above the paving;",
+          "new": "At the snap, the cup's downward movement ends halfway between the height where it left his hand and the pavement, its lid level and its base directly below that release point;"
+        },
+        {
+          "old": "The cup keeps its height and upright angle, and the rider holds exactly the same reaching posture through the final frame.",
+          "new": "The cup stays upright at that same halfway height, its base over the same patch of paving, while the rider holds exactly the same reaching posture through the final frame."
+        }
+      ]
+    }
+  ]
+}

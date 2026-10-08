@@ -1,0 +1,42 @@
+{
+  "baseline_source": "用户对上一批云端设置的报告",
+  "reported_baseline": {
+    "precision": "bf16",
+    "steps": 20,
+    "lora_enabled": false,
+    "additional_prompt_rewrite_enabled": false
+  },
+  "unknown_baseline_fields": [
+    "full_model_filename",
+    "cfg",
+    "resolution",
+    "sampler",
+    "scheduler",
+    "workflow_version"
+  ],
+  "round1_actual": {
+    "full_model_filename": null,
+    "precision": null,
+    "steps": null,
+    "cfg": null,
+    "lora_enabled": null,
+    "additional_prompt_rewrite_enabled": null,
+    "resolution": null,
+    "sampler": null,
+    "scheduler": null,
+    "workflow_version": null
+  },
+  "render_parameters_in_director_json": {
+    "fps": 24,
+    "duration_seconds": 8,
+    "frames": 192,
+    "seeds": [
+      2026100801,
+      2026100802
+    ],
+    "latentRelay": false,
+    "secondSamplingMode": "super_resolution_only",
+    "assets": []
+  },
+  "note": "BF16/20步/无LoRA/无额外改写为沿用要求，需在云端工作流设置；这些模型参数不由本导播台JSON设置。本轮尚未生成，round1_actual留空。"
+}

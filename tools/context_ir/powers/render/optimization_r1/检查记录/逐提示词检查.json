@@ -1,0 +1,32 @@
+[
+  {
+    "file": "b3_hand.txt",
+    "exit_code": 0,
+    "output": "mode=T2VA  shots=1  real_duration=8.000s  words=344  spoken_zh=0\nOK\n",
+    "stderr": ""
+  },
+  {
+    "file": "b3_original.txt",
+    "exit_code": 0,
+    "output": "mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0\nOK\n",
+    "stderr": ""
+  },
+  {
+    "file": "b3_position.txt",
+    "exit_code": 0,
+    "output": "mode=T2VA  shots=1  real_duration=8.000s  words=353  spoken_zh=0\nOK\n",
+    "stderr": ""
+  },
+  {
+    "file": "c1_original.txt",
+    "exit_code": 0,
+    "output": "mode=T2VA  shots=5  real_duration=8.000s  words=555  spoken_zh=0\nWARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)\n",
+    "stderr": ""
+  },
+  {
+    "file": "c1_timing.txt",
+    "exit_code": 0,
+    "output": "mode=T2VA  shots=5  real_duration=8.000s  words=581  spoken_zh=0\nWARN  shot before [Shot 3] lasts 1.30s (< 1.5s; fine only for fast-action quick cuts)\n",
+    "stderr": ""
+  }
+]
