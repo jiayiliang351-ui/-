@@ -1,0 +1,73 @@
+{
+  "version": "freeze_minimal_v1",
+  "created_date": "2026-10-08",
+  "schemaVersion": 5,
+  "project_id": "powers_freeze_minimal_v1",
+  "mode": "T2VA",
+  "shot_count": 2,
+  "seconds_per_shot": 8,
+  "fps": 24,
+  "frames_per_shot": 192,
+  "total_seconds": 16,
+  "seeds": [
+    2026100701,
+    2026100702
+  ],
+  "prompts_identical": true,
+  "only_per_shot_differences": [
+    "id",
+    "title",
+    "seed"
+  ],
+  "assets_count": 0,
+  "no_latent_relay": true,
+  "source_json_sha256": "4e0b8dc2127ca6c31ad21cfce07665a8d24b3c340f8f3ab4ccdbe0cf0f849dc1",
+  "source_user_and_repo_copies_identical_and_unchanged": true,
+  "preexisting_render_priority_unchanged": true,
+  "cinematic_base_copied_exactly": true,
+  "action_words_excluding_fixed_base_light_and_protection": 178,
+  "lint_errors_per_shot": [
+    0,
+    0
+  ],
+  "lint_warnings_per_shot": [
+    0,
+    0
+  ],
+  "repo_and_installed_lints_passed": true,
+  "linter_hashes": {
+    "h3-shot-prompt/scripts/lint_prompt.py": {
+      "repo_sha256": "80ca029a1b972e5dd8e9194b1a6c879140815c3e32abed49bf035a91f1ebdf93",
+      "installed_sha256": "421fd17917351eb16af2ed16126904eb575530a3c774cea86d26cb3a10cfe200",
+      "normalized_text_equal": true
+    },
+    "h3-director-json-review/scripts/lint_json.py": {
+      "repo_sha256": "a10d5f0a3f11f8037fcb25d0bbd834efd05aae7788dfe4311dabe971f1732806",
+      "installed_sha256": "b6661da8567800cefe5ea5a907ea00f274000cbc02019e6283c8f4fbda3a9f43",
+      "normalized_text_equal": true
+    }
+  },
+  "scope": "One moving arrow stops in midair on the left-palm gesture and stays suspended to the end. This does not test world freeze or rescue.",
+  "render_status": "not_rendered",
+  "cloud_import_status": "not_tested",
+  "actual_cloud_model_lora_sampler_steps_resolution": "not_provided",
+  "causal_attribution": "Diagnostic simplification changes multiple factors; no single-rule effect has been demonstrated.",
+  "files": {
+    "H3时间静止_最小冻结_2段16秒.json": {
+      "sha256": "157c0fbf21be9a19423bf272034e79b13e7e90b605ed6dde87302d4e2f5679d6",
+      "bytes": 5765
+    },
+    "提示词原文.txt": {
+      "sha256": "b94d1eb99f3a8474028ba12f710204705bfa20f28472099a2634b48d1ae5d9ec",
+      "bytes": 2304
+    },
+    "检查结果.txt": {
+      "sha256": "b7e5c4e27deffc37db262ffafb3e71fa93a92982c1a700fec0f1728138ebf320",
+      "bytes": 1605
+    },
+    "测试说明.md": {
+      "sha256": "06be42ef28d6c7d6a9c1eae3fc2c80b27affe0c0be5b5f6c3cf0ff2430555f80",
+      "bytes": 2268
+    }
+  }
+}

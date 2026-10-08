@@ -1,0 +1,37 @@
+提示词检查
+mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+OK
+
+导播台 JSON 检查
+
+=== freeze_minimal_s1  最小冻结_单支飞箭_种子1  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+
+=== freeze_minimal_s2  最小冻结_单支飞箭_种子2  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+
+linter: C:\Users\Administrator\Videos\提示词参考视频\h3-calibration\h3-shot-prompt\scripts\lint_prompt.py
+id           sec  err warn  summary
+freeze_minimal_s1   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+freeze_minimal_s2   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+
+2 shots checked, 0 with errors
+
+说明：以上为静态检查，不代表导入、渲染或成片质量已验证。
+
+已安装 skill 的导播台检查
+
+=== freeze_minimal_s1  最小冻结_单支飞箭_种子1  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+
+=== freeze_minimal_s2  最小冻结_单支飞箭_种子2  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+
+linter: D:\Codex\Users\Administrator\.codex\skills\h3-shot-prompt\scripts\lint_prompt.py
+id           sec  err warn  summary
+freeze_minimal_s1   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+freeze_minimal_s2   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=316  spoken_zh=0
+
+2 shots checked, 0 with errors
+
+仓库和已安装检查器的文本一致，仅换行编码不同；两边检查均为 0 错误、0 警告。
