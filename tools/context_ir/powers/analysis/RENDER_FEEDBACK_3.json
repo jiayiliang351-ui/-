@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-08",
+  "source": "user_report_after_cloud_render",
+  "user_message": "这两段视频都没问题",
+  "input_json": "tools/context_ir/powers/render/freeze_direction_v2/H3时间静止_只修箭头方向_2段16秒.json",
+  "input_json_sha256": "4ae09306579f2867471b764f1318b01a88c0baaa79af36d206f9c1270f404e43",
+  "input_prompt_sha256": "8cf9ce209f5721ac2747f428c7e6a9095ab086261c84a38899156c57580fe064",
+  "shots": [
+    {
+      "id": "freeze_direction_s1",
+      "seed": 2026100701,
+      "durationSeconds": 8,
+      "user_reported_overall_result": "pass"
+    },
+    {
+      "id": "freeze_direction_s2",
+      "seed": 2026100702,
+      "durationSeconds": 8,
+      "user_reported_overall_result": "pass"
+    }
+  ],
+  "sample_count": 2,
+  "user_reported_overall_pass_count": 2,
+  "video_directly_inspected_by_codex": false,
+  "actual_video_filenames": "not_provided",
+  "actual_cloud_model_lora_sampler_steps_resolution": "not_provided",
+  "individual_frame_and_audio_measurements": "not_provided",
+  "evidence_scope": "User acceptance of two outputs for this exact single-person, single-arrow, 8-second freeze-and-hold diagnostic.",
+  "compared_to_v1": "Both v1 seeds were reported reversed from first appearance. v2 changes only one arrow-shape/orientation prompt block; seeds, duration and JSON generation fields match v1.",
+  "causal_attribution": "The rendered effective prompt and actual cloud configuration were not independently verified, so this is not proof that the text change alone caused the improvement.",
+  "not_validated": [
+    "whole-world freeze",
+    "multiple arrows",
+    "moving or touching a frozen arrow",
+    "rescuing or carrying a child",
+    "resuming time",
+    "Ref2VA/I2VA",
+    "stable success across other seeds or configurations"
+  ],
+  "skill_update_scope": "Add the exact prompt as a bounded user-reported rendered reference; update obsolete evidence-status text, without imposing a universal new rule."
+}
