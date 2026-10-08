@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-08",
+  "source": "user_report_after_cloud_render",
+  "video_directly_inspected_by_codex": false,
+  "input_json": "tools/context_ir/powers/render/freeze_minimal_v1/H3时间静止_最小冻结_2段16秒.json",
+  "input_json_sha256": "157c0fbf21be9a19423bf272034e79b13e7e90b605ed6dde87302d4e2f5679d6",
+  "input_prompt_sha256": "b94d1eb99f3a8474028ba12f710204705bfa20f28472099a2634b48d1ae5d9ec",
+  "user_message": " 箭先飞后停，悬停，没有增升，但是箭头方向反了",
+  "clarification": {
+    "wrong_direction_onset": "from_first_appearance",
+    "affected_variants": "both_seeds"
+  },
+  "reported_observations": {
+    "motion_before_freeze": true,
+    "suspension": true,
+    "duplication_reported": false,
+    "arrowhead_direction_correct": false
+  },
+  "arrowhead_direction_failure_sample_count": 2,
+  "sample_count": 2,
+  "actual_video_filenames": "not_provided",
+  "actual_cloud_model_lora_sampler_steps_resolution": "not_provided",
+  "original_direction_clause": "A single black-feathered wooden arrow enters from screen-right at her shoulder height, its point facing left and its entire shaft visible against a pale wall.",
+  "original_clause_is_missing_or_contradictory": false,
+  "confirmed_issue": "Rendered arrowhead orientation does not follow the written left-facing direction; both seeds are reversed from first appearance.",
+  "root_cause": "not_established",
+  "candidate_hypothesis": "Explicit visual positions of arrowhead and feathered tail relative to the woman may improve orientation adherence.",
+  "candidate_direction_clause": "A single wooden arrow enters from screen-right at her shoulder height, fully visible side-on against the pale wall. Its sharp metal arrowhead is at the left end nearest the woman, and its black-feathered tail is at the right end farther from her; the arrow travels point-first.",
+  "candidate_status": "not_rendered",
+  "candidate_seeds": [
+    2026100701,
+    2026100702
+  ],
+  "scope_limits": [
+    "No whole-world freeze, rescue, arrow deflection or time restoration has passed this diagnostic.",
+    "Two samples and user feedback do not establish stable general performance.",
+    "No inference about model internals or LoRA causality is supported."
+  ]
+}

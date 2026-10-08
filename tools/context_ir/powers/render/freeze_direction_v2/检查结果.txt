@@ -1,0 +1,27 @@
+提示词检查
+mode=T2VA  shots=1  real_duration=8.000s  words=337  spoken_zh=0
+OK
+
+JSON 检查
+
+=== freeze_direction_s1  冻结方向修正_箭头朝向女侠_种子1  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=337  spoken_zh=0
+
+=== freeze_direction_s2  冻结方向修正_箭头朝向女侠_种子2  (8s)
+    mode=T2VA  shots=1  real_duration=8.000s  words=337  spoken_zh=0
+
+linter: C:\Users\Administrator\Videos\提示词参考视频\h3-calibration\h3-shot-prompt\scripts\lint_prompt.py
+id           sec  err warn  summary
+freeze_direction_s1   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=337  spoken_zh=0
+freeze_direction_s2   8    0    0  mode=T2VA  shots=1  real_duration=8.000s  words=337  spoken_zh=0
+
+2 shots checked, 0 with errors
+
+结构对照
+PASS: exactly one prompt block replaced; original prompts recoverable by reversing replacement.
+PASS: seeds, duration, soundscape, shot count, generation fields and cinematic base preserved.
+PASS: prior repository test JSON files and preexisting untracked file unchanged; new deliverable copies identical.
+Previous delivery JSON still at original local path: False
+Render status: candidate not rendered; observations are user-reported.
+
+检查范围：静态文本和结构；方向修正候选尚未渲染。

@@ -1,0 +1,56 @@
+{
+  "version": "freeze_direction_v2",
+  "date": "2026-10-08",
+  "schemaVersion": 5,
+  "source_json_sha256": "157c0fbf21be9a19423bf272034e79b13e7e90b605ed6dde87302d4e2f5679d6",
+  "source_prompt_sha256": "b94d1eb99f3a8474028ba12f710204705bfa20f28472099a2634b48d1ae5d9ec",
+  "source_repository_json_preserved": true,
+  "source_local_delivery_json_at_previous_path": false,
+  "shot_count": 2,
+  "seconds_per_shot": 8,
+  "total_seconds": 16,
+  "seeds": [
+    2026100701,
+    2026100702
+  ],
+  "changed_prompt_blocks": 1,
+  "changed_prompt_factor": "Visible arrowhead and feathered-tail orientation relative to the woman.",
+  "old_block": "A single black-feathered wooden arrow enters from screen-right at her shoulder height, its point facing left and its entire shaft visible against a pale wall.",
+  "new_block": "A single wooden arrow enters from screen-right at her shoulder height, fully visible side-on against the pale wall. Its sharp metal arrowhead is at the left end nearest the woman, and its black-feathered tail is at the right end farther from her; the arrow travels point-first.",
+  "generation_fields_preserved": true,
+  "soundscape_and_music_preserved": true,
+  "prompts_identical_between_seeds": true,
+  "project_runId_shot_ids_titles_changed_to_distinguish_output": true,
+  "lint_errors_per_shot": [
+    0,
+    0
+  ],
+  "lint_warnings_per_shot": [
+    0,
+    0
+  ],
+  "skill_rules_modified": false,
+  "scripts_modified": false,
+  "prior_result_source": "User feedback; video not directly inspected.",
+  "candidate_render_status": "not_rendered",
+  "cloud_import_status": "not_tested",
+  "actual_cloud_config": "not_provided",
+  "files": {
+    "H3时间静止_只修箭头方向_2段16秒.json": {
+      "sha256": "4ae09306579f2867471b764f1318b01a88c0baaa79af36d206f9c1270f404e43",
+      "bytes": 6029
+    },
+    "提示词原文.txt": {
+      "sha256": "8cf9ce209f5721ac2747f428c7e6a9095ab086261c84a38899156c57580fe064",
+      "bytes": 2423
+    },
+    "检查结果.txt": {
+      "sha256": "fec54803bbbb5507dfbdaddead910b2940dd8d9ae0d1fa9e0f053bb053ca7e9f",
+      "bytes": 1297
+    },
+    "测试说明.md": {
+      "sha256": "38aea7fd043e493ab1e3c228531491bd83b1bf6509f31fa9e0375e9a71dbf9de",
+      "bytes": 1261
+    }
+  }
+}
